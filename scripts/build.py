@@ -81,13 +81,13 @@ def wrap(title, body, page):
 <meta property="og:image" content="{BASE_URL}social.png">
 <link rel="canonical" href="{canonical}">
 <link rel="icon" href="{relative('favicon.svg', page)}" type="image/svg+xml">
-<link rel="stylesheet" href="{relative('styles.css', page)}?v=4">
-<link rel="stylesheet" href="{relative('research.css', page)}?v=4">
+<link rel="stylesheet" href="{relative('styles.css', page)}?v=5">
+<link rel="stylesheet" href="{relative('research.css', page)}?v=5">
 </head><body><a class="skip" href="#content">本文へ移動</a>
 <header class="site-header"><div class="header-inner"><div class="header-top"><a class="brand" href="{relative('index.html', page)}">Oprol QA <span>Research</span></a><span class="edition">競合調査 / 2026.10.27</span></div>{navigation(page)}</div></header>
 <div class="page-layout {page_class}{' with-toc' if toc else ''}"><main id="content" tabindex="-1">{breadcrumb}{body}</main>{toc}</div>
 <footer><p><a href="{relative('competitor-inventory.html', page)}">調査対象について</a> · <a href="{relative('competitor-evidence/2026-10-27/README.html', page)}">画像・動画の出典と確認方法</a></p><p>2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。</p></footer>
-{image_viewer()}<script src="{relative('site.js', page)}?v=4" defer></script></body></html>'''
+{image_viewer()}<script src="{relative('site.js', page)}?v=5" defer></script></body></html>'''
 
 
 def build_document(source, poster_paths):
@@ -132,7 +132,7 @@ def build_gallery(poster_paths):
     body = body.replace('<input id="query"', '<input type="search" id="query"')
     body = body.replace('<span id="count"', '<button type="button" id="gallery-reset">検索をクリア</button><span id="count"')
     body = re.sub(r'(href|src)="([^"]+)"', rewrite_link, body)
-    body += f'<script src="{relative("gallery.js", path)}?v=4" defer></script>'
+    body += f'<script src="{relative("gallery.js", path)}?v=5" defer></script>'
     path.write_text(wrap("競合プロダクトの機能・画面・動画", body, path))
 
 

@@ -688,3 +688,38 @@ button:hover {
 .directory-card .media-count {
   margin-top: 8px;
 }
+
+.comparison-table .evidence {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 72px;
+  height: auto;
+  min-height: 56px;
+  padding: 8px 4px;
+  background: var(--bg);
+  color: var(--ink);
+}
+.comparison-table .evidence-u {
+  background: #ebddb3;
+  color: #7a5c14;
+}
+.evidence-symbol {
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 600;
+}
+.evidence-source {
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: nowrap;
+  font-weight: 400;
+}
+.comparison-table td:nth-child(n + 2):nth-child(-n + 7) {
+  text-align: center;
+}
+.evidence-legend b {
+  font-size: 20px;
+  vertical-align: middle;
+}

@@ -65,14 +65,18 @@ def comparison(body):
         return f'''<div data-filter-root class="comparison-root">
 <div class="filter-bar"><div><label for="comparison-query">比較する製品・機能を検索</label><input id="comparison-query" type="search" data-filter-query placeholder="例：TestNeo、API、回帰"></div><button type="button" data-filter-reset>検索をクリア</button><p data-filter-count role="status" aria-live="polite">40 / 40 件</p></div>
 <p class="table-hint">表は縦・横にスクロールできます。製品名と見出しは固定しています。</p>
-<div class="evidence-legend"><span>R 実画面</span><span>S 公開サンプル</span><span>V 公式画面・動画</span><span>D 文書</span><span>U 未確認</span></div>
+<div class="evidence-legend"><span><b>○</b> 機能の記載・例あり</span><span><b>？</b> 未確認</span></div>
+<p class="table-hint">記号の下に確認の根拠を表示しています。○は全機能の動作確認や性能の保証ではありません。非対応が明記された項目だけを×とし、未確認とは区別します。</p>
 <p class="empty-state" data-filter-empty hidden>該当する製品がありません。検索語を変更してください。</p>
 <div class="table-scroll comparison-table" role="region" aria-label="40製品の機能・導線比較。縦と横にスクロールできます" tabindex="0"><table><thead><tr>{rows[0]}</tr></thead><tbody>{rows_html}</tbody></table></div></div>'''
 
     body = re.sub(pattern, table, body, count=1, flags=re.S)
-    names = {"R": "実画面", "S": "公開サンプル", "V": "公式画面・動画", "D": "文書", "U": "未確認"}
+    names = {"R": "実画面", "S": "サンプル", "V": "公式画面等", "D": "文書", "U": "未確認"}
     for code, label in names.items():
-        body = body.replace(f'<td>{code}</td>', f'<td><abbr class="evidence evidence-{code.lower()}" title="{label}" aria-label="{label}">{code}</abbr></td>')
+        symbol = "？" if code == "U" else "○"
+        description = "未確認。非対応という意味ではありません" if code == "U" else f"機能の記載・例あり。根拠：{label}"
+        badge = f'<span class="evidence evidence-{code.lower()}" role="img" aria-label="{description}" title="{description}"><span class="evidence-symbol" aria-hidden="true">{symbol}</span><span class="evidence-source" aria-hidden="true">{label}</span></span>'
+        body = body.replace(f'<td>{code}</td>', f'<td>{badge}</td>')
     return body
 
 
