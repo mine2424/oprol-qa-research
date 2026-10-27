@@ -64,10 +64,13 @@ def directory_previews(text, page, poster_paths):
     images = re.findall(r'\]\(([^)]+\.png)\)', text)
     videos = re.findall(r'\[([^\]]+)\]\(([^)]+\.mp4)\)', text)
     items = []
+    def relative(url):
+        source = (SITE / "competitor-products" / url).resolve()
+        return html.escape(os.path.relpath(source, page.parent), quote=True)
     if images:
-        url = html.escape(images[0], quote=True)
+        url = relative(images[0])
         items.append(f'<a class="inline-image" href="{url}"><img loading="lazy" src="{url}" alt="製品画面のプレビュー"><span>画面を拡大</span></a>')
     if videos:
         label, url = videos[0]
-        items.append(video_preview(html.escape(url, quote=True), html.escape(label), page, poster_paths))
+        items.append(video_preview(relative(url), html.escape(label), page, poster_paths))
     return '<div class="directory-previews">' + "".join(items) + '</div>' if items else ""
