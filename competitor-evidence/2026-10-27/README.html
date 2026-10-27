@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>競合の画面・動画の証跡 | Oprol QA Research</title>
+<meta name="description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="競合の画面・動画の証跡 | Oprol QA Research">
+<meta property="og:description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:url" content="https://mine2424.github.io/oprol-qa-research/competitor-evidence/2026-10-27/README.html">
+<meta property="og:image" content="https://mine2424.github.io/oprol-qa-research/social.png">
+<link rel="canonical" href="https://mine2424.github.io/oprol-qa-research/competitor-evidence/2026-10-27/README.html">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../styles.css">
+</head><body><a class="skip" href="#content">本文へ移動</a>
+<header class="site-header"><a class="brand" href="../../index.html">Oprol QA <span>Research</span></a><nav aria-label="資料ナビゲーション"><a href="../../index.html">概要</a><a href="../../competitor-flows.html">機能・導線比較</a><a href="../../competitor-products/README.html">製品別詳細</a><a href="gallery.html">画像・動画</a><a href="../../02-competitors.html">市場・価格比較</a><a href="../../competitor-inventory.html">候補台帳</a></nav></header>
+<main id="content" tabindex="-1"><h1>競合の画面・動画の証跡</h1>
+<p>確認日：2026年10月27日。<a href="gallery.html">ギャラリー</a>・<a href="../../competitor-flows.html">全体比較</a>・<a href="../../competitor-products/README.html">製品別</a>。Autestは対象外。問い合わせ・予約・登録フォーム、一般的なHero、装飾映像は収録しない。</p>
+<h2>種別</h2>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>表記</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>recorded-product-ui</td>
+<td>既存のログイン済み製品の読取操作を撮影。今回の新規テストの証明ではない</td>
+</tr>
+<tr>
+<td>public-demo-ui</td>
+<td>公開サンプル／紹介UIの画面。任意対象への実行とは別</td>
+</tr>
+<tr>
+<td>official-ui-image / official-ui-example</td>
+<td>公式が掲載するUI画像、またはその表示を撮影。提供者の例</td>
+</tr>
+<tr>
+<td>official-diagram</td>
+<td>業務・概念図。製品内の実画面ではない</td>
+</tr>
+<tr>
+<td>official-product-video</td>
+<td>公式ページから取得した操作を含む動画。自分で実行した結果ではない</td>
+</tr>
+<tr>
+<td>official-ui-animation</td>
+<td>提供者が構成したUIの紹介アニメーション。実アカウントの実行ではない</td>
+</tr>
+<tr>
+<td>official-concept-video</td>
+<td>変更管理の概念アニメーション。実UIの操作映像ではない</td>
+</tr>
+<tr>
+<td>recorded-official-video / recorded-official-demo</td>
+<td>公開紹介動画・アニメーションの再生画面を連続撮影</td>
+</tr>
+<tr>
+<td>recorded-public-demo</td>
+<td>公開サンプルの操作、または生成された動画の再生を撮影</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>保存・撮影と確認</h2>
+<p>macOSのDia／EdgeをComputer Useで操作。製品名・表示内容を目視し、不要なホーム・フォーム・読み込み途中・重複画像を除外した。ブラウザchromeを切り取り、TestSpriteではアカウント行も切り取った。公式のUI画像は出典を保持してPNG化した。画像の内容を生成AIで補完していない。</p>
+<p>取得した公式動画はH.264へ変換、最大幅1600px、速度を変更せず、音声を除いた。動画の切り出し画像はファイル名のtNNNが当保存動画の秒数。元動画の時刻とは限らない。Moは公開YouTubeの約0:33〜1:01の範囲を連続撮影した抜粋で、全編ではない。</p>
+<p>Computer Useによる連続撮影は取得間隔を維持してMP4化した。15fps出力は元の取得頻度ではなく、取得間隔中の動きは保存されていない。QA.techは86枚／約26秒、Moは140枚の連続区間。滑らかなOS録画やダウンロードした原映像と区別する。</p>
+<p>MP4はFFmpegで全体をデコードして終了コードを確認し、代表フレームを目視。公開の人物紹介、装飾映像、テスト対象モックだけの操作ガイドは操作動画の件数に含めない。アットストリームの26秒映像はモックの記録・再生デモと明記する。</p>
+<p>TestNeoの認証文字列は公開テンプレートのサンプル。顧客の認証情報ではない。動画の一時アクセス値・セッションURLを出典一覧へ転記しない。</p>
+<h2>製品別の画像・動画一覧</h2>
+<p>保存画像161点（公式UI素材・業務図を含む）、動画22本、動画の切り出し画像73点。切り出しを独立した確認画面として二重加算しない。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>製品</th>
+<th>画像</th>
+<th>動画</th>
+<th>詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TestSprite</td>
+<td>36</td>
+<td>1</td>
+<td><a href="../../competitor-products/testsprite.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>QA.tech</td>
+<td>2</td>
+<td>1</td>
+<td><a href="../../competitor-products/qatech.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Momentic／Mo</td>
+<td>11</td>
+<td>1</td>
+<td><a href="../../competitor-products/momentic.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Touchstone</td>
+<td>0</td>
+<td>1</td>
+<td><a href="../../competitor-products/touchstone.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>TestNeo</td>
+<td>12</td>
+<td>1</td>
+<td><a href="../../competitor-products/testneo.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Validate.QA</td>
+<td>6</td>
+<td>0</td>
+<td><a href="../../competitor-products/validate.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Canary</td>
+<td>1</td>
+<td>0</td>
+<td><a href="../../competitor-products/canary.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>QA Wolf Platform</td>
+<td>0</td>
+<td>0</td>
+<td><a href="../../competitor-products/qawolf.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>MagicPod本体</td>
+<td>3</td>
+<td>0</td>
+<td><a href="../../competitor-products/magicpod.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Autify Aximo</td>
+<td>0</td>
+<td>4</td>
+<td><a href="../../competitor-products/autify.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Docket</td>
+<td>0</td>
+<td>3</td>
+<td><a href="../../competitor-products/docket.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Meticulous</td>
+<td>1</td>
+<td>0</td>
+<td><a href="../../competitor-products/meticulous.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Autosana</td>
+<td>0</td>
+<td>1</td>
+<td><a href="../../competitor-products/autosana.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>QualGent</td>
+<td>3</td>
+<td>0</td>
+<td><a href="../../competitor-products/qualgent.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Spur</td>
+<td>1</td>
+<td>0</td>
+<td><a href="../../competitor-products/spur.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Revyl</td>
+<td>14</td>
+<td>2</td>
+<td><a href="../../competitor-products/revyl.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>TesterArmy</td>
+<td>0</td>
+<td>0</td>
+<td><a href="../../competitor-products/testerarmy.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Swarm</td>
+<td>0</td>
+<td>0</td>
+<td><a href="../../competitor-products/swarm.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Tookii</td>
+<td>0</td>
+<td>0</td>
+<td><a href="../../competitor-products/tookii.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Uxia</td>
+<td>4</td>
+<td>0</td>
+<td><a href="../../competitor-products/uxia.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>MagicPod AIテストセンター</td>
+<td>1</td>
+<td>0</td>
+<td><a href="../../competitor-products/magicpod-center.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>SHIFT AIテストエージェント</td>
+<td>0</td>
+<td>0</td>
+<td><a href="../../competitor-products/shift.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>AGEST QA for AI駆動開発</td>
+<td>0</td>
+<td>0</td>
+<td><a href="../../competitor-products/agest.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>アットストリーム</td>
+<td>3</td>
+<td>1</td>
+<td><a href="../../competitor-products/atstream.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>TESTRA</td>
+<td>2</td>
+<td>0</td>
+<td><a href="../../competitor-products/testra.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>mabl</td>
+<td>9</td>
+<td>1</td>
+<td><a href="../../competitor-products/mabl.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>testRigor</td>
+<td>4</td>
+<td>0</td>
+<td><a href="../../competitor-products/testrigor.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Amikoo（MuukTest）</td>
+<td>1</td>
+<td>0</td>
+<td><a href="../../competitor-products/amikoo.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>MuukTest Managed QA</td>
+<td>0</td>
+<td>0</td>
+<td><a href="../../competitor-products/muuktest-service.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Checksum</td>
+<td>2</td>
+<td>0</td>
+<td><a href="../../competitor-products/checksum.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>TestDriver</td>
+<td>7</td>
+<td>0</td>
+<td><a href="../../competitor-products/testdriver.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Panaya Test Dynamix</td>
+<td>7</td>
+<td>0</td>
+<td><a href="../../competitor-products/panaya.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Testsigma／Atto</td>
+<td>6</td>
+<td>0</td>
+<td><a href="../../competitor-products/testsigma.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Katalon True Platform</td>
+<td>0</td>
+<td>1</td>
+<td><a href="../../competitor-products/katalon.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Tricentis Testim</td>
+<td>0</td>
+<td>0</td>
+<td><a href="../../competitor-products/testim.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>UserTesting</td>
+<td>5</td>
+<td>1</td>
+<td><a href="../../competitor-products/usertesting.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Synthetic Users</td>
+<td>2</td>
+<td>1</td>
+<td><a href="../../competitor-products/synthetic-users.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>Browser Use</td>
+<td>0</td>
+<td>0</td>
+<td><a href="../../competitor-products/browser-use.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>KaneAI（TestMu AI）</td>
+<td>0</td>
+<td>0</td>
+<td><a href="../../competitor-products/kaneai.html">全画面・出典・動画の場面</a></td>
+</tr>
+<tr>
+<td>BrowserStack AI（Test Management／LCA）</td>
+<td>18</td>
+<td>2</td>
+<td><a href="../../competitor-products/browserstack-ai.html">全画面・出典・動画の場面</a></td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p><a href="manifest.json">manifest.json</a>に各ファイルの種別・掲載元・直接URL・SHA-256を記録する。提供者の画面は現行版と異なる場合がある。全製品の登録後の全画面を確認した資料ではない。</p></main>
+<footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
+<script src="../../site.js" defer></script></body></html>

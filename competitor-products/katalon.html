@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Katalon True Platform — 機能・導線・画面 | Oprol QA Research</title>
+<meta name="description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Katalon True Platform — 機能・導線・画面 | Oprol QA Research">
+<meta property="og:description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:url" content="https://mine2424.github.io/oprol-qa-research/competitor-products/katalon.html">
+<meta property="og:image" content="https://mine2424.github.io/oprol-qa-research/social.png">
+<link rel="canonical" href="https://mine2424.github.io/oprol-qa-research/competitor-products/katalon.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head><body><a class="skip" href="#content">本文へ移動</a>
+<header class="site-header"><a class="brand" href="../index.html">Oprol QA <span>Research</span></a><nav aria-label="資料ナビゲーション"><a href="../index.html">概要</a><a href="../competitor-flows.html">機能・導線比較</a><a href="README.html">製品別詳細</a><a href="../competitor-evidence/2026-10-27/gallery.html">画像・動画</a><a href="../02-competitors.html">市場・価格比較</a><a href="../competitor-inventory.html">候補台帳</a></nav></header>
+<main id="content" tabindex="-1"><h1>Katalon True Platform — 機能・導線・画面</h1>
+<p>確認日：2026年10月27日。<a href="../competitor-flows.html">全体比較</a>・<a href="../competitor-evidence/2026-10-27/gallery.html#katalon">画面／動画ギャラリー</a></p>
+<h2>調査範囲</h2>
+<p>4製品の役割とKatalon AI・MCPを分ける。個々の利用枠・契約を1つの機能として混ぜない。</p>
+<p>比較上の位置：テスト運用全体の直接比較。追加理由：Studio・TestOps・TestCloud・TrueTestで作成から本番行動の再利用までをつなぐため。</p>
+<p>公式Studio操作映像・公開ページのUI例まで。製品のinstall・実行・端末・MCP接続は未実施。</p>
+<h2>作業の流れ</h2>
+<p>要求／ticket → Studio・AI作成 → TestOpsでcase・plan → TestCloud／自社runner → 結果・defect・approval → TrueTestの実利用からcoverage更新</p>
+<h2>機能の構成</h2>
+<p>StudioのTests Explorer・手順・AI Assistant、TestOpsのHome／Plans／Tests／Assets／Executions／Analytics／Device Cloud、TestCloud、TrueTest。</p>
+<p>下表は公開説明・文書の要約。実操作した範囲は画面一覧と調査範囲に限定し、表全体を実機検証済みとはしない。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>段階</th>
+<th>画面・機能</th>
+<th>入力・操作と次の行動</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>要求・作成</td>
+<td>Studio・Katalon AI</td>
+<td>自然言語やチケットからケース・操作・objectを作り、人がreviewする。</td>
+</tr>
+<tr>
+<td>編集</td>
+<td>No-code／low-code／code</td>
+<td>Web・mobile・API・Windowsのテスト作成・編集を案内。</td>
+</tr>
+<tr>
+<td>管理</td>
+<td>TestOps</td>
+<td>手動・自動のケース、要求、担当者、計画と実行結果をまとめる。</td>
+</tr>
+<tr>
+<td>準備</td>
+<td>Test plan・environment</td>
+<td>実施範囲・担当・データ・環境・起動条件を決める。</td>
+</tr>
+<tr>
+<td>実行</td>
+<td>TestCloud・Runtime Engine</td>
+<td>browser・実device・自社runnerでの実行を管理する。</td>
+</tr>
+<tr>
+<td>結果</td>
+<td>Evidence・defect・readiness</td>
+<td>stepの証拠、Jira等の不具合、承認・releaseの判断根拠を残す。</td>
+</tr>
+<tr>
+<td>保守</td>
+<td>Self-healing・failure analysis</td>
+<td>操作対象の変更への対応と失敗説明を案内。期待保持は未評価。</td>
+</tr>
+<tr>
+<td>再利用</td>
+<td>TrueTest・MCP・Playwright</td>
+<td>実利用からcoverage不足を拾い、既存Playwrightの結果や外部Agentも運用に接続する。</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>人の担当と比較上の着眼点</h2>
+<p>要求・生成物のreview、テストや実行の担当割当、修復とreleaseの判断。</p>
+<p>調査者の解釈：1つのAI機能との比較ではなく、要求・資産・実行・証拠・本番知識をつなぐ運用の代替として見る。 製品性能の優劣を実証した結論ではない。</p>
+<h2>動画と見る場面</h2>
+<ul>
+<li><a href="../competitor-evidence/2026-10-27/deep/katalon-expanded-walkthrough.mp4">Studio：Jira要求→object・stepの作成</a>（17.1秒、official-product-video）。<a href="https://katalon.com/katalon-studio" rel="nofollow">公式の掲載元</a>。<br>
+見る場面：<a href="../competitor-evidence/2026-10-27/deep/katalon-expanded-walkthrough-t002.png">2秒：AIへの依頼</a>、<a href="../competitor-evidence/2026-10-27/deep/katalon-expanded-walkthrough-t006.png">6秒：ticketの参照</a>、<a href="../competitor-evidence/2026-10-27/deep/katalon-expanded-walkthrough-t011.png">11秒：case生成</a>、<a href="../competitor-evidence/2026-10-27/deep/katalon-expanded-walkthrough-t015.png">15秒：生成step</a>。</li>
+</ul>
+<h2>画面一覧</h2>
+<p>製品内の画面は未収録。公開説明に基づく機能表と、実際のUIを確認できた範囲を分けている。</p>
+<h2>一次情報</h2>
+<ul>
+<li><a href="https://katalon.com/" rel="nofollow">公式製品ページ</a></li>
+<li><a href="https://katalon.com/katalon-studio" rel="nofollow">katalon-1</a></li>
+<li><a href="https://katalon.com/testops" rel="nofollow">katalon-2</a></li>
+</ul></main>
+<footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
+<script src="../site.js" defer></script></body></html>

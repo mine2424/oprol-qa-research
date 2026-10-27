@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Revyl — 機能・導線・画面 | Oprol QA Research</title>
+<meta name="description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Revyl — 機能・導線・画面 | Oprol QA Research">
+<meta property="og:description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:url" content="https://mine2424.github.io/oprol-qa-research/competitor-products/revyl.html">
+<meta property="og:image" content="https://mine2424.github.io/oprol-qa-research/social.png">
+<link rel="canonical" href="https://mine2424.github.io/oprol-qa-research/competitor-products/revyl.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head><body><a class="skip" href="#content">本文へ移動</a>
+<header class="site-header"><a class="brand" href="../index.html">Oprol QA <span>Research</span></a><nav aria-label="資料ナビゲーション"><a href="../index.html">概要</a><a href="../competitor-flows.html">機能・導線比較</a><a href="README.html">製品別詳細</a><a href="../competitor-evidence/2026-10-27/gallery.html">画像・動画</a><a href="../02-competitors.html">市場・価格比較</a><a href="../competitor-inventory.html">候補台帳</a></nav></header>
+<main id="content" tabindex="-1"><h1>Revyl — 機能・導線・画面</h1>
+<p>確認日：2026年10月27日。<a href="../competitor-flows.html">全体比較</a>・<a href="../competitor-evidence/2026-10-27/gallery.html#revyl">画面／動画ギャラリー</a></p>
+<h2>調査範囲</h2>
+<p>モバイルを中心とするビルド・クラウド実行・テスト・Atlas・Agentの作業基盤。DocsにはWeb／computerのalphaもある。</p>
+<p>操作したのは公開Atlasサンプル。任意アプリの新規解析・build・CI・Agent起動は未実施。Web等のalphaを一般提供済みとはしない。</p>
+<h2>作業の流れ</h2>
+<p>Build・branch → device／session起動 → 探索・テスト → Atlas → screen／flow → report → IDE Agent → PR検証</p>
+<h2>機能の構成</h2>
+<p>Apps / Builds / branches / Sessions / Tests / Workflows / Reports / Atlas（Map・Graph・Screens・Flows）/ Integrations。</p>
+<p>下表は公開説明・文書の要約。実操作した範囲は画面一覧と調査範囲に限定し、表全体を実機検証済みとはしない。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>段階</th>
+<th>画面・機能</th>
+<th>入力・操作と次の行動</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>準備</td>
+<td>Build workspace</td>
+<td>buildの状態・logs・起動先を管理する。</td>
+</tr>
+<tr>
+<td>操作</td>
+<td>Cloud device・Session</td>
+<td>動くアプリをbrowser経由で操作・共有する環境を提供する。</td>
+</tr>
+<tr>
+<td>作成</td>
+<td>Tests・YAML・Workflows</td>
+<td>自然言語やYAML等の作成、テスト集合と継続実行を文書化。</td>
+</tr>
+<tr>
+<td>探索</td>
+<td>Atlas exploration</td>
+<td>操作で観測した画面・遷移をアプリマップへ蓄積する。</td>
+</tr>
+<tr>
+<td>参照</td>
+<td>Map・Screens・Flows</td>
+<td>公開Airbnbサンプルのjourney・step・画面・report切替を操作。</td>
+</tr>
+<tr>
+<td>結果</td>
+<td>Report</td>
+<td>動画、Summary、Performance、問題・証拠をまとめる。</td>
+</tr>
+<tr>
+<td>修正</td>
+<td>Cursor・coding agent</td>
+<td>画面やflowの文脈をAgentへ渡す導線を示す。</td>
+</tr>
+<tr>
+<td>継続</td>
+<td>PR・CI・Slack等</td>
+<td>buildと変更の証明・継続テストを開発工程へ返す。</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>人の担当と比較上の着眼点</h2>
+<p>アプリbuild・認証・データの用意、問題判断とAgentへの依頼。</p>
+<p>調査者の解釈：実行画面だけでなく、アプリ知識を参照・再利用するAtlasと開発環境の往復が重要。 製品性能の優劣を実証した結論ではない。</p>
+<h2>動画と見る場面</h2>
+<ul>
+<li><a href="../competitor-evidence/2026-10-27/deep/revyl-official-01.mp4">Atlasの画面・フローを選択して確認</a>（14.8秒、official-product-video）。<a href="https://revyl.com/" rel="nofollow">公式の掲載元</a>。<br>
+見る場面：<a href="../competitor-evidence/2026-10-27/deep/revyl-official-01-t002.png">2秒：Atlasマップ</a>、<a href="../competitor-evidence/2026-10-27/deep/revyl-official-01-t005.png">5秒：onboarding画面</a>、<a href="../competitor-evidence/2026-10-27/deep/revyl-official-01-t009.png">9秒：別フロー</a>、<a href="../competitor-evidence/2026-10-27/deep/revyl-official-01-t012.png">12秒：home画面</a>。</li>
+<li><a href="../competitor-evidence/2026-10-27/deep/../revyl-atlas-walkthrough.mp4">公開Atlas：Journey→Screens→Reportの操作</a>（12.6秒、recorded-public-demo）。<a href="https://revyl.com/atlas/airbnb/" rel="nofollow">公式の掲載元</a>。</li>
+</ul>
+<h2>画面一覧</h2>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>画面</th>
+<th>種別</th>
+<th>出典</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/revyl-vendor-13.png">A successful cloud build ready to launch on a mobile device</a></td>
+<td>official-ui-image</td>
+<td><a href="https://revyl.com/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/revyl-vendor-14.png">A coding agent iterating on a mobile game running on a cloud device</a></td>
+<td>official-ui-image</td>
+<td><a href="https://revyl.com/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/revyl-vendor-15.png">A passed Revyl test report with mobile evidence and performance data</a></td>
+<td>official-ui-image</td>
+<td><a href="https://revyl.com/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/revyl-vendor-16.png">An Atlas map connecting observed mobile screens and flows</a></td>
+<td>official-ui-image</td>
+<td><a href="https://revyl.com/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/revyl-vendor-17.png">Revyl opening a Cursor coding agent from an Atlas screen</a></td>
+<td>official-ui-image</td>
+<td><a href="https://revyl.com/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/revyl-vendor-19.png">test-execution.webp</a></td>
+<td>official-ui-image</td>
+<td><a href="https://revyl.com/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/revyl-vendor-20.png">pr-validation-result-1600.webp</a></td>
+<td>official-ui-image</td>
+<td><a href="https://revyl.com/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/revyl-vendor-21.png">release-blocker-1600.webp</a></td>
+<td>official-ui-image</td>
+<td><a href="https://revyl.com/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/revyl-vendor-22.png">atlas-exploration.webp</a></td>
+<td>official-ui-image</td>
+<td><a href="https://revyl.com/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/revyl-vendor-23.png">cross-platform-result.webp</a></td>
+<td>official-ui-image</td>
+<td><a href="https://revyl.com/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/../revyl-01-map.png">公開Atlas：Map</a></td>
+<td>public-demo-ui</td>
+<td><a href="https://revyl.com/atlas/airbnb/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/../revyl-03-screens.png">公開Atlas：Screens</a></td>
+<td>public-demo-ui</td>
+<td><a href="https://revyl.com/atlas/airbnb/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/../revyl-04-report.png">公開Atlas：Report</a></td>
+<td>public-demo-ui</td>
+<td><a href="https://revyl.com/atlas/airbnb/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/../revyl-02-journey.png">公開Atlas：Journey</a></td>
+<td>public-demo-ui</td>
+<td><a href="https://revyl.com/atlas/airbnb/" rel="nofollow">掲載元</a></td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/revyl-vendor-13.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/revyl-vendor-13.png" alt="A successful cloud build ready to launch on a mobile device — official-ui-image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/revyl-vendor-14.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/revyl-vendor-14.png" alt="A coding agent iterating on a mobile game running on a cloud device — official-ui-image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/revyl-vendor-15.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/revyl-vendor-15.png" alt="A passed Revyl test report with mobile evidence and performance data — official-ui-image" style="max-width: 100%;"></a></p>
+<h2>一次情報</h2>
+<ul>
+<li><a href="https://revyl.com/" rel="nofollow">公式製品ページ</a></li>
+<li><a href="https://docs.revyl.com/llms.txt" rel="nofollow">llms.txt</a></li>
+</ul></main>
+<footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
+<script src="../site.js" defer></script></body></html>

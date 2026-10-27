@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QA Wolf Platform — 機能・導線・画面 | Oprol QA Research</title>
+<meta name="description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="QA Wolf Platform — 機能・導線・画面 | Oprol QA Research">
+<meta property="og:description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:url" content="https://mine2424.github.io/oprol-qa-research/competitor-products/qawolf.html">
+<meta property="og:image" content="https://mine2424.github.io/oprol-qa-research/social.png">
+<link rel="canonical" href="https://mine2424.github.io/oprol-qa-research/competitor-products/qawolf.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head><body><a class="skip" href="#content">本文へ移動</a>
+<header class="site-header"><a class="brand" href="../index.html">Oprol QA <span>Research</span></a><nav aria-label="資料ナビゲーション"><a href="../index.html">概要</a><a href="../competitor-flows.html">機能・導線比較</a><a href="README.html">製品別詳細</a><a href="../competitor-evidence/2026-10-27/gallery.html">画像・動画</a><a href="../02-competitors.html">市場・価格比較</a><a href="../competitor-inventory.html">候補台帳</a></nav></header>
+<main id="content" tabindex="-1"><h1>QA Wolf Platform — 機能・導線・画面</h1>
+<p>確認日：2026年10月27日。<a href="../competitor-flows.html">全体比較</a>・<a href="../competitor-evidence/2026-10-27/gallery.html#qawolf">画面／動画ギャラリー</a></p>
+<h2>調査範囲</h2>
+<p>Platformのテスト計画・自動化・実行基盤と、人が担当するServiceを分ける。</p>
+<p>公開のworkflowアニメーションのみ操作確認。ログイン後の編集・失敗調査・スケジュール・権限設定は未操作。</p>
+<h2>作業の流れ</h2>
+<p>対象アプリ → フロー把握・計画 → Agentで作成 → Playwright／Appium → 手動／schedule／deploy → 失敗調査 → バグ報告・保守</p>
+<h2>機能の構成</h2>
+<p>PlatformのMapping / AI Automation / AI Run Infra。DocsにTest Planning / Test Automation / Triggers / Smart Smoke Suites / MCP / Integrations。</p>
+<p>下表は公開説明・文書の要約。実操作した範囲は画面一覧と調査範囲に限定し、表全体を実機検証済みとはしない。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>段階</th>
+<th>画面・機能</th>
+<th>入力・操作と次の行動</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>範囲</td>
+<td>Test Planning・Mapping</td>
+<td>ユーザーフローをテスト計画へ整理し、確認範囲を管理する。</td>
+</tr>
+<tr>
+<td>作成</td>
+<td>AI Automation</td>
+<td>AgentがWebはPlaywright、モバイル等はAppiumでテストを作る。</td>
+</tr>
+<tr>
+<td>実行</td>
+<td>Run infrastructure</td>
+<td>スイートを並列実行する基盤。手動・スケジュール・デプロイ契機を扱う。</td>
+</tr>
+<tr>
+<td>選定</td>
+<td>Smart Smoke Suites</td>
+<td>変更に応じた検証集合を扱う。選定精度は未評価。</td>
+</tr>
+<tr>
+<td>失敗調査</td>
+<td>Investigation</td>
+<td>失敗を調べ、テスト側の問題と製品側の問題を扱うと説明。</td>
+</tr>
+<tr>
+<td>報告・保守</td>
+<td>Bug report・maintenance</td>
+<td>根拠付き報告とテスト維持を同じサイクルで提供。</td>
+</tr>
+<tr>
+<td>連携</td>
+<td>MCP・GitHub／Slack等</td>
+<td>開発Agent、PR、チャットから作成・実行へ接続。独自skillsも文書化。</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>人の担当と比較上の着眼点</h2>
+<p>対象・範囲・期待の決定。Service契約ではどの作業を人が引き取るか別途確認する。</p>
+<p>調査者の解釈：作成単価だけでなく、原因調査・保守・実行環境と人のサービスの費用を含めて比較する。 製品性能の優劣を実証した結論ではない。</p>
+<h2>動画と見る場面</h2>
+<p>製品操作を確認できる動画を今回保存できていない。存在しない・非対応という意味ではない。問い合わせ画面で代用しない。</p>
+<h2>画面一覧</h2>
+<p>製品内の画面は未収録。公開説明に基づく機能表と、実際のUIを確認できた範囲を分けている。</p>
+<h2>一次情報</h2>
+<ul>
+<li><a href="https://www.qawolf.com/" rel="nofollow">公式製品ページ</a></li>
+<li><a href="https://docs.qawolf.com/test-automation" rel="nofollow">Test Automation</a></li>
+<li><a href="https://docs.qawolf.com/triggers/overview" rel="nofollow">Triggers</a></li>
+<li><a href="https://docs.qawolf.com/smart-smoke-suites" rel="nofollow">Smart Smoke Suites</a></li>
+<li><a href="https://docs.qawolf.com/qrcode" rel="nofollow">Test QR code authentication</a></li>
+<li><a href="https://docs.qawolf.com/Pass-data-between-flows" rel="nofollow">Pass data between flows</a></li>
+<li><a href="https://docs.qawolf.com/integrations" rel="nofollow">Integrations</a></li>
+</ul></main>
+<footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
+<script src="../site.js" defer></script></body></html>

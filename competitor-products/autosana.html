@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Autosana — 機能・導線・画面 | Oprol QA Research</title>
+<meta name="description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Autosana — 機能・導線・画面 | Oprol QA Research">
+<meta property="og:description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:url" content="https://mine2424.github.io/oprol-qa-research/competitor-products/autosana.html">
+<meta property="og:image" content="https://mine2424.github.io/oprol-qa-research/social.png">
+<link rel="canonical" href="https://mine2424.github.io/oprol-qa-research/competitor-products/autosana.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head><body><a class="skip" href="#content">本文へ移動</a>
+<header class="site-header"><a class="brand" href="../index.html">Oprol QA <span>Research</span></a><nav aria-label="資料ナビゲーション"><a href="../index.html">概要</a><a href="../competitor-flows.html">機能・導線比較</a><a href="README.html">製品別詳細</a><a href="../competitor-evidence/2026-10-27/gallery.html">画像・動画</a><a href="../02-competitors.html">市場・価格比較</a><a href="../competitor-inventory.html">候補台帳</a></nav></header>
+<main id="content" tabindex="-1"><h1>Autosana — 機能・導線・画面</h1>
+<p>確認日：2026年10月27日。<a href="../competitor-flows.html">全体比較</a>・<a href="../competitor-evidence/2026-10-27/gallery.html#autosana">画面／動画ギャラリー</a></p>
+<h2>調査範囲</h2>
+<p>Web／モバイルのフロー、ローカル／クラウド、PR検証、開発Agentの修正ループを広く扱う。</p>
+<p>公式動画とDocs。自社アプリ接続、hooks・private network・実機・PR botは未実行。動画に表示された成功は提供者のサンプル。</p>
+<h2>作業の流れ</h2>
+<p>Apps → Flows → Suites → Environment・Variables・Hooks → Run／Automation／PR → Issues・動画・Network → Agent修正 → 再実行</p>
+<h2>機能の構成</h2>
+<p>Overview / Issues / Runs / Flows / Apps / Hooks / Automations / Settings。DocsにSuites / Environments / Variables / Notifications / Performance / Network。</p>
+<p>下表は公開説明・文書の要約。実操作した範囲は画面一覧と調査範囲に限定し、表全体を実機検証済みとはしない。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>段階</th>
+<th>画面・機能</th>
+<th>入力・操作と次の行動</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>接続</td>
+<td>Apps</td>
+<td>WebのURL、モバイルのbuild・対象環境を用意する。</td>
+</tr>
+<tr>
+<td>作成</td>
+<td>Flows</td>
+<td>自然言語の操作・期待をフローとして作成・編集する。コード管理・CLI同期も案内。</td>
+</tr>
+<tr>
+<td>構成</td>
+<td>Suites・Environment・Variables</td>
+<td>複数フロー、実行先、共通値を分けて管理する。</td>
+</tr>
+<tr>
+<td>前後処理</td>
+<td>Hooks</td>
+<td>準備・後始末・外部連携をフロー本体から分離する。</td>
+</tr>
+<tr>
+<td>実行</td>
+<td>Local・Cloud・Automation</td>
+<td>端末／browserで実行。手動・自動化・PR起点を扱う。</td>
+</tr>
+<tr>
+<td>結果</td>
+<td>Runs・Issues</td>
+<td>操作動画、バグ・UX所見と実行結果を確認する。</td>
+</tr>
+<tr>
+<td>調査</td>
+<td>Network・Performance</td>
+<td>通信と性能・device logsの根拠へ掘り下げる。</td>
+</tr>
+<tr>
+<td>修正・継続</td>
+<td>GitHub bot・Agent・再検証</td>
+<td>PRに結果を返し、文脈付きで修正Agentへ渡し、修正後を再確認する。</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>人の担当と比較上の着眼点</h2>
+<p>アプリ・認証・実行データ、フローの期待、issueの妥当性、修正の採否。</p>
+<p>調査者の解釈：QA画面単独ではなく、IDE→PR→結果→Agent修正→再実行の往復全体が比較対象になる。 製品性能の優劣を実証した結論ではない。</p>
+<h2>動画と見る場面</h2>
+<ul>
+<li><a href="../competitor-evidence/2026-10-27/deep/autosana-official-01.mp4">開発Agent→CLI→PR検証→不具合→修正→再検証の公式紹介</a>（119.7秒、official-product-video）。<a href="https://autosana.ai/" rel="nofollow">公式の掲載元</a>。<br>
+見る場面：<a href="../competitor-evidence/2026-10-27/deep/autosana-official-01-t036.png">36秒：CLIの検証</a>、<a href="../competitor-evidence/2026-10-27/deep/autosana-official-01-t046.png">46秒：端末での実行</a>、<a href="../competitor-evidence/2026-10-27/deep/autosana-official-01-t060.png">60秒：PRへの結果</a>、<a href="../competitor-evidence/2026-10-27/deep/autosana-official-01-t081.png">81秒：修正Agentへの文脈</a>、<a href="../competitor-evidence/2026-10-27/deep/autosana-official-01-t090.png">90秒：再検証の動画</a>、<a href="../competitor-evidence/2026-10-27/deep/autosana-official-01-t096.png">96秒：UX finding</a>、<a href="../competitor-evidence/2026-10-27/deep/autosana-official-01-t099.png">99秒：network・device logs</a>。</li>
+</ul>
+<h2>画面一覧</h2>
+<p>製品内の画面は未収録。公開説明に基づく機能表と、実際のUIを確認できた範囲を分けている。</p>
+<h2>一次情報</h2>
+<ul>
+<li><a href="https://autosana.ai/" rel="nofollow">公式製品ページ</a></li>
+<li><a href="https://docs.autosana.ai/quickstart" rel="nofollow">Quickstart</a></li>
+<li><a href="https://docs.autosana.ai/flows" rel="nofollow">Flows</a></li>
+<li><a href="https://docs.autosana.ai/suites" rel="nofollow">Suites</a></li>
+<li><a href="https://docs.autosana.ai/automations" rel="nofollow">Automations</a></li>
+<li><a href="https://docs.autosana.ai/hooks" rel="nofollow">Hooks</a></li>
+<li><a href="https://docs.autosana.ai/environments" rel="nofollow">Environments</a></li>
+<li><a href="https://docs.autosana.ai/variables" rel="nofollow">Variables</a></li>
+<li><a href="https://docs.autosana.ai/issues" rel="nofollow">Issues</a></li>
+<li><a href="https://docs.autosana.ai/notifications" rel="nofollow">Notifications</a></li>
+<li><a href="https://docs.autosana.ai/github-integration" rel="nofollow">GitHub Bot</a></li>
+<li><a href="https://docs.autosana.ai/network-traffic" rel="nofollow">Network Traffic</a></li>
+<li><a href="https://docs.autosana.ai/apps" rel="nofollow">Apps</a></li>
+</ul></main>
+<footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
+<script src="../site.js" defer></script></body></html>

@@ -1,0 +1,2343 @@
+{
+  "checked_at": "2026-10-27 Asia/Tokyo",
+  "scope": "40 products/services: 25 initial + 15 additional; includes adjacent UX and browser infrastructure; Autest excluded",
+  "excluded": "Sales/contact/booking/signup forms; generic hero pages; decorative videos; target-app-only tours",
+  "images": [
+    {
+      "product": "testneo",
+      "id": "testneo-vendor-01",
+      "kind": "official-ui-image",
+      "title": "TestNeo Release Intelligence Platform",
+      "file": "testneo-vendor-01.png",
+      "source_page": "https://www.testneo.ai/",
+      "source_url": "https://www.testneo.ai/assets/images/Screenshot%202026-05-31%20at%2010.06.03%20AM.png",
+      "sha256": "472945d016a90389f3b2423cfd135d43605cfda572550ea9d2b587a7370b5510"
+    },
+    {
+      "product": "testneo",
+      "id": "testneo-vendor-02",
+      "kind": "official-ui-image",
+      "title": "TestNeo Release Intelligence Dashboard",
+      "file": "testneo-vendor-02.png",
+      "source_page": "https://www.testneo.ai/",
+      "source_url": "https://www.testneo.ai/assets/images/Screenshot%202026-05-31%20at%209.01.09%20AM.png",
+      "sha256": "fb699264a34fbcbbac30b079f94e7561bacdf308ed5731a14146fc47108c3cb2"
+    },
+    {
+      "product": "testneo",
+      "id": "testneo-vendor-03",
+      "kind": "official-ui-image",
+      "title": "TestNeo Impact Analysis View",
+      "file": "testneo-vendor-03.png",
+      "source_page": "https://www.testneo.ai/",
+      "source_url": "https://www.testneo.ai/assets/images/Screenshot%202026-05-31%20at%209.01.34%20AM.png",
+      "sha256": "207054271785403025a17d0c7a43f030615db44ba57aa010ffad38d7becb5813"
+    },
+    {
+      "product": "testneo",
+      "id": "testneo-vendor-04",
+      "kind": "official-ui-image",
+      "title": "TestNeo Verification Execution",
+      "file": "testneo-vendor-04.png",
+      "source_page": "https://www.testneo.ai/",
+      "source_url": "https://www.testneo.ai/assets/images/Screenshot%202026-05-31%20at%209.01.58%20AM.png",
+      "sha256": "4ddc89a5869a7cd59be007030d480747e648b01ea146224b29d473b9f0c4ab11"
+    },
+    {
+      "product": "testneo",
+      "id": "testneo-vendor-05",
+      "kind": "official-ui-image",
+      "title": "TestNeo Release Decision Board",
+      "file": "testneo-vendor-05.png",
+      "source_page": "https://www.testneo.ai/",
+      "source_url": "https://www.testneo.ai/assets/images/Screenshot%202026-05-31%20at%209.02.19%20AM.png",
+      "sha256": "eb59b4f5249a74f48f3b86191e2109fbfeb0b2bf472681a826edf3f9b06a8449"
+    },
+    {
+      "product": "meticulous",
+      "id": "meticulous-vendor-06",
+      "kind": "official-ui-image",
+      "title": "Dashboard",
+      "file": "meticulous-vendor-06.png",
+      "source_page": "https://www.meticulous.ai/",
+      "source_url": "https://www.meticulous.ai/images/dashboard_1.webp",
+      "sha256": "a7ef2e2d96e5e7ec7efa90ee4d90dd5b0d7cf8a2ff2308922388a4a0458558fc"
+    },
+    {
+      "product": "qualgent",
+      "id": "qualgent-vendor-10",
+      "kind": "official-ui-image",
+      "title": "TrustLoop recording screen",
+      "file": "qualgent-vendor-10.png",
+      "source_page": "https://www.qualgent.ai/",
+      "source_url": "https://www.qualgent.ai/_next/image",
+      "sha256": "17f528fdf0b667bf54d3b590973182a418582fa25578aadeb19db1881cecf54b"
+    },
+    {
+      "product": "qualgent",
+      "id": "qualgent-vendor-11",
+      "kind": "official-ui-image",
+      "title": "DevLoop agent testing interface",
+      "file": "qualgent-vendor-11.png",
+      "source_page": "https://www.qualgent.ai/",
+      "source_url": "https://www.qualgent.ai/_next/image",
+      "sha256": "018f81e4721c418836d0729526079cd4dea23ca704f2f6a2d4a4c4fc64d3e0ef"
+    },
+    {
+      "product": "qualgent",
+      "id": "qualgent-vendor-12",
+      "kind": "official-ui-image",
+      "title": "QualGent Enterprise dashboard",
+      "file": "qualgent-vendor-12.png",
+      "source_page": "https://www.qualgent.ai/",
+      "source_url": "https://www.qualgent.ai/_next/image",
+      "sha256": "6ff39a9c63d0737aee3bd66c8a387209d3c81087b81a42bef91bf872be260584"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-vendor-13",
+      "kind": "official-ui-image",
+      "title": "A successful cloud build ready to launch on a mobile device",
+      "file": "revyl-vendor-13.png",
+      "source_page": "https://revyl.com/",
+      "source_url": "https://revyl.com/media/product/posters/build-workspace.webp",
+      "sha256": "d4ca82698b1d29799dbae77bccaaeab9f368542988e11ff51aed2acc1ab5dd17"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-vendor-14",
+      "kind": "official-ui-image",
+      "title": "A coding agent iterating on a mobile game running on a cloud device",
+      "file": "revyl-vendor-14.png",
+      "source_page": "https://revyl.com/",
+      "source_url": "https://revyl.com/media/product/images/claude-agent-loop-1600.webp",
+      "sha256": "7da615845d1812938cc445ab38860c89aa9757ba2060011556549851b5d39df1"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-vendor-15",
+      "kind": "official-ui-image",
+      "title": "A passed Revyl test report with mobile evidence and performance data",
+      "file": "revyl-vendor-15.png",
+      "source_page": "https://revyl.com/",
+      "source_url": "https://revyl.com/media/product/images/test-report-1600.webp",
+      "sha256": "376022a51946bb164a1b859a99590ce5bcdf960b1636298685f85106a5859867"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-vendor-16",
+      "kind": "official-ui-image",
+      "title": "An Atlas map connecting observed mobile screens and flows",
+      "file": "revyl-vendor-16.png",
+      "source_page": "https://revyl.com/",
+      "source_url": "https://revyl.com/media/product/images/atlas-map-1600.webp",
+      "sha256": "a589fca97ad53c5b2919782fb65ba0dddc25a50bd6278f4881d14c1590495136"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-vendor-17",
+      "kind": "official-ui-image",
+      "title": "Revyl opening a Cursor coding agent from an Atlas screen",
+      "file": "revyl-vendor-17.png",
+      "source_page": "https://revyl.com/",
+      "source_url": "https://revyl.com/media/product/images/cursor-integration-1600.webp",
+      "sha256": "b7686e77191e55b85a758bf2a6c7ce820134d1336c622532eff62bd4334ec568"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-vendor-19",
+      "kind": "official-ui-image",
+      "title": "test-execution.webp",
+      "file": "revyl-vendor-19.png",
+      "source_page": "https://revyl.com/",
+      "source_url": "https://revyl.com/media/product/posters/test-execution.webp",
+      "sha256": "bec121ad5dce5324a8b48268a536f8a89b74010e637e737abfbdd3e62c0ca2b5"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-vendor-20",
+      "kind": "official-ui-image",
+      "title": "pr-validation-result-1600.webp",
+      "file": "revyl-vendor-20.png",
+      "source_page": "https://revyl.com/",
+      "source_url": "https://revyl.com/media/product/images/pr-validation-result-1600.webp",
+      "sha256": "4c91f468a68e54a3b89b083c4af73a7890c1f6daab162f42aa6c79d45b12bcc9"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-vendor-21",
+      "kind": "official-ui-image",
+      "title": "release-blocker-1600.webp",
+      "file": "revyl-vendor-21.png",
+      "source_page": "https://revyl.com/",
+      "source_url": "https://revyl.com/media/product/images/release-blocker-1600.webp",
+      "sha256": "bdd6b845de04171b8f8a2d98692167178181fefdbc0e70af4dbaa22b17a61ec9"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-vendor-22",
+      "kind": "official-ui-image",
+      "title": "atlas-exploration.webp",
+      "file": "revyl-vendor-22.png",
+      "source_page": "https://revyl.com/",
+      "source_url": "https://revyl.com/media/product/posters/atlas-exploration.webp",
+      "sha256": "2e8a6fb719701e80b933b2ead5edc831ca701a0ba1934d806fa02fb348a3bcd3"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-vendor-23",
+      "kind": "official-ui-image",
+      "title": "cross-platform-result.webp",
+      "file": "revyl-vendor-23.png",
+      "source_page": "https://revyl.com/",
+      "source_url": "https://revyl.com/media/product/posters/cross-platform-result.webp",
+      "sha256": "e5485c345819291a65d130459a09f0b6b8236752da3ec5da97e758dd3a2e4dc1"
+    },
+    {
+      "product": "atstream",
+      "id": "atstream-vendor-24",
+      "kind": "official-diagram",
+      "title": "テスト自動化エージェントの全体像",
+      "file": "atstream-vendor-24.png",
+      "source_page": "https://atstreamconsulting.co.jp/services/sc/taa.html",
+      "source_url": "https://atstreamconsulting.co.jp/wordpress/wp-content/uploads/2026/07/test-automation-overview-scaled.png",
+      "sha256": "fa64081c01ef2d365dc36bb8816cf3ca8dc9ec74bf3782c2d2f5eef5fe39390c"
+    },
+    {
+      "product": "atstream",
+      "id": "atstream-vendor-25",
+      "kind": "official-diagram",
+      "title": "1つの設計書から8つの設計技法を用いて多数のテストケースへ展開する流れ",
+      "file": "atstream-vendor-25.png",
+      "source_page": "https://atstreamconsulting.co.jp/services/sc/taa.html",
+      "source_url": "https://atstreamconsulting.co.jp/wordpress/wp-content/uploads/2026/07/test-design-automation.png",
+      "sha256": "4afabc2701ee2ac903c499463a6fb43a0e83a9e4a9d848e1364e94437cdded66"
+    },
+    {
+      "product": "atstream",
+      "id": "atstream-vendor-26",
+      "kind": "official-ui-image",
+      "title": "自動生成したテストケース一覧のサンプル画面",
+      "file": "atstream-vendor-26.png",
+      "source_page": "https://atstreamconsulting.co.jp/services/sc/taa.html",
+      "source_url": "https://atstreamconsulting.co.jp/wordpress/wp-content/uploads/2026/07/test-case-sample.png",
+      "sha256": "21e93906ee20c9d395292bac4d5cea9fd9e0d8369ed7e967d684cdc5f7218bed"
+    },
+    {
+      "product": "testra",
+      "id": "testra-vendor-27",
+      "kind": "official-diagram",
+      "title": "図表1：一般的な生成AIによるテストケース生成と「TESTRA」によるテストケース生成の違い",
+      "file": "testra-vendor-27.png",
+      "source_page": "https://www.veriserve.co.jp/service/detail/testra.html",
+      "source_url": "https://www.veriserve.co.jp/service/image/ss-aitestra-img01.jpg",
+      "sha256": "0a0834f75e175aef2cb2e3c05c6e2c82f29fb7b5deea0338372c678578cdcfaf"
+    },
+    {
+      "product": "testra",
+      "id": "testra-vendor-28",
+      "kind": "official-ui-image",
+      "title": "図2：テストケースの自動生成（イメージ）",
+      "file": "testra-vendor-28.png",
+      "source_page": "https://www.veriserve.co.jp/service/detail/testra.html",
+      "source_url": "https://www.veriserve.co.jp/service/image/ss-aitestra-img02.jpg",
+      "sha256": "d62013750b12f17ffd379d3da12065c87a6bdb3eaf812672a8bd19721efab1d5"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-29",
+      "kind": "official-ui-image",
+      "title": "Overview：Workspace全体",
+      "file": "testsprite-vendor-29.png",
+      "source_page": "https://docs.testsprite.com/web-portal/getting-started/overview",
+      "source_url": "https://mintcdn.com/testspriteinc/TFcog-WNvgZBB09l/images/Overview-Overview.png",
+      "sha256": "30712ccffe14216fe2327bfc6fde15f15fa12ae3734e991384bfea6ed2c8d9ff"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-30",
+      "kind": "official-ui-image",
+      "title": "Sources：PRDを使う入力",
+      "file": "testsprite-vendor-30.png",
+      "source_page": "https://docs.testsprite.com/web-portal/getting-started/overview",
+      "source_url": "https://mintcdn.com/testspriteinc/NgwJ2RcRMRwjh7Vv/images/overview-spec-driven.png",
+      "sha256": "c2102d9ff66fd47b93bdac169dd9f4d22f7e8980ffbb67abf96681bad81c2649"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-32",
+      "kind": "official-ui-image",
+      "title": "Project設定：URL・認証・Sources",
+      "file": "testsprite-vendor-32.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/ui/quickstart",
+      "source_url": "https://mintcdn.com/testspriteinc/NgwJ2RcRMRwjh7Vv/images/overview-configure.png",
+      "sha256": "3f276bd1c654d640e42384e3958a730f60ca43615c83b43d895b51853f6f68f8"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-33",
+      "kind": "official-ui-image",
+      "title": "Feature Exploration：探索中",
+      "file": "testsprite-vendor-33.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/ui/quickstart",
+      "source_url": "https://mintcdn.com/testspriteinc/NgwJ2RcRMRwjh7Vv/images/overview-Explore.png",
+      "sha256": "47f3ed36c7409c19f6319afc88d659c399ea44d78fce051240010b3fe3470ade"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-34",
+      "kind": "official-ui-image",
+      "title": "Test Coverage：機能から計画へ",
+      "file": "testsprite-vendor-34.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/ui/quickstart",
+      "source_url": "https://mintcdn.com/testspriteinc/CImpC64Ju-sB5348/images/ui-testing-coverage.png",
+      "sha256": "09eba2b16404c244d9137c3c53229b19e9382e44d970d2d4ec54fd5e18a12553"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-35",
+      "kind": "official-ui-image",
+      "title": "探索：ライブ対象とAgentの操作",
+      "file": "testsprite-vendor-35.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/ui/feature-exploration",
+      "source_url": "https://mintcdn.com/testspriteinc/CImpC64Ju-sB5348/images/ui-testing-feature-explore-overview.png",
+      "sha256": "ed73072705719f7a69eeaeb4819e82ef0f0581861db02ed5a69df995d58324bd"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-36",
+      "kind": "official-ui-image",
+      "title": "探索：訪問画面とstep",
+      "file": "testsprite-vendor-36.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/ui/feature-exploration",
+      "source_url": "https://mintcdn.com/testspriteinc/CImpC64Ju-sB5348/images/ui-testing-feature-explore-what-you-see.png",
+      "sha256": "83722aebd60483550da678e225a97791677fd43c3c262e21642f96284b18a8dd"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-37",
+      "kind": "official-ui-image",
+      "title": "Sources：探索後の画面一覧",
+      "file": "testsprite-vendor-37.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/ui/feature-exploration",
+      "source_url": "https://mintcdn.com/testspriteinc/CImpC64Ju-sB5348/images/ui-testing-feature-explore-review-result.png",
+      "sha256": "0af915b53871dbc23a2c478b0ec1f86a811dddc2c6ca00b2bbc7901621dc1a31"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-38",
+      "kind": "official-ui-image",
+      "title": "Environment一覧：Dev／Staging／Prod",
+      "file": "testsprite-vendor-38.png",
+      "source_page": "https://docs.testsprite.com/web-portal/setup/environments",
+      "source_url": "https://mintcdn.com/testspriteinc/NgwJ2RcRMRwjh7Vv/images/environment-Overview.png",
+      "sha256": "89ebceba00162a2458a20b43bb5a0ac23d5049cf8de56e5df92f9ce2668f7c9b"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-40",
+      "kind": "official-ui-image",
+      "title": "Environment追加：URLと設定",
+      "file": "testsprite-vendor-40.png",
+      "source_page": "https://docs.testsprite.com/web-portal/setup/environments",
+      "source_url": "https://mintcdn.com/testspriteinc/NgwJ2RcRMRwjh7Vv/images/environment-create-2.png",
+      "sha256": "3ebe270b9fd0d4aada43b9216da67f927c5e1dc48cee5d8c3f03adae58536ed1"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-41",
+      "kind": "official-ui-image",
+      "title": "Coverage Map：機能とケース",
+      "file": "testsprite-vendor-41.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/working-with-test/coverage-map",
+      "source_url": "https://mintcdn.com/testspriteinc/_BbYEfcR7H2VaTOC/images/working-with-test-coverage-overview.png",
+      "sha256": "6caf8f36714cb6074641764657b8208c522d55c2084b4507f366a572212a538b"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-42",
+      "kind": "official-ui-image",
+      "title": "Coverage Map：ケース編集",
+      "file": "testsprite-vendor-42.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/working-with-test/coverage-map",
+      "source_url": "https://mintcdn.com/testspriteinc/_BbYEfcR7H2VaTOC/images/working-with-test-coverage-edit.png",
+      "sha256": "a10388c80149144e8fe452db7a0113630668feb7741a8fd90b75be9d1ae4294e"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-44",
+      "kind": "official-ui-image",
+      "title": "Test Lists：実行集合の一覧",
+      "file": "testsprite-vendor-44.png",
+      "source_page": "https://docs.testsprite.com/web-portal/maintenance/test-lists",
+      "source_url": "https://mintcdn.com/testspriteinc/CImpC64Ju-sB5348/images/testlist-overview.png",
+      "sha256": "40a8a9e2378f282c4ca0a83e193a8b4dfb832f91224040f9a965464c808c3dec"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-46",
+      "kind": "official-ui-image",
+      "title": "Test List：ケース追加",
+      "file": "testsprite-vendor-46.png",
+      "source_page": "https://docs.testsprite.com/web-portal/maintenance/test-lists",
+      "source_url": "https://mintcdn.com/testspriteinc/CImpC64Ju-sB5348/images/testlist-add-test.png",
+      "sha256": "296ac2db74eb4ec058d1357d40b62b41b2dd17ece8ec923e68b6838e01713148"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-47",
+      "kind": "official-ui-image",
+      "title": "GitHub：PRへの実行報告",
+      "file": "testsprite-vendor-47.png",
+      "source_page": "https://docs.testsprite.com/web-portal/integrations/github-integration",
+      "source_url": "https://mintcdn.com/testspriteinc/NgwJ2RcRMRwjh7Vv/images/githubapp-hero.png",
+      "sha256": "cb0d40ef69b775dbf45bbdd109fbd63e05882731aecca013716b1cfe9f205c00"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-48",
+      "kind": "official-ui-image",
+      "title": "GitHub：チェックと結果",
+      "file": "testsprite-vendor-48.png",
+      "source_page": "https://docs.testsprite.com/web-portal/integrations/github-integration",
+      "source_url": "https://mintcdn.com/testspriteinc/NgwJ2RcRMRwjh7Vv/images/github-test-push-branch.png",
+      "sha256": "4942f30370ab6959b100eb2dedffd8479d532865937dc2c37ed0223977590371"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-50",
+      "kind": "official-ui-image",
+      "title": "Share：アクセスできる人",
+      "file": "testsprite-vendor-50.png",
+      "source_page": "https://docs.testsprite.com/web-portal/admin/sharing",
+      "source_url": "https://mintcdn.com/testspriteinc/FYoQLTCW_la-ZL9W/images/share-overview.png",
+      "sha256": "34f51f26e9bfb38d72aa3e686e961aecfe3eb850c8b4c7222ccbe0c6b9cc1eca"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-vendor-52",
+      "kind": "official-ui-image",
+      "title": "Share：招待先と役割",
+      "file": "testsprite-vendor-52.png",
+      "source_page": "https://docs.testsprite.com/web-portal/admin/sharing",
+      "source_url": "https://mintcdn.com/testspriteinc/FYoQLTCW_la-ZL9W/images/share-enter-pick-role.png",
+      "sha256": "9ce462f4849687e0cb3bfa32d96bde57d11b7856db7d03c513ad6c7ab7b3e9f2"
+    },
+    {
+      "product": "momentic",
+      "id": "momentic-vendor-01",
+      "kind": "official-ui-image",
+      "title": "GitHub integration settings",
+      "file": "momentic-vendor-01.png",
+      "source_page": "https://momentic.ai/docs/integrations/github",
+      "source_url": "https://mintcdn.com/momentic-docs/74ZfuO1WWXQIVJ6H/images/integrations/github-settings.png",
+      "sha256": "837f4a6d4094a10e013c282d9d1e9cb0c0bd49bd9b4d6921d630035f4d94e004"
+    },
+    {
+      "product": "momentic",
+      "id": "momentic-vendor-03",
+      "kind": "official-ui-image",
+      "title": "Slack integration settings",
+      "file": "momentic-vendor-03.png",
+      "source_page": "https://momentic.ai/docs/integrations/slack",
+      "source_url": "https://mintcdn.com/momentic-docs/74ZfuO1WWXQIVJ6H/images/integrations/slack-settings.png",
+      "sha256": "9e846334896f95f87c995afa036bb30e8cf197ddfb8a886c20f4f0b116944640"
+    },
+    {
+      "product": "momentic",
+      "id": "momentic-vendor-05",
+      "kind": "official-ui-image",
+      "title": "Momentic local app showing a test step list, AI action details, a live browser, and browser context tabs",
+      "file": "momentic-vendor-05.png",
+      "source_page": "https://momentic.ai/docs/local-app",
+      "source_url": "https://mintcdn.com/momentic-docs/I8jCFZCGZvEYt8le/images/local-app/local-app-overview.jpg",
+      "sha256": "9c52e3a428b2af20b945d47ba7463173220ac50197156ac6b156c7a7d2eaa741"
+    },
+    {
+      "product": "momentic",
+      "id": "momentic-vendor-06",
+      "kind": "official-ui-image",
+      "title": "Momentic editor while dragging a While loop between AI actions, with undo and redo controls in the toolbar",
+      "file": "momentic-vendor-06.png",
+      "source_page": "https://momentic.ai/docs/local-app",
+      "source_url": "https://mintcdn.com/momentic-docs/I8jCFZCGZvEYt8le/images/local-app/editor-drag-and-drop.jpg",
+      "sha256": "38b2bce9675cf7b83182303cae2d9c28bd68419c64767be69bf6d0e771e70c60"
+    },
+    {
+      "product": "momentic",
+      "id": "momentic-vendor-07",
+      "kind": "official-ui-image",
+      "title": "Momentic Network panel showing request filtering, a request waterfall, headers, response details, and timing tabs",
+      "file": "momentic-vendor-07.png",
+      "source_page": "https://momentic.ai/docs/local-app",
+      "source_url": "https://mintcdn.com/momentic-docs/I8jCFZCGZvEYt8le/images/local-app/network-debugging.jpg",
+      "sha256": "cabca11236fd14af0dbdb039e6503cad37bb80eb95518db269b9ced806eb3061"
+    },
+    {
+      "product": "momentic",
+      "id": "momentic-vendor-08",
+      "kind": "official-ui-image",
+      "title": "Network viewer",
+      "file": "momentic-vendor-08.png",
+      "source_page": "https://momentic.ai/docs/platforms/web/request-mocking",
+      "source_url": "https://mintcdn.com/momentic-docs/74ZfuO1WWXQIVJ6H/images/platforms/network-viewer.png",
+      "sha256": "939de53ff6c81ee05ff8053d03150f5bf1463c18d4ddd427e88612ad09b49107"
+    },
+    {
+      "product": "momentic",
+      "id": "momentic-vendor-09",
+      "kind": "official-ui-image",
+      "title": "Locator auto-healing diff",
+      "file": "momentic-vendor-09.png",
+      "source_page": "https://momentic.ai/docs/reliability/auto-maintenance",
+      "source_url": "https://mintcdn.com/momentic-docs/74ZfuO1WWXQIVJ6H/images/reliability/auto-heal-diff.png",
+      "sha256": "37e6e3654ead683362486a5831d5a9edfba4dff1314ebc894fc376a25a121075"
+    },
+    {
+      "product": "momentic",
+      "id": "momentic-vendor-10",
+      "kind": "official-ui-image",
+      "title": "Momentic classification showing Healed and Test authorship labels with reasoning about a transient UI race",
+      "file": "momentic-vendor-10.png",
+      "source_page": "https://momentic.ai/docs/reliability/auto-maintenance",
+      "source_url": "https://mintcdn.com/momentic-docs/SZGi8yiMYy_JzZIR/images/reliability/test-authorship-classification.jpg",
+      "sha256": "96df80c850fdded94f9911f2586b90b6b51e292a88d5413ebe53458d5323affc"
+    },
+    {
+      "product": "momentic",
+      "id": "momentic-vendor-11",
+      "kind": "official-ui-image",
+      "title": "Momentic healed step analysis explaining how triage replaced a transient label check with a durable queue-state check",
+      "file": "momentic-vendor-11.png",
+      "source_page": "https://momentic.ai/docs/reliability/auto-maintenance",
+      "source_url": "https://mintcdn.com/momentic-docs/SZGi8yiMYy_JzZIR/images/reliability/healed-step-analysis.jpg",
+      "sha256": "e1da1db242d4bbffe2e45c3b154b3b20dc0317e94293e70237753823c2bb1c09"
+    },
+    {
+      "product": "momentic",
+      "id": "momentic-vendor-12",
+      "kind": "official-ui-image",
+      "title": "A merged Momentic auto-heal pull request with root cause, fix, validation, and links to the base pull request and results",
+      "file": "momentic-vendor-12.png",
+      "source_page": "https://momentic.ai/docs/reliability/auto-maintenance",
+      "source_url": "https://mintcdn.com/momentic-docs/SZGi8yiMYy_JzZIR/images/reliability/auto-heal-pull-request.jpg",
+      "sha256": "6e40d2dacec012c415ba8acdd0e715a0447194d8728508d1094f4a4b5ca387ff"
+    },
+    {
+      "product": "momentic",
+      "id": "momentic-vendor-28",
+      "kind": "official-ui-image",
+      "title": "Runs view",
+      "file": "momentic-vendor-28.png",
+      "source_page": "https://momentic.ai/docs/running-tests/results",
+      "source_url": "https://mintcdn.com/momentic-docs/74ZfuO1WWXQIVJ6H/images/dashboard/results-runs-view.png",
+      "sha256": "2177b5b51801b615aad902bc9a02f1c1c1e10bdccd51b96f01055f8e87516172"
+    },
+    {
+      "product": "magicpod",
+      "id": "magicpod-vendor-hotel-booking",
+      "kind": "official-ui-image",
+      "title": "Hotel booking flow in one prompt",
+      "file": "magicpod-vendor-hotel-booking.png",
+      "source_page": "https://magicpod.com/en/features/magicpod-autopilot/",
+      "source_url": "https://magicpod.com/themes/magic-pod/img/autopilot/en/usecases__demo--hotel-booking.png",
+      "sha256": "444766fffb36d43fc2a9bc9754ed57ba4175d64a91abdde1c7817d967a67f990"
+    },
+    {
+      "product": "magicpod",
+      "id": "magicpod-vendor-user-registration",
+      "kind": "official-ui-image",
+      "title": "Create a user registration test for a mobile app",
+      "file": "magicpod-vendor-user-registration.png",
+      "source_page": "https://magicpod.com/en/features/magicpod-autopilot/",
+      "source_url": "https://magicpod.com/themes/magic-pod/img/autopilot/en/usecases__demo--user-registration.png",
+      "sha256": "f6f6983ee9c6baad75b5ad213315368f3c5fa0d52cdb784cbcf82908aecb99df"
+    },
+    {
+      "product": "magicpod",
+      "id": "magicpod-vendor-conditional-branch",
+      "kind": "official-ui-image",
+      "title": "Add conditional logic to an existing test",
+      "file": "magicpod-vendor-conditional-branch.png",
+      "source_page": "https://magicpod.com/en/features/magicpod-autopilot/",
+      "source_url": "https://magicpod.com/themes/magic-pod/img/autopilot/en/usecases__demo--conditional-branch.png",
+      "sha256": "65eb70c3e221b645c368d4f2f5e46e9c4a48fbd87b2ccca79e8a276efd54aa19"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-extra-quickstart-1",
+      "kind": "official-ui-image",
+      "title": "APIの準備・endpoint探索・実行 1",
+      "file": "testsprite-extra-quickstart-1.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/api/quickstart",
+      "source_url": "https://mintcdn.com/testspriteinc/TFcog-WNvgZBB09l/images/api-testing-quick-start-configure.png",
+      "sha256": "2891b2bda68723a4246ad5c0e3d5c6febfc6066e932e7a29de08f824ff547771"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-extra-quickstart-2",
+      "kind": "official-ui-image",
+      "title": "APIの準備・endpoint探索・実行 2",
+      "file": "testsprite-extra-quickstart-2.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/api/quickstart",
+      "source_url": "https://mintcdn.com/testspriteinc/TFcog-WNvgZBB09l/images/api-testing-quick-start-discover-endpoint.png",
+      "sha256": "d134c658ae8c9bdc157189e51fe085b79bef6416acbdb923fee05bb3f2df2782"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-extra-quickstart-3",
+      "kind": "official-ui-image",
+      "title": "APIの準備・endpoint探索・実行 3",
+      "file": "testsprite-extra-quickstart-3.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/api/quickstart",
+      "source_url": "https://mintcdn.com/testspriteinc/TFcog-WNvgZBB09l/images/api-testing-extra-context.png",
+      "sha256": "147f87f1ffb4fc91103261b460346c3324287cb9ec93cfec124b2e773f5c08a1"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-extra-quickstart-4",
+      "kind": "official-ui-image",
+      "title": "APIの準備・endpoint探索・実行 4",
+      "file": "testsprite-extra-quickstart-4.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/api/quickstart",
+      "source_url": "https://mintcdn.com/testspriteinc/TFcog-WNvgZBB09l/images/api-testing-quick-start-use-case.png",
+      "sha256": "2d8ac1d8b7a2a72cbd1d0f3c6003915aaa4b8c0757438f59814dbe84f0dc7789"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-extra-ui-step-by-step-1",
+      "kind": "official-ui-image",
+      "title": "ステップのHTML・録画のリプレイ 1",
+      "file": "testsprite-extra-ui-step-by-step-1.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/ui/ui-step-by-step",
+      "source_url": "https://mintcdn.com/testspriteinc/_BbYEfcR7H2VaTOC/images/ui-testing-step-overview.png",
+      "sha256": "2818acc038224632f328ac0e4696ab975e18c70f285fea3a48f194964b8a77c7"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-extra-ui-step-by-step-2",
+      "kind": "official-ui-image",
+      "title": "ステップのHTML・録画のリプレイ 2",
+      "file": "testsprite-extra-ui-step-by-step-2.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/ui/ui-step-by-step",
+      "source_url": "https://mintcdn.com/testspriteinc/_BbYEfcR7H2VaTOC/images/ui-testing-step-step-show.png",
+      "sha256": "4b1f8e284440e563c69aa7aab139294c81c881e08f2dc09310f274e2a26de924"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-extra-ui-step-by-step-3",
+      "kind": "official-ui-image",
+      "title": "ステップのHTML・録画のリプレイ 3",
+      "file": "testsprite-extra-ui-step-by-step-3.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/ui/ui-step-by-step",
+      "source_url": "https://mintcdn.com/testspriteinc/_BbYEfcR7H2VaTOC/images/ui-testing-step-find.png",
+      "sha256": "31896dda6e19f2134a41f83c7494e5a017ace62487fbb0c6f55c7042a4cd664b"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-extra-ui-step-by-step-4",
+      "kind": "official-ui-image",
+      "title": "ステップのHTML・録画のリプレイ 4",
+      "file": "testsprite-extra-ui-step-by-step-4.png",
+      "source_page": "https://docs.testsprite.com/web-portal/core/ui/ui-step-by-step",
+      "source_url": "https://mintcdn.com/testspriteinc/_BbYEfcR7H2VaTOC/images/ui-testing-step-video.png",
+      "sha256": "72bc1de550aad9fae4acd75002284e262303314630175b8d1a1797c2aa4e3a9e"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-10-overview",
+      "kind": "recorded-product-ui",
+      "title": "Workspace overview",
+      "file": "testsprite-10-overview.png",
+      "source_page": "https://www.testsprite.com/",
+      "source_url": "https://www.testsprite.com/",
+      "sha256": "8b9c6061fa083dc662e30d6e7c7235886fcd75a34fd9ec1d74c30a680d722acb",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-11-projects",
+      "kind": "recorded-product-ui",
+      "title": "All Projects",
+      "file": "testsprite-11-projects.png",
+      "source_page": "https://www.testsprite.com/",
+      "source_url": "https://www.testsprite.com/",
+      "sha256": "317319f2b70de6bf46ebc145c34d289368577359cab3d3524c4797bc47c6190f",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-12-test-cases",
+      "kind": "recorded-product-ui",
+      "title": "Test Cases：状態・優先度・編集／実行",
+      "file": "testsprite-12-test-cases.png",
+      "source_page": "https://www.testsprite.com/",
+      "source_url": "https://www.testsprite.com/",
+      "sha256": "f87d5b908e7137e42b98e6a020fa74bda15baf2a6423495aa78244a22621b8e8",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-13-runs",
+      "kind": "recorded-product-ui",
+      "title": "Test Runs：実行履歴・再実行入口",
+      "file": "testsprite-13-runs.png",
+      "source_page": "https://www.testsprite.com/",
+      "source_url": "https://www.testsprite.com/",
+      "sha256": "07d145fad48a27f3f01b9b00fd31611837c01a91a6c716195ac5a266413a0e2a",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-14-failure",
+      "kind": "recorded-product-ui",
+      "title": "Agent Action View：ページマップ",
+      "file": "testsprite-14-failure.png",
+      "source_page": "https://www.testsprite.com/",
+      "source_url": "https://www.testsprite.com/",
+      "sha256": "7081413aa7e9038dd81334c6cb6fbcd594470f2a04f7eb8dfc213a6a0c59bf65",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-15-run-list",
+      "kind": "recorded-product-ui",
+      "title": "List View：失敗ケース",
+      "file": "testsprite-15-run-list.png",
+      "source_page": "https://www.testsprite.com/",
+      "source_url": "https://www.testsprite.com/",
+      "sha256": "02c08ac4f4ab442292263e236a062e639a7a0dc1aeb806e7b27798178c097c10",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-16-environments",
+      "kind": "recorded-product-ui",
+      "title": "Environments：実行先",
+      "file": "testsprite-16-environments.png",
+      "source_page": "https://www.testsprite.com/",
+      "source_url": "https://www.testsprite.com/",
+      "sha256": "219626ba59e7634d5a1f94655750536c06b7f02461f93a29ac0b64ad36f89882",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-17-run-behavior",
+      "kind": "recorded-product-ui",
+      "title": "Run Behavior：実行設定",
+      "file": "testsprite-17-run-behavior.png",
+      "source_page": "https://www.testsprite.com/",
+      "source_url": "https://www.testsprite.com/",
+      "sha256": "32da38e6540c5c55b900c06ec253465fa380d24bd0c87fdb062223962fec98b1",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "validate",
+      "id": "validate-12-tests",
+      "kind": "public-demo-ui",
+      "title": "Tests：ケース一覧・Healed表示",
+      "file": "validate-12-tests.png",
+      "source_page": "https://validate.qa",
+      "source_url": "https://validate.qa",
+      "sha256": "2273780226312ac3451de4837db157f47685f239aa7fa83a495fafdc5ff5a818",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "validate",
+      "id": "validate-13-reports",
+      "kind": "public-demo-ui",
+      "title": "Reports：履歴と修復前後",
+      "file": "validate-13-reports.png",
+      "source_page": "https://validate.qa",
+      "source_url": "https://validate.qa",
+      "sha256": "3b5a24645f144842132c2c50f54e89f566ef2ebb908c7cecaa18ce5fb713c26d",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "validate",
+      "id": "validate-14-api",
+      "kind": "public-demo-ui",
+      "title": "API Intelligence：所見",
+      "file": "validate-14-api.png",
+      "source_page": "https://validate.qa",
+      "source_url": "https://validate.qa",
+      "sha256": "7b4232c7e7754962418af5dc285c0e280c579adf954c081539a3a662d4f86f68",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "validate",
+      "id": "validate-15-selectors",
+      "kind": "public-demo-ui",
+      "title": "Selector Registry：修復差分",
+      "file": "validate-15-selectors.png",
+      "source_page": "https://validate.qa",
+      "source_url": "https://validate.qa",
+      "sha256": "cf8094e0e265300df8c9f8146fbd5071b775b0d886f6bca346e48be37bc5ceee",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "validate",
+      "id": "validate-16-copilot",
+      "kind": "public-demo-ui",
+      "title": "Validate Copilot：質問と根拠への入口",
+      "file": "validate-16-copilot.png",
+      "source_page": "https://validate.qa",
+      "source_url": "https://validate.qa",
+      "sha256": "47b6d0f57882023c4534b9b9b845d5fba915582f18e8734c10bb84e211fdf282",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "validate",
+      "id": "validate-17-audit",
+      "kind": "public-demo-ui",
+      "title": "AI Audit：処理別のtokens・費用（sample）",
+      "file": "validate-17-audit.png",
+      "source_page": "https://validate.qa",
+      "source_url": "https://validate.qa",
+      "sha256": "8ad7e0c8ca8138a3e5c1d1ffb68b2c628b9b4b98eebf0fb6e43a4f6fcc9c1d70",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "canary",
+      "id": "canary-11-examples",
+      "kind": "official-ui-example",
+      "title": "公開case file：再現・原因・修正例",
+      "file": "canary-11-examples.png",
+      "source_page": "https://www.runcanary.ai/#demo",
+      "source_url": "https://www.runcanary.ai/#demo",
+      "sha256": "c670f970a743a3b3043a6d37d827a3f2c4fd7982116e1a87ba9b2e67ed896eb7",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "spur",
+      "id": "spur-10-bug-report",
+      "kind": "official-ui-example",
+      "title": "公開Bug Book：問題・影響・根拠",
+      "file": "spur-10-bug-report.png",
+      "source_page": "https://www.spurtest.com/bug-book/checkout-button-leads-to-error-page",
+      "source_url": "https://www.spurtest.com/bug-book/checkout-button-leads-to-error-page",
+      "sha256": "390201d80e95ae942259b38b07900c5499c98f95a54c8ec16a1563f7cb8d76a7",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "uxia",
+      "id": "uxia-14-audience",
+      "kind": "official-ui-example",
+      "title": "Analytics：画面ごとのヒートマップ",
+      "file": "uxia-14-audience.png",
+      "source_page": "https://www.uxia.app",
+      "source_url": "https://www.uxia.app",
+      "sha256": "a04abbde9848f04c24a37f66e6f4137db50648a632675c7aa991d3fc90691e2e",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "uxia",
+      "id": "uxia-15-personas",
+      "kind": "official-ui-example",
+      "title": "Audience：属性と顧客資料",
+      "file": "uxia-15-personas.png",
+      "source_page": "https://www.uxia.app",
+      "source_url": "https://www.uxia.app",
+      "sha256": "d15db66ae83bf56ef7be2d5bd7e32aa16a38592d150202f4b4cf2aee7c519e56",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "uxia",
+      "id": "uxia-16-human-research",
+      "kind": "official-ui-example",
+      "title": "Human research：参加者セッション",
+      "file": "uxia-16-human-research.png",
+      "source_page": "https://www.uxia.app",
+      "source_url": "https://www.uxia.app",
+      "sha256": "662d74852fd7d55a605c16e5c0703f880806e9bd225352b64a5396b0e80f6084",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "uxia",
+      "id": "uxia-17-unified-report",
+      "kind": "official-ui-example",
+      "title": "Unified report：調査結果",
+      "file": "uxia-17-unified-report.png",
+      "source_page": "https://www.uxia.app",
+      "source_url": "https://www.uxia.app",
+      "sha256": "bc105525f29f0a7f3357a1490b57501931da2021dc8c70f0a35d540b1c146de9",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "qatech",
+      "id": "qatech-10-product-film",
+      "kind": "official-ui-example",
+      "title": "公開製品film：AI Chat・coverage・候補tests",
+      "file": "qatech-10-product-film.png",
+      "source_page": "https://qa.tech/qatech-anim.html",
+      "source_url": "https://qa.tech/qatech-anim.html",
+      "sha256": "f80e66fc22b7c6b2be25d40d961cd40e9d36b54c1d5b8416fb5b9367db6bc6df",
+      "capture": "native browser screenshot; browser chrome cropped; TestSprite account row cropped"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-02-copilot",
+      "kind": "public-demo-ui",
+      "title": "公開Copilot：レポートと会話",
+      "file": "../testsprite-02-copilot.png",
+      "source_page": "https://www.testsprite.com/",
+      "source_url": "https://www.testsprite.com/",
+      "sha256": "6b40516837cf72d4c4f873ee25ac8b70921b1a04847840b6b30ddc51297adfaf"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-03-live-run",
+      "kind": "public-demo-ui",
+      "title": "公開Live run：進捗とページマップ",
+      "file": "../testsprite-03-live-run.png",
+      "source_page": "https://www.testsprite.com/",
+      "source_url": "https://www.testsprite.com/",
+      "sha256": "615368006b316170602bb265d4291bdfe3d361b4877e99ffc0793ef0a62df8d4"
+    },
+    {
+      "product": "qatech",
+      "id": "qatech-02-pr-chapter",
+      "kind": "public-demo-ui",
+      "title": "公開PR検証の章",
+      "file": "../qatech-02-pr-chapter.png",
+      "source_page": "https://qa.tech/",
+      "source_url": "https://qa.tech/",
+      "sha256": "ecd27095b8ecc64aad617ba7fb4fe98d46f318c8dab92efc9804f215f51d07d3"
+    },
+    {
+      "product": "magicpod-center",
+      "id": "magicpod-center-02-flow",
+      "kind": "official-diagram",
+      "title": "資料→AI設計・自動化→顧客／提供側運用（業務図）",
+      "file": "../magicpod-center-02-flow.png",
+      "source_page": "https://magicpod.com/ai-test-center/",
+      "source_url": "https://magicpod.com/ai-test-center/",
+      "sha256": "247f1dd507e69e5d364ec187cf3a035ba1ffddaf1436e400465bfeb43bd7239f"
+    },
+    {
+      "product": "testneo",
+      "id": "testneo-01-playground",
+      "kind": "public-demo-ui",
+      "title": "Playground：入力",
+      "file": "../testneo-01-playground.png",
+      "source_page": "https://app.testneo.ai/playground?product=web",
+      "source_url": "https://app.testneo.ai/playground",
+      "sha256": "66feab3e3011d1c1dd73f9dec060f133533c5108341dbfff17f3d8bbf77beffe"
+    },
+    {
+      "product": "testneo",
+      "id": "testneo-07-playback",
+      "kind": "public-demo-ui",
+      "title": "実行動画の再生",
+      "file": "../testneo-07-playback.png",
+      "source_page": "https://app.testneo.ai/playground?product=web",
+      "source_url": "https://app.testneo.ai/playground",
+      "sha256": "afb06958dc957abad8d62a2f10a41b7d7764ea86808dab80e6a1e7c20471b8ea"
+    },
+    {
+      "product": "testneo",
+      "id": "testneo-06-timeline",
+      "kind": "public-demo-ui",
+      "title": "Timeline",
+      "file": "../testneo-06-timeline.png",
+      "source_page": "https://app.testneo.ai/playground?product=web",
+      "source_url": "https://app.testneo.ai/playground",
+      "sha256": "6340a6b70c6720db5811c1a04271f4710ceb5183418ee9755119c05a05746b03"
+    },
+    {
+      "product": "testneo",
+      "id": "testneo-04-completed",
+      "kind": "public-demo-ui",
+      "title": "完了結果",
+      "file": "../testneo-04-completed.png",
+      "source_page": "https://app.testneo.ai/playground?product=web",
+      "source_url": "https://app.testneo.ai/playground",
+      "sha256": "da6aeb78a91cf29bd6067e8a94e92202e2ba70be9f301d632cd25849d4e66b43"
+    },
+    {
+      "product": "testneo",
+      "id": "testneo-05-events",
+      "kind": "public-demo-ui",
+      "title": "Event trace",
+      "file": "../testneo-05-events.png",
+      "source_page": "https://app.testneo.ai/playground?product=web",
+      "source_url": "https://app.testneo.ai/playground",
+      "sha256": "e37611ca27789f0ed648be609ed97008556eb5a716a51515c42453b1c17fddc3"
+    },
+    {
+      "product": "testneo",
+      "id": "testneo-03-running",
+      "kind": "public-demo-ui",
+      "title": "Run live：実行中",
+      "file": "../testneo-03-running.png",
+      "source_page": "https://app.testneo.ai/playground?product=web",
+      "source_url": "https://app.testneo.ai/playground",
+      "sha256": "aa1a7eb22ea684fa1d07c3a6ccca28a6233f79511d67c9e66c16e1917e693ab3"
+    },
+    {
+      "product": "testneo",
+      "id": "testneo-02-plan",
+      "kind": "public-demo-ui",
+      "title": "Preview plan：実行計画",
+      "file": "../testneo-02-plan.png",
+      "source_page": "https://app.testneo.ai/playground?product=web",
+      "source_url": "https://app.testneo.ai/playground",
+      "sha256": "6d9aef3abb46d07315a18b204aecaf9057a2b1c7311f8169bdb499fa72658607"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-01-map",
+      "kind": "public-demo-ui",
+      "title": "公開Atlas：Map",
+      "file": "../revyl-01-map.png",
+      "source_page": "https://revyl.com/atlas/airbnb/",
+      "source_url": "https://revyl.com/atlas/airbnb/",
+      "sha256": "f2b94d350e1ebacd48fb9ede796c6d67d3bb2f72a8aee0c67f82a8ef701a0925"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-03-screens",
+      "kind": "public-demo-ui",
+      "title": "公開Atlas：Screens",
+      "file": "../revyl-03-screens.png",
+      "source_page": "https://revyl.com/atlas/airbnb/",
+      "source_url": "https://revyl.com/atlas/airbnb/",
+      "sha256": "aba661447d3a22f4e6ccbe47030835dbdc498001d25f8e8e13e6996ffc84ae2f"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-04-report",
+      "kind": "public-demo-ui",
+      "title": "公開Atlas：Report",
+      "file": "../revyl-04-report.png",
+      "source_page": "https://revyl.com/atlas/airbnb/",
+      "source_url": "https://revyl.com/atlas/airbnb/",
+      "sha256": "ed17f520cb67e04be6601277150ac40aeb264e86c4617f98fbdd5d50c7de8bbf"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-02-journey",
+      "kind": "public-demo-ui",
+      "title": "公開Atlas：Journey",
+      "file": "../revyl-02-journey.png",
+      "source_page": "https://revyl.com/atlas/airbnb/",
+      "source_url": "https://revyl.com/atlas/airbnb/",
+      "sha256": "5b023e34b6d9df64d5a431790a76c6ef5e1521cc5413d635c5a175305cab171d"
+    },
+    {
+      "product": "testrigor",
+      "id": "testrigor-extra-01",
+      "kind": "official-ui-image",
+      "title": "Suite設定：種類・URL・認証・OS／browser",
+      "file": "testrigor-extra-01.png",
+      "source_page": "https://support.testrigor.com/support/solutions/articles/154000231623-how-to-do-api-testing-using-testrigor-",
+      "source_url": "https://testrigor.com/wp-content/uploads/2024/03/api-1.png",
+      "sha256": "bd71336362b613af2ddf083b732580ebb1afde3b16d12e1af24a13f7f9dd5be1"
+    },
+    {
+      "product": "testrigor",
+      "id": "testrigor-extra-02",
+      "kind": "official-ui-image",
+      "title": "Test Cases：custom caseの追加",
+      "file": "testrigor-extra-02.png",
+      "source_page": "https://support.testrigor.com/support/solutions/articles/154000231623-how-to-do-api-testing-using-testrigor-",
+      "source_url": "https://testrigor.com/wp-content/uploads/2024/03/api-2.png",
+      "sha256": "6d6c6c8b8182705688726d0385406a4ddbb16ebc01126d5fad34f290411f651c"
+    },
+    {
+      "product": "testrigor",
+      "id": "testrigor-extra-07",
+      "kind": "official-ui-image",
+      "title": "ケース編集：APIの戻り値とUI操作",
+      "file": "testrigor-extra-07.png",
+      "source_page": "https://support.testrigor.com/support/solutions/articles/154000231623-how-to-do-api-testing-using-testrigor-",
+      "source_url": "https://testrigor.com/wp-content/uploads/2024/03/api-tc.png",
+      "sha256": "f9d93f88151aa49c24429427624eb8aa08b339deb2846b4dbb10caf731a880e1"
+    },
+    {
+      "product": "testrigor",
+      "id": "testrigor-extra-08",
+      "kind": "official-ui-image",
+      "title": "View Execution：step画像・log・出力",
+      "file": "testrigor-extra-08.png",
+      "source_page": "https://support.testrigor.com/support/solutions/articles/154000231623-how-to-do-api-testing-using-testrigor-",
+      "source_url": "https://testrigor.com/wp-content/uploads/2024/03/api-3.png",
+      "sha256": "de13ba528a837b4614a883a1bc15e4057886614f781f9b2ef36580e06ba7c3b5"
+    },
+    {
+      "product": "amikoo",
+      "id": "amikoo-extra-09",
+      "kind": "official-ui-image",
+      "title": "Chat：coverage不足からscriptを依頼する入口",
+      "file": "amikoo-extra-09.png",
+      "source_page": "https://amikoo.ai/",
+      "source_url": "https://amikoo.ai/hubfs/unnamed%20(8).png",
+      "sha256": "0f6a509f2e9eb7c19220ab93c3774ca9fca5cfecffdfb1a505828d359dbeb3f0"
+    },
+    {
+      "product": "checksum",
+      "id": "checksum-extra-11",
+      "kind": "official-ui-image",
+      "title": "Feature Health：機能別の検証状態",
+      "file": "checksum-extra-11.png",
+      "source_page": "https://checksum.ai/product/platform",
+      "source_url": "https://cdn.prod.website-files.com/6982de9247ee7bccfacb48f9/69a6155ad6212b31bd05f0db_Feature%20Health%20Dashboard.avif",
+      "sha256": "adda7e967ea04f0955e35a165a9a377ca73c54c2f626671bce184cd263423d59"
+    },
+    {
+      "product": "checksum",
+      "id": "checksum-extra-12",
+      "kind": "official-ui-image",
+      "title": "API Agent：endpointと結果の一覧",
+      "file": "checksum-extra-12.png",
+      "source_page": "https://checksum.ai/product/platform",
+      "source_url": "https://cdn.prod.website-files.com/6982de9247ee7bccfacb48f9/699f7779595fe75b8952cbc2_Checksum%20API%20Agent.avif",
+      "sha256": "3453ae30cb9d3628dce23102ca191289d330b104b84fc693e0f69ed08f0710fe"
+    },
+    {
+      "product": "testdriver",
+      "id": "testdriver-extra-14",
+      "kind": "official-ui-image",
+      "title": "List of test runs",
+      "file": "testdriver-extra-14.png",
+      "source_page": "https://testdriver.ai/",
+      "source_url": "https://testdriver.ai/images/screenshots/v7-8/test-runs.webp",
+      "sha256": "65f92e7964f1c39b0365f7fe3f253d2ea371b305a8ad6744fc2744d92e3ff226"
+    },
+    {
+      "product": "testdriver",
+      "id": "testdriver-extra-15",
+      "kind": "official-ui-image",
+      "title": "Video replay of a failed run",
+      "file": "testdriver-extra-15.png",
+      "source_page": "https://testdriver.ai/",
+      "source_url": "https://testdriver.ai/images/screenshots/v7-2/replay-failure.webp",
+      "sha256": "024c0340f9bc07ca37714a09a264cfffd552aa8d4b711fc3630f39077510f662"
+    },
+    {
+      "product": "testdriver",
+      "id": "testdriver-extra-16",
+      "kind": "official-ui-image",
+      "title": "Test logs viewer",
+      "file": "testdriver-extra-16.png",
+      "source_page": "https://testdriver.ai/",
+      "source_url": "https://testdriver.ai/images/screenshots/v7-8/logs.webp",
+      "sha256": "7f543a5407f43fc53194733cc282d72b80a95a6310cb89a9abd48ded6123ef80"
+    },
+    {
+      "product": "testdriver",
+      "id": "testdriver-extra-17",
+      "kind": "official-ui-image",
+      "title": "Request information panel",
+      "file": "testdriver-extra-17.png",
+      "source_page": "https://testdriver.ai/",
+      "source_url": "https://testdriver.ai/images/screenshots/v7-8/network-logs.webp",
+      "sha256": "4a2479bc31c1f742f9c99f9e9414c5779a16f245e5c3dbb0d4b5efeeb0fcfcac"
+    },
+    {
+      "product": "testdriver",
+      "id": "testdriver-extra-18",
+      "kind": "official-ui-image",
+      "title": "CPU and memory metrics",
+      "file": "testdriver-extra-18.png",
+      "source_page": "https://testdriver.ai/",
+      "source_url": "https://testdriver.ai/images/screenshots/v7-2/cpu-memory.webp",
+      "sha256": "7fd038530f0c74507c651af8fdb11aae27206258768c844d752c0b287b1a6a46"
+    },
+    {
+      "product": "testdriver",
+      "id": "testdriver-extra-19",
+      "kind": "official-ui-image",
+      "title": "Action log timeline",
+      "file": "testdriver-extra-19.png",
+      "source_page": "https://testdriver.ai/",
+      "source_url": "https://testdriver.ai/images/screenshots/v7-8/interactions.webp",
+      "sha256": "5190907429d0f864633589e45138d10fc25d635489b260f12450754b2636b501"
+    },
+    {
+      "product": "testdriver",
+      "id": "testdriver-extra-20",
+      "kind": "official-ui-image",
+      "title": "Regression and quality trends dashboard",
+      "file": "testdriver-extra-20.png",
+      "source_page": "https://testdriver.ai/",
+      "source_url": "https://testdriver.ai/images/screenshots/v7-8/metrics.webp",
+      "sha256": "84ca496492161214533feec43a1a34f7c26ab3a6dc75868860b94230b6935d51"
+    },
+    {
+      "product": "panaya",
+      "id": "panaya-extra-21",
+      "kind": "official-ui-image",
+      "title": "Requirement > Testing > Tests",
+      "file": "panaya-extra-21.png",
+      "source_page": "https://success.panaya.com/docs/requirement-tests",
+      "source_url": "https://cdn.document360.io/f404076c-de23-4609-848e-2dfd4ef701b0/Images/Documentation/image-BHGJ6TXO.png",
+      "sha256": "bdb0242271c43ef66c650eddc80884fec634846922c3d5c008a420c5872f2a0b"
+    },
+    {
+      "product": "panaya",
+      "id": "panaya-extra-22",
+      "kind": "official-ui-image",
+      "title": "要求から新規Test／Quick Testを作成",
+      "file": "panaya-extra-22.png",
+      "source_page": "https://success.panaya.com/docs/requirement-tests",
+      "source_url": "https://cdn.document360.io/f404076c-de23-4609-848e-2dfd4ef701b0/Images/Documentation/image-WADNZRNV.png",
+      "sha256": "796a2b4e6f84ea4949b04384fe619b67cdcc6fc58c18ff39a1b0aec29accf805"
+    },
+    {
+      "product": "panaya",
+      "id": "panaya-extra-23",
+      "kind": "official-ui-image",
+      "title": "Create test：名前と所属先",
+      "file": "panaya-extra-23.png",
+      "source_page": "https://success.panaya.com/docs/requirement-tests",
+      "source_url": "https://cdn.document360.io/f404076c-de23-4609-848e-2dfd4ef701b0/Images/Documentation/image-1673431094383.png",
+      "sha256": "d4a2744a2e1f0dfecfacf6afd106ca441bcdabd28e23b8c6395981a738b47452"
+    },
+    {
+      "product": "panaya",
+      "id": "panaya-extra-24",
+      "kind": "official-ui-image",
+      "title": "cycle・business processの選択",
+      "file": "panaya-extra-24.png",
+      "source_page": "https://success.panaya.com/docs/requirement-tests",
+      "source_url": "https://cdn.document360.io/f404076c-de23-4609-848e-2dfd4ef701b0/Images/Documentation/image-1673431078269.png",
+      "sha256": "3e80387c53d628ec1794ac9bc95f43cebcfcf471faee30a374574b5231768393"
+    },
+    {
+      "product": "panaya",
+      "id": "panaya-extra-25",
+      "kind": "official-ui-image",
+      "title": "要求へ既存テストを追加",
+      "file": "panaya-extra-25.png",
+      "source_page": "https://success.panaya.com/docs/requirement-tests",
+      "source_url": "https://cdn.document360.io/f404076c-de23-4609-848e-2dfd4ef701b0/Images/Documentation/image-QUBES6GS.png",
+      "sha256": "82ac3752576eb4f20a903e34113583442941563d2ed7fa3961cac7583b782f43"
+    },
+    {
+      "product": "panaya",
+      "id": "panaya-extra-26",
+      "kind": "official-ui-image",
+      "title": "既存テストのlink／clone",
+      "file": "panaya-extra-26.png",
+      "source_page": "https://success.panaya.com/docs/requirement-tests",
+      "source_url": "https://cdn.document360.io/f404076c-de23-4609-848e-2dfd4ef701b0/Images/Documentation/image-F1G4MOYD.png",
+      "sha256": "3f288f21d71fb38d0add580732f1de9cc4fec40e854c61448101ab2f0833ad18"
+    },
+    {
+      "product": "panaya",
+      "id": "panaya-extra-27",
+      "kind": "official-ui-image",
+      "title": "要求に紐付いたテストと状態",
+      "file": "panaya-extra-27.png",
+      "source_page": "https://success.panaya.com/docs/requirement-tests",
+      "source_url": "https://cdn.document360.io/f404076c-de23-4609-848e-2dfd4ef701b0/Images/Documentation/image-TAWDDQ50.png",
+      "sha256": "0121c9106595a1f53b349364970e3d981305ed35f9a748ca893691ab5bf0cdf1"
+    },
+    {
+      "product": "synthetic-users",
+      "id": "synthetic-users-extra-28",
+      "kind": "official-ui-image",
+      "title": "UX & Product Research mockup",
+      "file": "synthetic-users-extra-28.png",
+      "source_page": "https://www.syntheticusers.com/",
+      "source_url": "https://www.syntheticusers.com/_next/image",
+      "sha256": "649df022285fc860b50aaa754ef392a65bf4979d23e6e221b020b4b93d36e9b5"
+    },
+    {
+      "product": "synthetic-users",
+      "id": "synthetic-users-extra-29",
+      "kind": "official-ui-image",
+      "title": "Define your audience mockup",
+      "file": "synthetic-users-extra-29.png",
+      "source_page": "https://www.syntheticusers.com/",
+      "source_url": "https://www.syntheticusers.com/_next/image",
+      "sha256": "4a9bd082d780e63af98d44e4bf39584cf8aa553ee9697928662eedeaa8c8881d"
+    },
+    {
+      "product": "mabl",
+      "id": "mabl-doc-0-0",
+      "kind": "official-ui-image",
+      "title": "The New test tab on the Build tests page, with the prompt, the + button, and the Start with mabl button",
+      "file": "mabl-doc-0-0.png",
+      "source_page": "https://help.mabl.com/hc/en-us/articles/38361400751380-Agentic-test-authoring-for-web-apps",
+      "source_url": "https://help.mabl.com/hc/article_attachments/54627372943636",
+      "sha256": "bf2a1c5d6c5be8ba6296779cb945cb5bd7ed65743a33be2197ba9169bae6c7ac"
+    },
+    {
+      "product": "mabl",
+      "id": "mabl-doc-0-1",
+      "kind": "official-ui-image",
+      "title": "The + menu below the prompt, with the Existing test, File, Case, and Azure Boards work item options",
+      "file": "mabl-doc-0-1.png",
+      "source_page": "https://help.mabl.com/hc/en-us/articles/38361400751380-Agentic-test-authoring-for-web-apps",
+      "source_url": "https://help.mabl.com/hc/article_attachments/54102595060884",
+      "sha256": "e53afe0449b447742ec055b4ba270e3fb1698bbc6cd611b360a0dd635710174f"
+    },
+    {
+      "product": "mabl",
+      "id": "mabl-doc-1-0",
+      "kind": "official-ui-image",
+      "title": "The generate button",
+      "file": "mabl-doc-1-0.png",
+      "source_page": "https://help.mabl.com/hc/en-us/articles/50932677869460-Use-agent-mode-in-the-Trainer",
+      "source_url": "https://help.mabl.com/hc/article_attachments/52597248670228",
+      "sha256": "71164bc188757fa100b35545725bf30fbac6a5414e872503e5c3009269febc30"
+    },
+    {
+      "product": "mabl",
+      "id": "mabl-doc-1-1",
+      "kind": "official-ui-image",
+      "title": "Entering a prompt to generate steps",
+      "file": "mabl-doc-1-1.png",
+      "source_page": "https://help.mabl.com/hc/en-us/articles/50932677869460-Use-agent-mode-in-the-Trainer",
+      "source_url": "https://help.mabl.com/hc/article_attachments/52597248672660",
+      "sha256": "bbe69b845ea16aaa41e9b883238550119108b35e80052e9a4f99b5e30709a00b"
+    },
+    {
+      "product": "mabl",
+      "id": "mabl-doc-1-2",
+      "kind": "official-ui-image",
+      "title": "Show agent activity",
+      "file": "mabl-doc-1-2.png",
+      "source_page": "https://help.mabl.com/hc/en-us/articles/50932677869460-Use-agent-mode-in-the-Trainer",
+      "source_url": "https://help.mabl.com/hc/article_attachments/52597232099092",
+      "sha256": "2dad8c3d7fac53e1776f9f698e09661b550c1600cc61fae840bb261f673c984c"
+    },
+    {
+      "product": "mabl",
+      "id": "mabl-doc-1-3",
+      "kind": "official-ui-image",
+      "title": "Record mode",
+      "file": "mabl-doc-1-3.png",
+      "source_page": "https://help.mabl.com/hc/en-us/articles/50932677869460-Use-agent-mode-in-the-Trainer",
+      "source_url": "https://help.mabl.com/hc/article_attachments/52597232100372",
+      "sha256": "4189baa4c2eee05103566d12c71492b09eb79ea272cdcc37a4daf5454d7b061a"
+    },
+    {
+      "product": "mabl",
+      "id": "mabl-doc-2-0",
+      "kind": "official-ui-image",
+      "title": "The Tasks table on the Agents page, with every task listed in one table and its state in the Status column",
+      "file": "mabl-doc-2-0.png",
+      "source_page": "https://help.mabl.com/hc/en-us/articles/53564732795412-Agent-tasks-and-notifications",
+      "source_url": "https://help.mabl.com/hc/article_attachments/53820536421396",
+      "sha256": "2971333120a1b3b813f36b78b31603771c2eb55611581c4f335f223168a0376c"
+    },
+    {
+      "product": "mabl",
+      "id": "mabl-doc-3-0",
+      "kind": "official-ui-image",
+      "title": "Edit test with mab",
+      "file": "mabl-doc-3-0.png",
+      "source_page": "https://help.mabl.com/hc/en-us/articles/51702227921044-Edit-an-existing-test-with-the-mabl-agent",
+      "source_url": "https://help.mabl.com/hc/article_attachments/51702228374420",
+      "sha256": "c2a9e83a6a611daffb32561fd687c6290052237e03eb279c013cb15fc2023835"
+    },
+    {
+      "product": "mabl",
+      "id": "mabl-doc-3-1",
+      "kind": "official-ui-image",
+      "title": "The + menu below the edit prompt, with the Existing test, File, Case, and Azure Boards work item options",
+      "file": "mabl-doc-3-1.png",
+      "source_page": "https://help.mabl.com/hc/en-us/articles/51702227921044-Edit-an-existing-test-with-the-mabl-agent",
+      "source_url": "https://help.mabl.com/hc/article_attachments/54102600001044",
+      "sha256": "d61b66eaa318d6f46b97c42a17d8b2a1dcb66e0d50b99f9f5d0cc8f4488f08f6"
+    },
+    {
+      "product": "usertesting",
+      "id": "usertesting-02-method",
+      "kind": "public-demo-ui",
+      "title": "調査方式：画面・発話等のfeedbackを選ぶ",
+      "file": "usertesting-02-method.png",
+      "source_page": "https://www.usertesting.com/resources/usertesting-demo-center",
+      "source_url": "https://demo.arcade.software/m2CDv2tebpNbolLIa1Wr",
+      "sha256": "c70f2bbca55bbea5765dd3b5f90b806e386c08113e25787d7ae4bf67953fc657",
+      "capture": "Native Edge screenshot; browser chrome cropped"
+    },
+    {
+      "product": "usertesting",
+      "id": "usertesting-05-plan",
+      "kind": "public-demo-ui",
+      "title": "prototype・URL・画像を添える",
+      "file": "usertesting-05-plan.png",
+      "source_page": "https://www.usertesting.com/resources/usertesting-demo-center",
+      "source_url": "https://demo.arcade.software/m2CDv2tebpNbolLIa1Wr",
+      "sha256": "c3f09aedde457b5ccbbee15b6cd56c07c7625c00696f1de8567496084633477b",
+      "capture": "Native Edge screenshot; browser chrome cropped"
+    },
+    {
+      "product": "testsigma",
+      "id": "testsigma-01-lifecycle",
+      "kind": "official-ui-example",
+      "title": "Commit：PR・session・storyを確認範囲へ結び付ける",
+      "file": "testsigma-01-lifecycle.png",
+      "source_page": "https://testsigma.com/",
+      "source_url": "https://testsigma.com/",
+      "sha256": "00f6e42ec4277f6a5032a72da3ed998fc012aad2657aeecf56c3ae5b2d10edd9",
+      "capture": "Native Edge screenshot; browser chrome cropped"
+    },
+    {
+      "product": "testsigma",
+      "id": "testsigma-02-plan",
+      "kind": "official-ui-example",
+      "title": "Generate：計画案とaccept／reject",
+      "file": "testsigma-02-plan.png",
+      "source_page": "https://testsigma.com/",
+      "source_url": "https://testsigma.com/",
+      "sha256": "cc746501a114e52af90a802c14b8f7563ac95ff5b3d217c58eaf37cd5193652e",
+      "capture": "Native Edge screenshot; browser chrome cropped"
+    },
+    {
+      "product": "testsigma",
+      "id": "testsigma-03-run",
+      "kind": "official-ui-example",
+      "title": "Execute：端末・browser別の状態",
+      "file": "testsigma-03-run.png",
+      "source_page": "https://testsigma.com/",
+      "source_url": "https://testsigma.com/",
+      "sha256": "68b0f6b6f1b41cc5e018414218210c9953a5ab432da15e3f4b1eb0082cb6a49c",
+      "capture": "Native Edge screenshot; browser chrome cropped"
+    },
+    {
+      "product": "testsigma",
+      "id": "testsigma-04-steps",
+      "kind": "official-ui-example",
+      "title": "Automate：手動stepから自動化stepへ",
+      "file": "testsigma-04-steps.png",
+      "source_page": "https://testsigma.com/",
+      "source_url": "https://testsigma.com/",
+      "sha256": "db70c49f1a48f7c6b58c104b0b33e65a056284324a88d52ab77f9ced78c787c2",
+      "capture": "Native Edge screenshot; browser chrome cropped"
+    },
+    {
+      "product": "testsigma",
+      "id": "testsigma-05-queue",
+      "kind": "official-ui-example",
+      "title": "Scale：並列枠・queue・実行集合",
+      "file": "testsigma-05-queue.png",
+      "source_page": "https://testsigma.com/",
+      "source_url": "https://testsigma.com/",
+      "sha256": "703050f49075d5fb126730e2291c097d8df5505e865e5c3e234b48d160e74b93",
+      "capture": "Native Edge screenshot; browser chrome cropped"
+    },
+    {
+      "product": "testsigma",
+      "id": "testsigma-06-readiness",
+      "kind": "official-ui-example",
+      "title": "Release：review・coverage・release gate",
+      "file": "testsigma-06-readiness.png",
+      "source_page": "https://testsigma.com/",
+      "source_url": "https://testsigma.com/",
+      "sha256": "7321ba5d7c45b25d63164a0e663f047b9516cf17702bc50ab92be89e3eca3853",
+      "capture": "Native Edge screenshot; browser chrome cropped"
+    },
+    {
+      "product": "usertesting",
+      "id": "usertesting-01-start",
+      "kind": "public-demo-ui",
+      "title": "Workspace：調査一覧からCreate with AIへ",
+      "file": "usertesting-01-start.png",
+      "source_page": "https://www.usertesting.com/resources/usertesting-demo-center",
+      "source_url": "https://demo.arcade.software/m2CDv2tebpNbolLIa1Wr",
+      "sha256": "8e6f077d20048310e46356534235fee0dbf2a32fa9b42c7e570e9cf281763547",
+      "capture": "Native Edge screenshot; browser chrome cropped"
+    },
+    {
+      "product": "usertesting",
+      "id": "usertesting-06-context",
+      "kind": "public-demo-ui",
+      "title": "生成した計画：goal・task・質問の確認",
+      "file": "usertesting-06-context.png",
+      "source_page": "https://www.usertesting.com/resources/usertesting-demo-center",
+      "source_url": "https://demo.arcade.software/m2CDv2tebpNbolLIa1Wr",
+      "sha256": "f8c3aa8628a99a3206ae3f92a3f2937a33e5fdfad5abd4d1b086caecc5f7431a",
+      "capture": "Native Edge screenshot; browser chrome cropped"
+    },
+    {
+      "product": "usertesting",
+      "id": "usertesting-10-import-confirmed",
+      "kind": "public-demo-ui",
+      "title": "既存の調査案をimportする入口",
+      "file": "usertesting-10-import-confirmed.png",
+      "source_page": "https://www.usertesting.com/resources/usertesting-demo-center",
+      "source_url": "https://demo.arcade.software/m2CDv2tebpNbolLIa1Wr",
+      "sha256": "449084e7f22d2b33170d240ffd0deeddbe912b66d4dfc24b27938bae8c9b0e68",
+      "capture": "Native Edge screenshot; browser chrome cropped"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-7",
+      "kind": "official-ui-image",
+      "title": "The Create a new test with AI page with the four ways to start.",
+      "file": "browserstack-ai-2-ui-7.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/create-a-new-test-with-ai.webp",
+      "sha256": "f072fafbf1defd3d08bde52d238b0179f602844e4d7454e8794ce948634bbafd"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-8",
+      "kind": "official-ui-image",
+      "title": "The Create a new test with AI page with an objective entered and the Automate case button enabled.",
+      "file": "browserstack-ai-2-ui-8.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/existing-test-case/create-test-with-ai.webp",
+      "sha256": "ecc034096cc9dc76b0e7239e7f6c7c45834d3bf31e4a36956a08563698ccfd2d"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-9",
+      "kind": "official-ui-image",
+      "title": "A test case with its description, preconditions, and numbered test steps.",
+      "file": "browserstack-ai-2-ui-9.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/existing-test-case/test-case-details.webp",
+      "sha256": "f94f247f7135d299b2d108067b0f45d6975498d6152055b6dc271d6020c8ddb3"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-10",
+      "kind": "official-ui-image",
+      "title": "The Import from Test Management option below the prompt box on the Create a new test with AI page.",
+      "file": "browserstack-ai-2-ui-10.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/test-management/import-test-management-option.webp",
+      "sha256": "b3897f2b5e0c6f1634e2f9712a4c9e3889892c03b6b8959034cc2cf3e152f413"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-11",
+      "kind": "official-ui-image",
+      "title": "The Import from Test Management dialog with a folder open and one test case selected.",
+      "file": "browserstack-ai-2-ui-11.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/test-management/import-from-test-management.webp",
+      "sha256": "71eb0e3a9d00cce14d3473a9a772a0d387095aa599a4c4273c21d8c9510aa96b"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-12",
+      "kind": "official-ui-image",
+      "title": "Seven imported test cases listed under the Imported from BrowserStack Test Management scenario.",
+      "file": "browserstack-ai-2-ui-12.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/test-management/imported-test-cases.webp",
+      "sha256": "deeb22f48bf45cf0483df9d8cc25c3e67a776ea64d237a4e26c23df0b4de4a8a"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-13",
+      "kind": "official-ui-image",
+      "title": "The Create a new test with AI page with a prompt entered and a PRD file attached as a chip.",
+      "file": "browserstack-ai-2-ui-13.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/using-requirements/generate-from-requirements.webp",
+      "sha256": "af7e4fa978131ed08454676c99b939f35bf14c4332f3e51a39bbfe6571d3c66e"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-14",
+      "kind": "official-ui-image",
+      "title": "The Instructions dialog with an instruction file toggle and the field to add a new file.",
+      "file": "browserstack-ai-2-ui-14.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/url-exploration/instructions.webp",
+      "sha256": "a3f10354721e0c160549ce8554cc3633931f3244e0338e86adcb6ac99f594ad2"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-15",
+      "kind": "official-ui-image",
+      "title": "The Thoughts pane listing document processing steps while test cases generate.",
+      "file": "browserstack-ai-2-ui-15.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/using-requirements/generated-test-cases.webp",
+      "sha256": "29668862f9cb6ab806867e877ac01ff7a9e2df2cc1074691bdc067f62408a6dd"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-16",
+      "kind": "official-ui-image",
+      "title": "The Explore URL option with a URL and the functionality to explore.",
+      "file": "browserstack-ai-2-ui-16.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/url-exploration/explore-url.webp",
+      "sha256": "e2c5fffd808f85e78ef1bb349440ca7c240400509ba5b3aa04715383efc7ef24"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-17",
+      "kind": "official-ui-image",
+      "title": "The Instructions dialog with the field to add an instruction file.",
+      "file": "browserstack-ai-2-ui-17.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/url-exploration/instructions.webp",
+      "sha256": "a3f10354721e0c160549ce8554cc3633931f3244e0338e86adcb6ac99f594ad2"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-18",
+      "kind": "official-ui-image",
+      "title": "The URL Exploration screen with the agent's progress beside a live browser session.",
+      "file": "browserstack-ai-2-ui-18.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/url-exploration/url-exploration-live.webp",
+      "sha256": "3322fff8566e0e6c5c8042da8fc7645d201a56958b48529108756fac26357b0a"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-19",
+      "kind": "official-ui-image",
+      "title": "The completed exploration summary with the overview, target URL, and interactive elements.",
+      "file": "browserstack-ai-2-ui-19.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/url-exploration/exploration-summary.webp",
+      "sha256": "aefaae0ad7e88d23063de19fd498c0f64f9bb6d4315b78921c602c58ab8eca97"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-20",
+      "kind": "official-ui-image",
+      "title": "Test cases grouped into scenarios after a URL exploration, each case tagged with a priority.",
+      "file": "browserstack-ai-2-ui-20.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/url-exploration/generated-cases.webp",
+      "sha256": "3bf96fce7a6286d6efc2fa98f151b40a055939bfabc7aa0ece94ed6d391f465f"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-21",
+      "kind": "official-ui-image",
+      "title": "Selected test cases and the Automate button.",
+      "file": "browserstack-ai-2-ui-21.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/automate-tests/automating-case.webp",
+      "sha256": "fd7d32b2def88d68fee9b61fa2bf336d2d6ad817d053fb73befd1f9bf7738cf4"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-22",
+      "kind": "official-ui-image",
+      "title": "The Add a starting URL dialog with a field for the URL and the Save and automate button.",
+      "file": "browserstack-ai-2-ui-22.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/automate-tests/add-starting-url.webp",
+      "sha256": "c2298b01937ab1e044fdf88793d3c6888ba33618f0fc1046e88c2ace96b239a0"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-2-ui-23",
+      "kind": "official-ui-image",
+      "title": "The History list of earlier sessions on the Create a new test with AI page.",
+      "file": "browserstack-ai-2-ui-23.png",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/history.webp",
+      "sha256": "14d6ff50a5c8d72404589152bcf78fa2a89973c56a990ace387509bd5a2e4f90"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-ai-3-ui-7",
+      "kind": "official-ui-image",
+      "title": "GitHub Copilot prompt in VS Code asking the BrowserStack MCP server to fix flaky test selectors, with the fetchSelfHealedSelectors tool call",
+      "file": "browserstack-ai-3-ui-7.png",
+      "source_page": "https://www.browserstack.com/docs/browserstack-mcp-server/tools/ai-agents",
+      "source_url": "https://www.browserstack.com/docs/static/img/browserstack-mcp-server/ai-agents-mcp.webp",
+      "sha256": "f4211fb5bfffc7ed430b64a7664061d72faba15b52411e4cb2af334179d93f74"
+    }
+  ],
+  "videos": [
+    {
+      "product": "touchstone",
+      "id": "touchstone-official-02",
+      "kind": "official-concept-video",
+      "title": "資料差替え→要求レビュー→依存ジャーニー（公式の概念アニメーション）",
+      "source_page": "https://www.virtuosoqa.com/touchstone",
+      "source_url": "https://framerusercontent.com/assets/HsxQshygx5KYFpINO2qRmDacHA.webm",
+      "file": "touchstone-official-02.mp4",
+      "duration": 27.0,
+      "frames": [
+        {
+          "file": "touchstone-official-02-t004.png",
+          "seconds": 4,
+          "label": "資料の差替え"
+        },
+        {
+          "file": "touchstone-official-02-t013.png",
+          "seconds": 13,
+          "label": "影響要求のレビュー"
+        },
+        {
+          "file": "touchstone-official-02-t021.png",
+          "seconds": 21,
+          "label": "依存Journeyのレビュー"
+        }
+      ],
+      "sha256": "41ffa0faf76e56f28d5b7214b1dbb87f8604b891983243f3f159ebdf987bc283",
+      "audio": "removed",
+      "transcode": "H264 <=1600px CRF23; speed unchanged"
+    },
+    {
+      "product": "autify",
+      "id": "autify-official-01",
+      "kind": "official-product-video",
+      "title": "シナリオを自然言語で入力",
+      "source_page": "https://autify.com/products/aximo",
+      "source_url": "https://aximovids.autify.com/GOOGLE_FLIGHTS_PROMPT_VER_01.mp4",
+      "file": "autify-official-01.mp4",
+      "duration": 16.3163,
+      "frames": [
+        {
+          "file": "autify-official-01-t003.png",
+          "seconds": 3,
+          "label": "操作の指示"
+        },
+        {
+          "file": "autify-official-01-t010.png",
+          "seconds": 10,
+          "label": "検索と期待の確認"
+        }
+      ],
+      "sha256": "8c59e56862301bcc72be0ad2d32c89d6488abcc1cbe9ae3a8bf4453546b29a12",
+      "audio": "removed",
+      "transcode": "H264 <=1600px CRF23; speed unchanged"
+    },
+    {
+      "product": "autify",
+      "id": "autify-official-03",
+      "kind": "official-product-video",
+      "title": "モバイルシナリオの入力",
+      "source_page": "https://autify.com/products/aximo",
+      "source_url": "https://aximovids.autify.com/MOBILE_PROMPT_VER_01.mp4",
+      "file": "autify-official-03.mp4",
+      "duration": 20.02,
+      "frames": [
+        {
+          "file": "autify-official-03-t003.png",
+          "seconds": 3,
+          "label": "プロフィール設定"
+        },
+        {
+          "file": "autify-official-03-t012.png",
+          "seconds": 12,
+          "label": "イベント作成"
+        }
+      ],
+      "sha256": "047438f7bbb9308101d3fc0115ba8166480c760b0a426009018628ce7c992c01",
+      "audio": "removed",
+      "transcode": "H264 <=1600px CRF23; speed unchanged"
+    },
+    {
+      "product": "autify",
+      "id": "autify-official-04",
+      "kind": "official-product-video",
+      "title": "AI Chatと対象画面を並べた実行",
+      "source_page": "https://autify.com/products/aximo",
+      "source_url": "https://aximovids.autify.com/FEATURES/AI+Tester+explores+and+executes.mp4",
+      "file": "autify-official-04.mp4",
+      "duration": 36.803433,
+      "frames": [
+        {
+          "file": "autify-official-04-t003.png",
+          "seconds": 3,
+          "label": "対象画面とAI Chat"
+        },
+        {
+          "file": "autify-official-04-t014.png",
+          "seconds": 14,
+          "label": "日付の選択"
+        },
+        {
+          "file": "autify-official-04-t028.png",
+          "seconds": 28,
+          "label": "検索結果"
+        }
+      ],
+      "sha256": "0f527ddc78a8187cac721ea165efb1a3cdd8697d19b5c96945fe595bdf9bcfd0",
+      "audio": "removed",
+      "transcode": "H264 <=1600px CRF23; speed unchanged"
+    },
+    {
+      "product": "autify",
+      "id": "autify-official-06",
+      "kind": "official-product-video",
+      "title": "実行ログ・各ステップの画像",
+      "source_page": "https://autify.com/products/aximo",
+      "source_url": "https://aximovids.autify.com/FEATURES/Get+results+you+can+trust%2C+without+the+maintenance.mp4",
+      "file": "autify-official-06.mp4",
+      "duration": 4.2042,
+      "frames": [
+        {
+          "file": "autify-official-06-t001.png",
+          "seconds": 1,
+          "label": "stepごとの記録"
+        },
+        {
+          "file": "autify-official-06-t003.png",
+          "seconds": 3,
+          "label": "画像と説明"
+        }
+      ],
+      "sha256": "0d2996295802ebb44bcb7bb0da91be0e854651ddd16c5c1af29469ffe9a43822",
+      "audio": "removed",
+      "transcode": "H264 <=1600px CRF23; speed unchanged"
+    },
+    {
+      "product": "docket",
+      "id": "docket-official-01",
+      "kind": "official-product-video",
+      "title": "AIステップを入力→ブラウザ操作",
+      "source_page": "https://www.docketqa.com/",
+      "source_url": "https://s3.amazonaws.com/webflow-prod-assets/690690ec15299fb73a66c2e4/69196d1af259b5d5d5d8e97e_final_amazon_natural_language.mp4",
+      "file": "docket-official-01.mp4",
+      "duration": 14.933333,
+      "frames": [
+        {
+          "file": "docket-official-01-t002.png",
+          "seconds": 2,
+          "label": "AI stepの入力"
+        },
+        {
+          "file": "docket-official-01-t007.png",
+          "seconds": 7,
+          "label": "検索操作"
+        },
+        {
+          "file": "docket-official-01-t012.png",
+          "seconds": 12,
+          "label": "カート追加"
+        }
+      ],
+      "sha256": "38f5e8e42b46e7b50a0b64ec206387807335aadc9b0d1613c349dbf0bd2e6fab",
+      "audio": "removed",
+      "transcode": "H264 <=1600px CRF23; speed unchanged"
+    },
+    {
+      "product": "docket",
+      "id": "docket-official-02",
+      "kind": "official-product-video",
+      "title": "埋込ブラウザを操作→記録ステップ作成",
+      "source_page": "https://www.docketqa.com/",
+      "source_url": "https://s3.amazonaws.com/webflow-prod-assets/690690ec15299fb73a66c2e4/691959af7522cf30142c0fda_recorded_steps_demo.mp4",
+      "file": "docket-official-02.mp4",
+      "duration": 17.6,
+      "frames": [
+        {
+          "file": "docket-official-02-t002.png",
+          "seconds": 2,
+          "label": "操作の記録"
+        },
+        {
+          "file": "docket-official-02-t008.png",
+          "seconds": 8,
+          "label": "入力stepの蓄積"
+        },
+        {
+          "file": "docket-official-02-t015.png",
+          "seconds": 15,
+          "label": "遷移結果"
+        }
+      ],
+      "sha256": "cacdfd52238dcb1e81ecd2300a2173f05ca17f782c8976f3b96018bc1cb2fefd",
+      "audio": "removed",
+      "transcode": "H264 <=1600px CRF23; speed unchanged"
+    },
+    {
+      "product": "docket",
+      "id": "docket-official-03",
+      "kind": "official-product-video",
+      "title": "スイートの並列実行一覧",
+      "source_page": "https://www.docketqa.com/",
+      "source_url": "https://s3.amazonaws.com/webflow-prod-assets/690690ec15299fb73a66c2e4/69195b37de481c0824b2a85d_run_in_parallel_2.mp4",
+      "file": "docket-official-03.mp4",
+      "duration": 12.466667,
+      "frames": [
+        {
+          "file": "docket-official-03-t002.png",
+          "seconds": 2,
+          "label": "suite実行一覧"
+        },
+        {
+          "file": "docket-official-03-t006.png",
+          "seconds": 6,
+          "label": "状態と時間"
+        },
+        {
+          "file": "docket-official-03-t010.png",
+          "seconds": 10,
+          "label": "別のテストgroup"
+        }
+      ],
+      "sha256": "bc88c1efff25a13be7343e265cc34a52b5a992f67600e7905ecf9926ae070441",
+      "audio": "removed",
+      "transcode": "H264 <=1600px CRF23; speed unchanged"
+    },
+    {
+      "product": "autosana",
+      "id": "autosana-official-01",
+      "kind": "official-product-video",
+      "title": "開発Agent→CLI→PR検証→不具合→修正→再検証の公式紹介",
+      "source_page": "https://autosana.ai/",
+      "source_url": "https://autosana.ai/Autosana-Launch-Video-V2.mp4",
+      "file": "autosana-official-01.mp4",
+      "duration": 119.659,
+      "frames": [
+        {
+          "file": "autosana-official-01-t036.png",
+          "seconds": 36,
+          "label": "CLIの検証"
+        },
+        {
+          "file": "autosana-official-01-t046.png",
+          "seconds": 46,
+          "label": "端末での実行"
+        },
+        {
+          "file": "autosana-official-01-t060.png",
+          "seconds": 60,
+          "label": "PRへの結果"
+        },
+        {
+          "file": "autosana-official-01-t081.png",
+          "seconds": 81,
+          "label": "修正Agentへの文脈"
+        },
+        {
+          "file": "autosana-official-01-t090.png",
+          "seconds": 90,
+          "label": "再検証の動画"
+        },
+        {
+          "file": "autosana-official-01-t096.png",
+          "seconds": 96,
+          "label": "UX finding"
+        },
+        {
+          "file": "autosana-official-01-t099.png",
+          "seconds": 99,
+          "label": "network・device logs"
+        }
+      ],
+      "sha256": "bd4b29a89456a9f25c52001840b544685162fba2153baf9176521d34675b930f",
+      "audio": "removed",
+      "transcode": "H264 <=1600px CRF23; speed unchanged"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-official-01",
+      "kind": "official-product-video",
+      "title": "Atlasの画面・フローを選択して確認",
+      "source_page": "https://revyl.com/",
+      "source_url": "https://revyl.com/media/product/video/atlas-onboarding.mp4",
+      "file": "revyl-official-01.mp4",
+      "duration": 14.791667,
+      "frames": [
+        {
+          "file": "revyl-official-01-t002.png",
+          "seconds": 2,
+          "label": "Atlasマップ"
+        },
+        {
+          "file": "revyl-official-01-t005.png",
+          "seconds": 5,
+          "label": "onboarding画面"
+        },
+        {
+          "file": "revyl-official-01-t009.png",
+          "seconds": 9,
+          "label": "別フロー"
+        },
+        {
+          "file": "revyl-official-01-t012.png",
+          "seconds": 12,
+          "label": "home画面"
+        }
+      ],
+      "sha256": "d863d2750c2b9918b0885a6a8b3b04d6b0cc083ef1848662bfbe06801d8994b3",
+      "audio": "removed",
+      "transcode": "H264 <=1600px CRF23; speed unchanged"
+    },
+    {
+      "product": "atstream",
+      "id": "atstream-official-01",
+      "kind": "official-product-video",
+      "title": "販売管理モックを手動記録→3件自動再生",
+      "source_page": "https://atstreamconsulting.co.jp/services/sc/taa.html",
+      "source_url": "https://atstreamconsulting.co.jp/wordpress/wp-content/uploads/2026/07/rpa-demo.mp4",
+      "file": "atstream-official-01.mp4",
+      "duration": 25.64,
+      "frames": [
+        {
+          "file": "atstream-official-01-t005.png",
+          "seconds": 5,
+          "label": "1件の手動記録"
+        },
+        {
+          "file": "atstream-official-01-t010.png",
+          "seconds": 10,
+          "label": "受注入力"
+        },
+        {
+          "file": "atstream-official-01-t016.png",
+          "seconds": 16,
+          "label": "データ違いの再生"
+        },
+        {
+          "file": "atstream-official-01-t022.png",
+          "seconds": 22,
+          "label": "3件目の確認"
+        }
+      ],
+      "sha256": "9a2c0ab65894d73736dee65fa0041c63d476ec3334b7dd6e72abd6422395e45d",
+      "audio": "removed",
+      "transcode": "H264 <=1600px CRF23; speed unchanged"
+    },
+    {
+      "product": "qatech",
+      "id": "qatech-product-film-recording",
+      "kind": "recorded-official-demo",
+      "title": "QA.techの公開製品アニメーションを実時間で連続撮影",
+      "source_page": "https://qa.tech/",
+      "source_url": "https://qa.tech/qatech-anim.html",
+      "file": "qatech-product-film-recording.mp4",
+      "duration": 25.907,
+      "frames": [
+        {
+          "file": "qatech-recording-t002.png",
+          "seconds": 2,
+          "label": "coverage分析の依頼"
+        },
+        {
+          "file": "qatech-recording-t007.png",
+          "seconds": 7,
+          "label": "Agentの分析"
+        },
+        {
+          "file": "qatech-recording-t013.png",
+          "seconds": 13,
+          "label": "候補ケースの提示"
+        },
+        {
+          "file": "qatech-recording-t020.png",
+          "seconds": 20,
+          "label": "次の入力へ"
+        },
+        {
+          "file": "qatech-recording-t025.png",
+          "seconds": 25,
+          "label": "仕様と指示"
+        }
+      ],
+      "sha256": "c4f792dcc8a5b0317d71b8b7b177df23e403852417e705a55faf1ebae8fc2bad",
+      "audio": "none",
+      "transcode": "86 screenshots in 26.08s; actual intervals preserved; encoded15fps; crop browser chrome"
+    },
+    {
+      "product": "momentic",
+      "id": "momentic-mo-reproduction-report",
+      "kind": "recorded-official-video",
+      "title": "Mo：担当Agentへの委任→独立再現→根拠付きレポート（紹介動画の一部）",
+      "source_page": "https://www.youtube.com/watch?v=5RMQVtk-ayE",
+      "source_url": "https://youtu.be/5RMQVtk-ayE",
+      "file": "momentic-mo-reproduction-report.mp4",
+      "duration": 27.095,
+      "frames": [
+        {
+          "file": "momentic-mo-t002.png",
+          "seconds": 2,
+          "label": "bug basherへの委任"
+        },
+        {
+          "file": "momentic-mo-t007.png",
+          "seconds": 7,
+          "label": "独立再現"
+        },
+        {
+          "file": "momentic-mo-t012.png",
+          "seconds": 12,
+          "label": "再現中の対象"
+        },
+        {
+          "file": "momentic-mo-t017.png",
+          "seconds": 17,
+          "label": "再現根拠の報告"
+        },
+        {
+          "file": "momentic-mo-t022.png",
+          "seconds": 22,
+          "label": "reportと画像"
+        },
+        {
+          "file": "momentic-mo-t026.png",
+          "seconds": 26,
+          "label": "開発側の修正へ"
+        }
+      ],
+      "sha256": "09e59b52e969a5e4c5d54d2ae6e4648f4a9c428a651206df5f09b72960427c42",
+      "audio": "none",
+      "transcode": "140 native screenshots; actual intervals preserved; encoded15fps; source approximately 0:33–1:01"
+    },
+    {
+      "product": "testsprite",
+      "id": "testsprite-live-run",
+      "kind": "recorded-public-demo",
+      "title": "公開Live run紹介の連続撮影",
+      "file": "../testsprite-live-run.mp4",
+      "duration": 17.53,
+      "source_page": "https://www.testsprite.com/",
+      "source_url": "https://www.testsprite.com/",
+      "frames": [],
+      "sha256": "290e47e1d330876b972eb0c03e67662fcf775ede36d948dfe76778e879f9d644",
+      "audio": "none",
+      "transcode": "Native screenshots encoded with captured timing,15fps; not a source15fps recording"
+    },
+    {
+      "product": "testneo",
+      "id": "testneo-sample-playback",
+      "kind": "recorded-public-demo",
+      "title": "当調査で起動したサンプルRunの生成動画を再生",
+      "file": "../testneo-sample-playback.mp4",
+      "duration": 30.53,
+      "source_page": "https://app.testneo.ai/playground?product=web",
+      "source_url": "https://app.testneo.ai/playground",
+      "frames": [],
+      "sha256": "233ce650d595370e4ce37d69c54680f8a6da5a95439f122bcb280c9b9d2fb80c",
+      "audio": "none",
+      "transcode": "Native screenshots encoded with captured timing,15fps; not a source15fps recording"
+    },
+    {
+      "product": "revyl",
+      "id": "revyl-atlas-walkthrough",
+      "kind": "recorded-public-demo",
+      "title": "公開Atlas：Journey→Screens→Reportの操作",
+      "file": "../revyl-atlas-walkthrough.mp4",
+      "duration": 12.6,
+      "source_page": "https://revyl.com/atlas/airbnb/",
+      "source_url": "https://revyl.com/atlas/airbnb/",
+      "frames": [],
+      "sha256": "3ef25957a519df497004f96c9ca9215787269d982149a9f716f7af5f01f6efcf",
+      "audio": "none",
+      "transcode": "Native screenshots encoded with captured timing,15fps; not a source15fps recording"
+    },
+    {
+      "product": "mabl",
+      "id": "mabl-expanded-walkthrough",
+      "kind": "official-ui-animation",
+      "title": "開発Agent→対象操作→PR→回帰の紹介表示（公式アニメーション）",
+      "file": "mabl-expanded-walkthrough.mp4",
+      "source_page": "https://www.mabl.com/",
+      "source_url": "https://www.mabl.com/hubfs/Video%20Assets/Homepage---mabl-pipeline-loop.dc-3460828f.mp4",
+      "duration": 22.9,
+      "frames": [
+        {
+          "file": "mabl-expanded-walkthrough-t003.png",
+          "seconds": 3,
+          "label": "目的を指定"
+        },
+        {
+          "file": "mabl-expanded-walkthrough-t010.png",
+          "seconds": 10,
+          "label": "対象の操作"
+        },
+        {
+          "file": "mabl-expanded-walkthrough-t016.png",
+          "seconds": 16,
+          "label": "PRの確認"
+        },
+        {
+          "file": "mabl-expanded-walkthrough-t021.png",
+          "seconds": 21,
+          "label": "回帰suiteの結果"
+        }
+      ],
+      "sha256": "7ae255e57cf6578f688b4671043aef77dcf4c5fbdf9b9726e368f62c7575b06f",
+      "audio": "removed",
+      "transcode": "H264 <=1600px; speed unchanged"
+    },
+    {
+      "product": "katalon",
+      "id": "katalon-expanded-walkthrough",
+      "kind": "official-product-video",
+      "title": "Studio：Jira要求→object・stepの作成",
+      "file": "katalon-expanded-walkthrough.mp4",
+      "source_page": "https://katalon.com/katalon-studio",
+      "source_url": "https://katalon.com/hubfs/_Studio%20page%20-%20AI%20agent_may12.mp4",
+      "duration": 17.1,
+      "frames": [
+        {
+          "file": "katalon-expanded-walkthrough-t002.png",
+          "seconds": 2,
+          "label": "AIへの依頼"
+        },
+        {
+          "file": "katalon-expanded-walkthrough-t006.png",
+          "seconds": 6,
+          "label": "ticketの参照"
+        },
+        {
+          "file": "katalon-expanded-walkthrough-t011.png",
+          "seconds": 11,
+          "label": "case生成"
+        },
+        {
+          "file": "katalon-expanded-walkthrough-t015.png",
+          "seconds": 15,
+          "label": "生成step"
+        }
+      ],
+      "sha256": "e94e8f93e591cd0a62c1d67065a7111f5ab272a733fd41c3021609aad77fe913",
+      "audio": "removed",
+      "transcode": "H264 <=1600px; speed unchanged"
+    },
+    {
+      "product": "synthetic-users",
+      "id": "synthetic-users-expanded-walkthrough",
+      "kind": "official-product-video",
+      "title": "Audience→Participants→interview→Report",
+      "file": "synthetic-users-expanded-walkthrough.mp4",
+      "source_page": "https://www.syntheticusers.com/",
+      "source_url": "https://www.syntheticusers.com/images/home/video.mp4",
+      "duration": 14.033333,
+      "frames": [
+        {
+          "file": "synthetic-users-expanded-walkthrough-t001.png",
+          "seconds": 1,
+          "label": "studyの構成"
+        },
+        {
+          "file": "synthetic-users-expanded-walkthrough-t004.png",
+          "seconds": 4,
+          "label": "参加者profile"
+        },
+        {
+          "file": "synthetic-users-expanded-walkthrough-t007.png",
+          "seconds": 7,
+          "label": "個別回答"
+        },
+        {
+          "file": "synthetic-users-expanded-walkthrough-t010.png",
+          "seconds": 10,
+          "label": "follow-up"
+        },
+        {
+          "file": "synthetic-users-expanded-walkthrough-t013.png",
+          "seconds": 13,
+          "label": "report"
+        }
+      ],
+      "sha256": "72f5e9244678d8817f84a25d9f2801d0c9c64f4508b0af2ff9ad196cbeebbd28",
+      "audio": "removed",
+      "transcode": "H264 <=1600px; speed unchanged"
+    },
+    {
+      "product": "usertesting",
+      "id": "usertesting-ai-test-tour",
+      "kind": "recorded-public-demo",
+      "title": "AI Test Creation：調査作成ツアーの操作を連続撮影",
+      "file": "usertesting-ai-test-tour.mp4",
+      "source_page": "https://www.usertesting.com/resources/usertesting-demo-center",
+      "source_url": "https://demo.arcade.software/m2CDv2tebpNbolLIa1Wr",
+      "duration": 20.217,
+      "frames": [
+        {
+          "file": "usertesting-ai-test-tour-t002.png",
+          "seconds": 2,
+          "label": "作成ツアーの遷移"
+        },
+        {
+          "file": "usertesting-ai-test-tour-t007.png",
+          "seconds": 7,
+          "label": "作成ツアーの遷移"
+        },
+        {
+          "file": "usertesting-ai-test-tour-t012.png",
+          "seconds": 12,
+          "label": "作成ツアーの遷移"
+        },
+        {
+          "file": "usertesting-ai-test-tour-t017.png",
+          "seconds": 17,
+          "label": "作成ツアーの遷移"
+        }
+      ],
+      "sha256": "96dca8c940acb5972476454c43ed81ae6b0918b525c8d35c31d991a51aaa6b48",
+      "audio": "none",
+      "transcode": "100 native screenshots; captured intervals preserved; encoded15fps"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-1-walkthrough",
+      "kind": "official-product-video",
+      "title": "生成ケースへ再利用moduleを追加",
+      "file": "browserstack-1-walkthrough.mp4",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/add-modules.mp4",
+      "duration": 23.425667,
+      "frames": [
+        {
+          "file": "browserstack-1-walkthrough-t002.png",
+          "seconds": 2,
+          "label": "生成ケース"
+        },
+        {
+          "file": "browserstack-1-walkthrough-t007.png",
+          "seconds": 7,
+          "label": "moduleを指定"
+        },
+        {
+          "file": "browserstack-1-walkthrough-t013.png",
+          "seconds": 13,
+          "label": "ケース内の参照"
+        },
+        {
+          "file": "browserstack-1-walkthrough-t020.png",
+          "seconds": 20,
+          "label": "変更のreview"
+        }
+      ],
+      "sha256": "fd91c5ada5e323d7ea4ade98bbe920acd38953f170f0461d80c098e7cadbbab3",
+      "audio": "removed",
+      "transcode": "H264 <=1600px; speed unchanged"
+    },
+    {
+      "product": "browserstack-ai",
+      "id": "browserstack-3-walkthrough",
+      "kind": "official-product-video",
+      "title": "AI Automation Validation：実ブラウザの操作とstep結果",
+      "file": "browserstack-3-walkthrough.mp4",
+      "source_page": "https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing",
+      "source_url": "https://www.browserstack.com/docs/static/img/low-code-automation/browserstack-ai/agentic-testing/ai-automation-validation.mp4",
+      "duration": 48.3,
+      "frames": [
+        {
+          "file": "browserstack-3-walkthrough-t003.png",
+          "seconds": 3,
+          "label": "検証の開始"
+        },
+        {
+          "file": "browserstack-3-walkthrough-t013.png",
+          "seconds": 13,
+          "label": "途中step"
+        },
+        {
+          "file": "browserstack-3-walkthrough-t024.png",
+          "seconds": 24,
+          "label": "失敗したstep"
+        },
+        {
+          "file": "browserstack-3-walkthrough-t034.png",
+          "seconds": 34,
+          "label": "再実行"
+        },
+        {
+          "file": "browserstack-3-walkthrough-t045.png",
+          "seconds": 45,
+          "label": "stepの結果"
+        }
+      ],
+      "sha256": "e97f542a2ce457b0b9af7e93682a23cf65dce840267cb554d6bef3ca706a333c",
+      "audio": "removed",
+      "transcode": "H264 <=1600px; speed unchanged"
+    }
+  ]
+}

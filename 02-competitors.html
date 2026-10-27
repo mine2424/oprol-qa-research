@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>競合・代替手段の比較と事業への示唆 | Oprol QA Research</title>
+<meta name="description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="競合・代替手段の比較と事業への示唆 | Oprol QA Research">
+<meta property="og:description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:url" content="https://mine2424.github.io/oprol-qa-research/02-competitors.html">
+<meta property="og:image" content="https://mine2424.github.io/oprol-qa-research/social.png">
+<link rel="canonical" href="https://mine2424.github.io/oprol-qa-research/02-competitors.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head><body><a class="skip" href="#content">本文へ移動</a>
+<header class="site-header"><a class="brand" href="index.html">Oprol QA <span>Research</span></a><nav aria-label="資料ナビゲーション"><a href="index.html">概要</a><a href="competitor-flows.html">機能・導線比較</a><a href="competitor-products/README.html">製品別詳細</a><a href="competitor-evidence/2026-10-27/gallery.html">画像・動画</a><a href="02-competitors.html" aria-current="page">市場・価格比較</a><a href="competitor-inventory.html">候補台帳</a></nav></header>
+<main id="content" tabindex="-1"><h1>競合・代替手段の比較と事業への示唆</h1>
+<p>Oprol｜2026年10月13日｜競合比較資料</p>
+<blockquote>
+<p><strong>過去の検討資料（2026年10月13日）</strong>：自社価格・事業上の数値は当時の計画・仮説です。現行の提供価格・実績を示すものではありません。競合の公開情報も再調査していません。</p>
+</blockquote>
+<h2>この文書の位置づけ</h2>
+<ul>
+<li>2026年10月27日の製品全体の機能・導線調査と画面・動画は、<a href="competitor-flows.html">競合プロダクトの導線・機能・画面調査</a>を参照してください。以下の比較の確認日を更新したものではありません。</li>
+<li>各社の機能・価格は、<strong>2026年10月13日に各社の公式ページで確認した公開情報</strong>です。確認できなかった項目は「未確認」と書き、「機能がない」とは区別しています。</li>
+<li>実際に各製品を動かして比べた結果ではありません。性能の優劣は、ここからは判断できません。</li>
+<li>用語：<strong>PR</strong>＝開発者が変更を取り込む前に出す申請。<strong>CI</strong>＝変更のたびに自動で検査を走らせる仕組み。<strong>E2E</strong>＝画面の操作を最初から最後まで通す自動テスト。<strong>MCP</strong>＝AIエージェントに外部の道具をつなぐ接続方式。<strong>CLI</strong>＝コマンドで操作する道具。<strong>OSS</strong>＝ソースコードを公開したソフトウェア。<strong>PoC</strong>＝本契約の前の試行。<strong>RPA</strong>＝画面操作を自動化する道具。<strong>SSO</strong>＝会社のアカウントでまとめてログインする仕組み。</li>
+<li>「10/6調査」と書いた製品は、プロジェクト内の既存の競合調査（2026年10月6日）の内容で、今回は再確認していません。</li>
+<li>ドル建ての価格を円で示すときは、1ドル158円（2026年10月13日の終値158.35円）で換算しています。</li>
+<li><strong>v3での変更</strong>：UAT Agentの価格を、手書きメモに合わせて組織向け月額98,000円（Team）と個人向け月額5,980円（Solo）に変えました。これに伴い、比べる相手に「人に頼む手段」（外注、採用）を加え、価格の比較と示唆を書き直しました。特許の出願状況と、公開研究から見た性能の差も加えています。</li>
+</ul>
+<h2>1. 競合の全体像</h2>
+<p>顧客が「公開前に、これで合っているかを確かめたい」と思ったときの選択肢は、6つの群に分かれます。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>群</th>
+<th>何を確かめるか</th>
+<th>代表例</th>
+<th>UAT Agentとの関係</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A. 受け入れ条件に基づく確認</td>
+<td>決めた条件を満たしているか</td>
+<td>Quell、QA.tech、TestSprite、アットストリーム（国内・コンサル型）</td>
+<td><strong>直接の競合</strong></td>
+</tr>
+<tr>
+<td>B. PRごとの自動確認・回帰</td>
+<td>変更で壊れていないか</td>
+<td>Momentic、TesterArmy、MagicPod、Autify、mabl、QA Wolf</td>
+<td>継続利用の場面で重なる</td>
+</tr>
+<tr>
+<td>C. AIユーザーによる体験の確認</td>
+<td>使う人が迷わないか</td>
+<td>Tookii、Uxia、Synthers、PersonaIQ、SUSATest</td>
+<td>「ユーザー視点」の訴求で重なる</td>
+</tr>
+<tr>
+<td>D. 大企業向けのテスト設計・実行</td>
+<td>仕様書からテストを作り実行</td>
+<td>SHIFT ネムラナイ、ベリサーブ TESTRA、AGEST ZERO TEST、Autify Genesis、UiPath Test Cloud</td>
+<td>当面は顧客層が違う</td>
+</tr>
+<tr>
+<td>E. 手元の手段</td>
+<td>—</td>
+<td>手作業、Claude Code／Codex、Playwrightの自作、確認の省略</td>
+<td><strong>Soloにとって最も強い代替</strong></td>
+</tr>
+<tr>
+<td>F. 人に頼む手段</td>
+<td>テスト全般</td>
+<td>第三者検証会社への外注、QAエンジニアの採用、フリーランスのテスター</td>
+<td><strong>Teamが価格を比べられる相手</strong></td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>2. 製品別の比較</h2>
+<h3>A群：受け入れ条件に基づく確認</h3>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>Quell</th>
+<th>QA.tech</th>
+<th>TestSprite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>何をするか</td>
+<td>AIが受け入れテストを作成・実行し、ビルドが受け入れ基準を満たすか確認</td>
+<td>自然言語の目標からWeb・アプリをテスト。PRの変更内容から必要な確認を判断</td>
+<td>コードと要求を踏まえてテストし、失敗の原因と修正案を返す</td>
+</tr>
+<tr>
+<td>対象顧客（各社の表現）</td>
+<td>創業者、プロダクトチーム。金融分野を強調</td>
+<td>速く出荷する開発チーム、AIで書くチーム、QA</td>
+<td>開発者</td>
+</tr>
+<tr>
+<td>使う場面</td>
+<td>公開前の受け入れ確認。チケットの状態変更で自動実行</td>
+<td>PRレビュー、デプロイの関門、定期確認</td>
+<td>PRのチェック、開発環境の中</td>
+</tr>
+<tr>
+<td>価格</td>
+<td>Starter 月19ドル（年払い、120タスク）、Growth 月39ドル（年払い、300タスク）。月払いの額は未確認</td>
+<td>非公開。課金対象は実行のみ</td>
+<td>Free 150クレジット、Starter 月19ドル（400）、Standard 月39ドル（800）、Pro 月69ドル（1,600）、Enterprise 月199ドル〜</td>
+</tr>
+<tr>
+<td>課金単位の意味</td>
+<td>1タスク＝テストケースの生成または実行1回</td>
+<td>実行回数</td>
+<td>クレジットの定義は料金ページに記載なし</td>
+</tr>
+<tr>
+<td>売り方</td>
+<td>自己登録（カード不要）。Enterpriseのみデモ</td>
+<td>全プラン問い合わせ。重要な流れ2〜3本のPoCから</td>
+<td>自己登録</td>
+</tr>
+<tr>
+<td>導入の手間</td>
+<td>低</td>
+<td>中</td>
+<td>低</td>
+</tr>
+<tr>
+<td>既存業務への入り方</td>
+<td>Jira・Linear・Figma・GitHub・Notion・Slack・Vercel・Netlify。チケット連動はGrowth以上</td>
+<td>GitHub・GitLab・Bitbucket、PRコメント、Jira・Linearの受け入れ基準、Slack・Teams、MCP・API・CLI（Growth以上）</td>
+<td>OSSのCLI、MCP（Claude Code・Codex・Cursor）、GitHubのPRチェック</td>
+</tr>
+<tr>
+<td>対応環境</td>
+<td>Web。モバイルは記載なし</td>
+<td>Web、モバイルWeb、iOS・Android、API</td>
+<td>Web、API。モバイルは記載なし</td>
+</tr>
+<tr>
+<td>最近の動き</td>
+<td>2025年6月にProduct Huntで公開。直近の変更は未確認</td>
+<td>10月7〜8日：確認した範囲の可視化、関係のない変更の確認を省く機能。10月2日：保護されたプレビュー環境への接続設定</td>
+<td>価格は既存メモの食い違いを解消（Standard 月39ドルが正）</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p>国内では、アットストリームコンサルティングが「テスト自動化エージェント」（2026年8月発表）で、設計書からのUATのテスト設計、AIとRPAによる実行、証跡、合否判定までをコンサルティング型で提供しています。価格は非公開です。</p>
+<h3>B群：PRごとの自動確認・回帰</h3>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>Momentic／Mo</th>
+<th>TesterArmy</th>
+<th>MagicPod</th>
+<th>Autify Aximo</th>
+<th>QA Wolf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>何をするか</td>
+<td>自然言語のE2Eテストと自己修復。Moは期待動作を伝えると探索してバグを報告</td>
+<td>自然言語の流れをWeb・iOS・Androidで実行し、録画つきで報告</td>
+<td>Web・モバイルのノーコードテスト。日本語指示での作成（Autopilot）</td>
+<td>自然言語のシナリオをAIが操作して実行</td>
+<td>自社運用の基盤と、テストの作成・保守の代行</td>
+</tr>
+<tr>
+<td>対象顧客</td>
+<td>PRごとにE2Eを回す開発チーム</td>
+<td>スタートアップ</td>
+<td>スタートアップ〜中堅（国内）</td>
+<td>開発・QA組織</td>
+<td>開発チーム</td>
+</tr>
+<tr>
+<td>価格</td>
+<td>無料2,000クレジット／月。月125ドル＋従量（1万クレジット込み）。Enterprise個別</td>
+<td>Free 5回、Hobby 月99ドル（250回）、Startup 月299ドル（1,000回）</td>
+<td>月39,800円（年契約）、月54,800円（月契約）。税別。3プロジェクト・100テストケース、実行回数無制限。ブラウザとモバイルは別契約</td>
+<td>Free 2,000クレジット（1回限り）、Core 月99ドル（年払い）／120ドル（月払い）、Team 月450／550ドル</td>
+<td>基盤：AIクレジット1セント、実行1分15セント。代行：管理するテスト本数に応じた個別見積もり</td>
+</tr>
+<tr>
+<td>売り方</td>
+<td>自己登録＋営業</td>
+<td>自己登録＋OSS（Apache-2.0、GitHubで約8,100スター）</td>
+<td>2週間の無料試用＋営業</td>
+<td>問い合わせ中心（日本語ページはデモ依頼）</td>
+<td>自己登録／営業</td>
+</tr>
+<tr>
+<td>導入の手間</td>
+<td>中</td>
+<td>低</td>
+<td>中</td>
+<td>中</td>
+<td>低〜高</td>
+</tr>
+<tr>
+<td>既存業務への入り方</td>
+<td>CLI、MCP、GitHub App、Jira・Linear起票</td>
+<td>CLI、MCP、GitHubのPRチェック、定期実行、Slack</td>
+<td>MCP、CI</td>
+<td>同社のNexus・Genesisと連携</td>
+<td>CI</td>
+</tr>
+<tr>
+<td>対応環境</td>
+<td>Web、iOS、Android</td>
+<td>Web、iOS、Android</td>
+<td>Web、iOS、Android</td>
+<td>Web、モバイル。デスクトップは最上位のみ</td>
+<td>Web。代行はiOS・Android・Electronも</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p>mablは見積もり制です。1回目の調査では国内代理店（日立ソリューションズ）の製品ページに「430万円／年から」とありましたが（税の扱いは記載なし）、2回目の調査では同じ数字を再確認できませんでした。参考値として扱います。</p>
+<h3>C群：AIユーザーによる体験の確認</h3>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>Tookii</th>
+<th>SUSATest</th>
+<th>PersonaIQ</th>
+<th>Uxia／Synthers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>何をするか</td>
+<td>合成ペルソナがブラウザで操作。目標に到達できたか、どこで離脱したかを返す</td>
+<td>アプリやURLを渡すと11のペルソナで自律探索し、機能・アクセシビリティ・セキュリティなどを一度に確認</td>
+<td>AIペルソナが操作し、摩擦の点数と思考の記録を返す</td>
+<td>合成ユーザーによるユーザビリティ確認</td>
+</tr>
+<tr>
+<td>対象顧客</td>
+<td>プロダクトチーム・PM、個人開発者</td>
+<td>QAを雇えない創業者、開発チーム</td>
+<td>個人開発者</td>
+<td>デザイナー、UXリサーチャー</td>
+</tr>
+<tr>
+<td>価格</td>
+<td>非公開</td>
+<td>Free、Pro 月149ドル、Team 月399ドル（ページのスクリプト内の既定値から読み取り。実画面は未確認）</td>
+<td>1回49〜149ドル（公式サイトに接続できず、二次情報）</td>
+<td>Uxiaは無料試用1回＋個別見積もり。Synthersは未確認</td>
+</tr>
+<tr>
+<td>売り方</td>
+<td>自己登録＋面談予約</td>
+<td>自己登録</td>
+<td>自己登録</td>
+<td>デモ</td>
+</tr>
+<tr>
+<td>既存業務への入り方</td>
+<td>リモートMCP（Claude・ChatGPT・Cursor・Claude Code）</td>
+<td>CLI、CI/CD、MCP</td>
+<td>なし</td>
+<td>未確認</td>
+</tr>
+<tr>
+<td>対応環境</td>
+<td>Web</td>
+<td>Web、Android、iOS、API</td>
+<td>Web</td>
+<td>Web</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p>この群の結果は「AIがこう感じた」という仮説であり、決めた条件を満たしたかという事実とは性質が違います。Synthers自身も、合成ユーザーの反応は実際の利用者の証拠ではないと説明しています（10/6調査）。</p>
+<h3>D群：大企業向け</h3>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>製品</th>
+<th>内容</th>
+<th>売り方・価格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SHIFT ネムラナイ</td>
+<td>仕様書（PDF・Excel）からテスト設計書を作り、AIがWebシステムで実行。人が監視</td>
+<td>適用範囲の診断から。問い合わせのみ。価格非公開</td>
+</tr>
+<tr>
+<td>ベリサーブ TESTRA</td>
+<td>仕様書からテストケースを作る設計エージェント。自動実行つきの版は2026年秋予定</td>
+<td>2026年4月からPoC版。価格非公開</td>
+</tr>
+<tr>
+<td>AGEST ZERO TEST</td>
+<td>セキュリティパッチの適用前後で画面の挙動を比較。完全ローカルで動作</td>
+<td>年間固定ライセンス。PoC参加企業を10月27日まで募集。公式ページに金額なし（報道では年128万円）</td>
+</tr>
+<tr>
+<td>Autify Genesis</td>
+<td>テストの計画・設計・分析の生成AI基盤</td>
+<td>導入コンサル2か月つき、または自社運用。AIのキーは顧客持ち込み。価格非公開</td>
+</tr>
+<tr>
+<td>UiPath Test Cloud</td>
+<td>目的を与えるとAIが探索する機能を2026年10月提供と発表</td>
+<td>営業。価格非公開</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h3>E群：手元の手段（汎用のコーディングAI）</h3>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>製品</th>
+<th>公式文書で確認できたこと</th>
+<th>QAのいないチームに残る作業</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claude Code</td>
+<td>Chrome連携で操作・フォーム入力・コンソール読み取り・スクリーンショット・録画ができる。ログイン状態を共有できる。デスクトップ版は編集後に画面を自動で確認する。定期実行（Routines、試験提供）はPRやリリースを契機に動かせるが、個人アカウントに紐づき、成功の表示は作業の成功を意味しない</td>
+<td>期待結果を決めて保ち続けること。テスト用アカウントとデータ。証拠の保管と共有。変更時にどれを再確認するかの選定。合否の履歴。ネイティブアプリ</td>
+</tr>
+<tr>
+<td>Codex</td>
+<td>アプリ内ブラウザで操作・スクリーンショット・検証ができる。拡張機能で既存のログインを使える。クラウド上でブラウザ検証ができるかは文書に記載なし</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>Playwright MCP</td>
+<td>Claude Code・Codexに1コマンドで追加できる（Apache-2.0）</td>
+<td>同上</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h3>F群：人に頼む手段〔外部〕</h3>
+<p>創業者の手書きメモが「既存の代替品」として挙げているものです。月額98,000円のTeamは、道具ではなくこの群と比べられます。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>手段</th>
+<th>価格の目安</th>
+<th>出典の性質</th>
+<th>残る負担</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>小口のテスト外注（テスター10）</td>
+<td>10万円〜（25時間）、30万円〜（75時間）、追加は1時間4,500円。税別</td>
+<td>公開の料金表</td>
+<td>何を確かめるかの説明と、仕様の判断は社内に残る</td>
+</tr>
+<tr>
+<td>小口のテスト外注（Qualy。海外の人員を使う形とみられる）</td>
+<td>1人月15万円、スポット1人日1.5万円</td>
+<td>公開の料金表</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>第三者検証の大手（SHIFT）</td>
+<td>エンジニア単価 月108万円（2025年8月期の決算説明資料）</td>
+<td>決算資料</td>
+<td>小さな会社には高い。最低契約の公開情報は見つからなかった</td>
+</tr>
+<tr>
+<td>フリーランスのテスター・QA</td>
+<td>月47〜58万円（案件サイトの中央値・相場）</td>
+<td>案件サイトの集計</td>
+<td>探す手間。契約の管理</td>
+</tr>
+<tr>
+<td>QAエンジニアの採用</td>
+<td>年収386〜485万円（求人・転職サイト4社の平均値の幅）。社会保険の会社負担を足すと月約37〜46万円。採用費は別</td>
+<td>求人サイトの集計。母集団はそれぞれ違う</td>
+<td>採用に数か月。1人目は相談相手がいない</td>
+</tr>
+<tr>
+<td>運用代行つきのテスト自動化（QA Wolf、海外）</td>
+<td>年8.3万ドルが中央値（購買データの集計サイト、58件）</td>
+<td>二次情報</td>
+<td>英語。国内の小さな会社には高い</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>3. 比較軸ごとの整理</h2>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>比較軸</th>
+<th>小規模チーム向けの製品</th>
+<th>大企業向けの製品</th>
+<th>人に頼む手段</th>
+<th>UAT Agent（計画）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>対象顧客</td>
+<td>開発者・創業者</td>
+<td>QA部門・情報システム部門</td>
+<td>QAのいない会社</td>
+<td>Team：開発者10〜30人の組織。Solo：個人</td>
+</tr>
+<tr>
+<td>使う場面</td>
+<td>PRを出したとき、デプロイのとき</td>
+<td>リリース前の検証工程</td>
+<td>公開前、定期的</td>
+<td>実装前の要求確認と、公開前の受け入れ</td>
+</tr>
+<tr>
+<td>価格体系</td>
+<td>クレジット・実行回数。月19〜300ドル</td>
+<td>個別見積もり、年間契約</td>
+<td>時間・人月</td>
+<td>Team：組織単位の月額98,000円＋実行枠。Solo：月額5,980円</td>
+</tr>
+<tr>
+<td>売り方</td>
+<td>自己登録。無料枠あり</td>
+<td>営業、PoC、導入コンサル</td>
+<td>問い合わせ、採用</td>
+<td>Team：個別の商談と初月無料の試用。Solo：自己導入</td>
+</tr>
+<tr>
+<td>導入の手間</td>
+<td>数分〜1時間</td>
+<td>数週間〜数か月</td>
+<td>数日〜数か月</td>
+<td>Team：環境とアカウントの設定、開始時の打ち合わせ。Solo：数分を目標</td>
+</tr>
+<tr>
+<td>既存業務への入り方</td>
+<td>MCP、CLI、GitHubのPR、Jira・Linear</td>
+<td>既存のテスト管理・CI</td>
+<td>人が合わせる</td>
+<td>資料の貼り付けから。Notion・Slackの取り込みは後。月1回の確認会</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>4. 事業への示唆</h2>
+<h3>示唆1：名前と機能の並びでは差がつかない</h3>
+<p>「AIによる受け入れテスト」「要求を読んで確認する」「証拠を返す」「継続して確認する」は、すでに複数の製品が提供しています。Quellは「UAT」を名乗り、月19ドルから売っています。UAT Agentの説明は「何ができるか」ではなく、**「誰の、どの場面の、どの作業が終わるか」**で組み立てる必要があります。</p>
+<h3>示唆2：Teamは「道具の棚」ではなく「人に頼む棚」に置く</h3>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>比べる相手</th>
+<th align="right">月あたりの価格（円換算）</th>
+<th align="right">Team（98,000円）はその何倍か</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quell Starter、TestSprite Starter</td>
+<td align="right">約3,000円</td>
+<td align="right">約33倍</td>
+</tr>
+<tr>
+<td>TesterArmy Hobby、Autify Aximo Core</td>
+<td align="right">約15,600〜19,000円</td>
+<td align="right">約5〜6倍</td>
+</tr>
+<tr>
+<td>Momentic</td>
+<td align="right">約19,800円＋従量</td>
+<td align="right">約5倍</td>
+</tr>
+<tr>
+<td>Devin Max（AIエンジニア）</td>
+<td align="right">約31,600円</td>
+<td align="right">約3.1倍</td>
+</tr>
+<tr>
+<td>MagicPod（Web、年契約）</td>
+<td align="right">39,800円</td>
+<td align="right">約2.5倍</td>
+</tr>
+<tr>
+<td>MagicPod（Webとモバイル、年契約。2つの契約の合計〔計算〕）</td>
+<td align="right">79,600円</td>
+<td align="right">約1.2倍</td>
+</tr>
+<tr>
+<td>小口のテスト外注（25時間）</td>
+<td align="right">100,000円〜</td>
+<td align="right">ほぼ同じ</td>
+</tr>
+<tr>
+<td>QAエンジニアの採用</td>
+<td align="right">約37〜46万円</td>
+<td align="right">約0.2〜0.3倍</td>
+</tr>
+<tr>
+<td>フリーランスのテスター</td>
+<td align="right">47〜58万円</td>
+<td align="right">約0.2倍</td>
+</tr>
+<tr>
+<td>第三者検証の大手（1人月）</td>
+<td align="right">108万円</td>
+<td align="right">約0.1倍</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p>道具と並べると、Teamは約1.2〜33倍です。人に頼む手段と並べると、同じか、約4〜11分の1です。<strong>月10万円という価格は、「QA担当の代わり」として売る場合にだけ説明がつきます。</strong> 手書きメモの「QAエンジニアをあなたの組織にも」は、この置き方と合っています。</p>
+<p>この置き方には条件があります。</p>
+<ul>
+<li>顧客は、人に頼んだときと同じ結果を期待します。画面を渡して終わりにはできません。毎月の確認会、条件の見直し、導入時の伴走が製品の一部になります（モデルには1社あたり月2時間の支援を入れました）。</li>
+<li>QAエンジニアの仕事の全部（負荷試験、セキュリティ、自動化の基盤づくり）はできません。「受け入れ確認の担当」と範囲を言う必要があります。</li>
+<li>国内のテスト自動化の製品には、月8〜11万円の価格設定の前例があります（MagicPodのWebとモバイルの両方を契約した場合の合計。Autifyは2021年にモバイル版を月10万円程度の予定と報じられた）。どれだけ売れているかは確認していません。</li>
+</ul>
+<h3>示唆3：Soloは安さで勝てない</h3>
+<p>Solo（5,980円）は、Quell Starter（約3,000円）の約2倍、TestSprite Standard（約6,200円）とほぼ同じです。個人開発者は月19ドルの製品や無料枠と比べます。日本語での条件整理と、資料を貼ると未決事項が返る体験で選ばれるかを試しますが、売上は期待しません（3年後のMRRの約1.3%）。</p>
+<h3>示唆4：導入の手間で不利</h3>
+<p>小規模チーム向けの製品は、ほぼすべてが自己登録で始められ、MCPやCLIで開発者の手元に入り、GitHubのPRに結果を返します。</p>
+<p>対応の案〔提案〕：</p>
+<ul>
+<li><strong>Soloは、実装前レビューを最も軽い入口にする。</strong> 資料を貼るだけで未決事項が返る体験は、環境もアカウントも要りません。MCPまたはCLIでの提供を検討します。</li>
+<li><strong>Teamは、手間を「伴走」に変える。</strong> 環境の設定と最初の条件づくりを、初月の導入支援（12時間まで）として当社が一緒に行います。</li>
+<li>要件定義書は顧客のCI連携を対象外にしています。PRへの結果の返却だけでも対象に戻すかを、面談で需要を確かめて判断します。</li>
+</ul>
+<h3>示唆5：国内の空白と、その意味</h3>
+<p>今回確認した範囲では、国内の新しいAIテスト製品は大企業向けの営業型に集中しています。開発者10〜30人の組織に、日本語で、要求の確認から始まる受け入れ確認を月10万円前後で売る製品は見つかりませんでした。</p>
+<p>これは機会とも、市場が小さい兆候とも読めます。月10万円を払える組織は国内で3,000〜5,000と見積もっており（事業計画 第8章（内部資料・公開対象外））、1割を取っても年5億円弱です。</p>
+<h3>示唆6：汎用AIとの違いは「残るもの」と「正解の出どころ」</h3>
+<p>Claude CodeやCodexには、実装した直後の動作確認に使える機能があります（公式文書で確認した範囲で、性能は比べていません）。手書きメモは、これらを使う相手の不満を「出力結果に対して根拠、責任が持てない」と書いています。差が出るのは、確かめる条件を誰が決め、どこに残し、次にどう使うかです。この違いを顧客が価値と感じるかどうかは、同じアプリで比べて確かめるしかありません。</p>
+<h3>示唆7：体験の確認と、条件の確認を混ぜない</h3>
+<p>C群の製品は「AIが迷った」という仮説を返します。UAT Agentが同じことをすると、信頼性の説明が難しくなります。「決めた条件に対する事実」と「体験上の気づき（新しい要求の候補）」を分けて報告する設計は、要件定義書の判定区分にすでに入っており、維持します。</p>
+<h3>示唆8：公開研究から見た、差が出そうな場所〔外部・推定〕</h3>
+<p>各社の製品の性能を比べたデータは見つかりませんでした。公開されている研究からは、次のことが言えます。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>方式</th>
+<th>結果</th>
+<th>出典</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>汎用のエージェントが、自分で確認項目を作って画面を見て判定する</td>
+<td>不具合を見つける適合率22〜35%、再現率15〜34%。「既定で合格にする偏り」が失敗の要因</td>
+<td>WebTestBench（2026年3月、AIが生成した100のアプリ）</td>
+</tr>
+<tr>
+<td>要求を構造化し、記号化した条件で判定する</td>
+<td>適合率96%、再現率96%</td>
+<td>WebTestPilot（4つのアプリ、100の要求。要求がそろっている前提）</td>
+</tr>
+<tr>
+<td>AIの判定だけで成否を決める</td>
+<td>「成功」とした判定の約3割が実際は失敗</td>
+<td>AgentRewardBench（1,302件を専門家が判定）</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p>2つの研究は条件が違い、同じ土俵の比較ではありません。それでも、<strong>確認する条件を人が確定し、ルールで判定する設計のほうが、AIに任せきりの設計より見逃しと誤合格が少ない</strong>という方向は読み取れます。安価な製品がどちらの設計に近いかは分かりません。差が出るとすれば「画面が壊れていないか」ではなく「要求と合っているか」だと見込みますが、確度は低く、自分で比べるまで主張しません。</p>
+<h2>5. いまある特徴と、これから作る優位性</h2>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>区分</th>
+<th>内容</th>
+<th>証拠の状態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>いまある</td>
+<td>設計方針：出どころつきの条件、未決を合格にしない、8つの判定区分、ルールでの判定、役割ごとのセッション分離</td>
+<td>要件定義書とモック。動く製品はない</td>
+</tr>
+<tr>
+<td>いまある</td>
+<td>創業者が開発と営業を兼ねる。モバイルアプリ開発の経験</td>
+<td>本人の経歴</td>
+</tr>
+<tr>
+<td>これから作る</td>
+<td>業務ごとの条件の型（申請・承認、権限、招待など）</td>
+<td>未着手。試用で蓄積</td>
+</tr>
+<tr>
+<td>これから作る</td>
+<td>評価事例と誤判定の原因の蓄積</td>
+<td>未着手。利用許諾が前提</td>
+</tr>
+<tr>
+<td>これから作る</td>
+<td>確定済みシナリオの再生（低い実行費、安定した判定）</td>
+<td>未着手。技術検証の最優先</td>
+</tr>
+<tr>
+<td>これから作る</td>
+<td>月1回の確認会を少ない時間で回す運用の型</td>
+<td>未着手。「人に頼む棚」に置くための条件</td>
+</tr>
+<tr>
+<td>これから作る</td>
+<td>特許1件</td>
+<td>資金計画に1件分を計上（2027年1月）。出すかは、以前の所属先との権利関係の整理と弁理士の調査の後に決める</td>
+</tr>
+<tr>
+<td>競合も持っている（優位性にならない）</td>
+<td>自然言語での指示、画面の自動操作、要求の読み取り、証拠つき報告、定期実行、変更への追従</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h3>特許の出願状況〔外部〕</h3>
+<p>手書きメモは、優位性を「先行研究による独自特許の取得」としています。出願の状況を調べました（Google Patentsでの検索。網羅はしていません）。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>出願人</th>
+<th>番号</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>オーティファイ</td>
+<td>特開2026-113535（優先日2024年6月）</td>
+<td>テストケースからLLMでシナリオを生成し、実行スクリプトを生成する</td>
+</tr>
+<tr>
+<td>オーティファイ</td>
+<td>国際公開3件（優先日2023年2月）ほか2件</td>
+<td>テスト支援システム（内容は未確認）</td>
+</tr>
+<tr>
+<td>SHIFT</td>
+<td>特許7660331（出願2024年7月）</td>
+<td>2段の学習済みモデルで期待値を生成し、テストケースの作成を軽くする</td>
+</tr>
+<tr>
+<td>SHIFT</td>
+<td>ほか4件</td>
+<td>内容は未確認。「テスト」関連で2020年以降に15件</td>
+</tr>
+<tr>
+<td>ベリサーブ</td>
+<td>特開2025-120683（出願2024年2月）</td>
+<td>要求仕様書からテスト用のモデルを生成する</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p>「受け入れテスト＋大規模言語モデル」での全文検索（国内、2023年以降）は118件でした（関係の薄いものを多く含みます）。特許庁は2024年3月の事例で、人の業務を「LLMに入力して回答を得る」形に置き換えただけの発明は進歩性がないと示しています。</p>
+<p><strong>読み取れること</strong>：国内の競合はすでに出願しており、広い権利は取りにくい領域だと見ます。特許を優位性の中心に置くことは勧めません。出すなら、条件の出どころの記録、人による確定、ルールでの判定、手順の再生といった<strong>具体的な処理の組み合わせ</strong>で、仕組みを公開する前に1件です。出すかどうかと、他社の出願に触れないかは、弁理士の調査で確かめます。</p>
+<h2>6. 同じ条件での比較計画（90日以内）</h2>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>対象アプリ</td>
+<td>権利関係に問題のない見本アプリ（申請・承認の流れを持つWeb）。既知の不具合、仕様の未決、環境の不備を仕込む</td>
+</tr>
+<tr>
+<td>比べる手段</td>
+<td>手作業、Claude Code＋Playwright MCP、Quell、TestSpriteまたはQA.tech（利用できる場合）、UAT Agentの検証用MVP</td>
+</tr>
+<tr>
+<td>渡すもの</td>
+<td>同じ要求の資料、同じテスト用アカウント</td>
+</tr>
+<tr>
+<td>測るもの</td>
+<td>準備から結果確認までの人手の時間、重要な不一致の検出数、誤った合格の数、未確認として残った数、費用</td>
+</tr>
+<tr>
+<td>注意</td>
+<td>評価用の正解は実行する側に渡さない。利用できなかった製品に対しては優位性を主張しない。比較の結果を投資家や顧客に見せる前に、各社の利用規約に比較結果の公表を制限する条項がないかを確認する</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p>創業者メモにある、競合製品をリバースエンジニアリングで解析する案は見送りを勧めます。各社の利用規約に触れるおそれがあり、公開情報と試用で足ります。</p>
+<h2>7. 確認できなかった事項</h2>
+<ul>
+<li>PersonaIQの公式サイト（接続エラー）。価格は二次情報のみ。</li>
+<li>Tookii、QA.tech、Uxia、Synthers、Autify Genesis、AI Coworker、ネムラナイ、TESTRA、UiPathの価格。</li>
+<li>Quellの月払いの額、無料プランの内容、モバイル対応。</li>
+<li>TestSpriteのクレジットの定義と年払いの額。</li>
+<li>SUSATestの実画面の価格（スクリプト内の既定値から読み取ったもの）。</li>
+<li>AGEST ZERO TESTの年128万円（報道のみ）。</li>
+<li>MoがGA（正式提供）かベータか（ページによって表記が違う）。</li>
+<li>Codexのクラウド上でのブラウザ検証の可否。</li>
+<li>既存の競合調査（10/6）にあるClickStorm、FlowLens、Crowdi、Synthetic Users、Spur、Panaya、Applause、UserTesting、testRigor、Browser Useの現在の状況（Browser Useの料金のみ再確認：ブラウザ1時間0.02ドル、エージェントはモデル原価＋20%）。</li>
+<li>各社の実際の性能、契約数、継続率。</li>
+<li>mablの国内価格（1回目の調査で見た数字を、2回目に再確認できなかった）。Autifyの現在の国内価格（「月額30万円から」という情報の一次資料は見つからなかった）。</li>
+<li>第三者検証会社（ベリサーブ、AGEST、ポールトゥウィン）の単価と最低契約。</li>
+<li>特許：各出願の請求項の内容、MagicPod・mabl・AGESTの出願の有無、審査の状況。</li>
+<li>国内で、QA担当のいない会社の割合や、開発者に対するQAの人数の調査。</li>
+</ul>
+<p>出典のURLは<a href="comparison-sources.html">比較に関する外部出典（抜粋）</a>にあります。</p></main>
+<footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
+<script src="site.js" defer></script></body></html>
