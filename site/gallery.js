@@ -1,28 +1,72 @@
-const q = document.querySelector("#query"),
-  m = document.querySelector("#mode"),
-  ss = [...document.querySelectorAll("section")];
-function update() {
-  let n = 0;
-  for (const s of ss) {
-    const text = (s.dataset.search + " " + s.textContent).toLowerCase(),
-      ok =
-        text.includes(q.value.toLowerCase()) &&
-        (m.value === "all" || !!s.querySelector(".media." + m.value));
-    s.hidden = !ok;
-    if (ok) n++;
-    for (const e of s.querySelectorAll(".media"))
-      e.hidden =
-        (m.value === "video" && !e.classList.contains("video")) ||
-        (m.value === "image" && !e.classList.contains("image"));
-    for (const e of s.querySelectorAll(".image-label"))
-      e.hidden = m.value === "video";
-    for (const e of s.querySelectorAll(".video-label"))
-      e.hidden = m.value === "image";
-  }
+const query = document.querySelector("#query");
+const mode = document.querySelector("#mode");
+const sections = [...document.querySelectorAll(".gallery-content section")];
+
+function updateGallery() {
+  const terms = query.value
+    .normalize("NFKC")
+    .toLowerCase()
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  let count = 0;
+  sections.forEach((section) => {
+    const text = (section.dataset.search + " " + section.textContent)
+      .normalize("NFKC")
+      .toLowerCase();
+    section.hidden =
+      !terms.every((term) => text.includes(term)) ||
+      (mode.value !== "all" && !section.querySelector(".media." + mode.value));
+    if (!section.hidden) count++;
+    section.querySelectorAll(".media").forEach((media) => {
+      media.hidden =
+        mode.value !== "all" && !media.classList.contains(mode.value);
+    });
+    section.querySelectorAll(".image-label").forEach((label) => {
+      label.hidden = mode.value === "video";
+    });
+    section.querySelectorAll(".video-label").forEach((label) => {
+      label.hidden = mode.value === "image";
+    });
+    section.querySelectorAll("video").forEach((video) => {
+      if (section.hidden || mode.value === "image") video.pause();
+    });
+    const shortcut = document.querySelector(`.index a[href="#${section.id}"]`);
+    if (shortcut) shortcut.hidden = section.hidden;
+  });
   document.querySelector("#count").textContent =
-    n + " / " + ss.length + " 製品";
-  document.querySelector("#empty-results").hidden = n > 0;
+    `${count} / ${sections.length} 製品`;
+  document.querySelector("#empty-results").hidden = count > 0;
 }
-q.addEventListener("input", update);
-m.addEventListener("change", update);
-update();
+
+query.addEventListener("input", updateGallery);
+mode.addEventListener("change", updateGallery);
+document.querySelector("#gallery-reset").addEventListener("click", () => {
+  query.value = "";
+  mode.value = "all";
+  updateGallery();
+  query.focus();
+});
+
+function revealProduct() {
+  const section = sections.find(
+    (item) => `#${item.id}` === window.location.hash,
+  );
+  if (!section) return;
+  query.value = "";
+  mode.value = "all";
+  updateGallery();
+  const picker = document.querySelector(".product-picker");
+  if (picker) picker.open = false;
+  section.querySelectorAll("details").forEach((details) => {
+    details.open = true;
+  });
+  section.scrollIntoView();
+  const heading = section.querySelector("h2");
+  heading.tabIndex = -1;
+  heading.focus({ preventScroll: true });
+}
+
+window.addEventListener("hashchange", revealProduct);
+updateGallery();
+revealProduct();
