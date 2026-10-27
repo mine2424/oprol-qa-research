@@ -4,6 +4,8 @@ import html
 from pathlib import Path
 import re
 
+from media import directory_previews
+
 CONTENT = Path(__file__).resolve().parents[1] / "content"
 
 
@@ -24,7 +26,7 @@ def contents(body):
     return body, toc
 
 
-def directory():
+def directory(poster_paths):
     rows = []
     for line in (CONTENT / "competitor-flows.md").read_text().splitlines():
         if not line.startswith("| ["):
@@ -36,9 +38,12 @@ def directory():
         name, slug = found.groups()
         text = (CONTENT / f"competitor-products/{slug}.md").read_text()
         scope = text.split("## 調査範囲\n", 1)[1].strip().split("\n", 1)[0]
+        page = CONTENT.parent / "site/competitor-products/README.html"
+        media = directory_previews(text, page, poster_paths)
         rows.append(f'''<li class="directory-card" data-filter-item>
 <h2><a href="{slug}.html">{html.escape(name)}</a></h2>
 <p class="directory-scope">{html.escape(scope)}</p>
+{media}
 <p class="media-count">{html.escape(cells[-2])}</p>
 <div class="directory-links"><a href="{slug}.html" aria-label="{html.escape(name)}の詳細を読む">詳細を読む</a><a href="../competitor-evidence/2026-10-27/gallery.html#{slug}" aria-label="{html.escape(name)}の画像・動画を見る">画像・動画</a></div></li>''')
     return f'''<h1>製品別の機能・導線調査</h1>

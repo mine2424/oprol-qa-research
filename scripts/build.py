@@ -10,6 +10,7 @@ import re
 import subprocess
 
 from presentation import comparison, contents, directory, image_viewer, overview
+from media import posters, previews
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "content"
@@ -82,16 +83,16 @@ def wrap(title, body, page):
 <meta property="og:image" content="{BASE_URL}social.png">
 <link rel="canonical" href="{canonical}">
 <link rel="icon" href="{relative('favicon.svg', page)}" type="image/svg+xml">
-<link rel="stylesheet" href="{relative('styles.css', page)}?v=2">
-<link rel="stylesheet" href="{relative('research.css', page)}?v=2">
+<link rel="stylesheet" href="{relative('styles.css', page)}?v=3">
+<link rel="stylesheet" href="{relative('research.css', page)}?v=3">
 </head><body><a class="skip" href="#content">本文へ移動</a>
 <header class="site-header"><div class="header-inner"><div class="header-top"><a class="brand" href="{relative('index.html', page)}">Oprol QA <span>Research</span></a><span class="edition">競合調査 / 2026.10.27</span></div>{navigation(page)}</div></header>
 <div class="page-layout {page_class}{' with-toc' if toc else ''}"><main id="content" tabindex="-1">{breadcrumb}{body}</main>{toc}</div>
 <footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
-{image_viewer()}<script src="{relative('site.js', page)}?v=2" defer></script></body></html>'''
+{image_viewer()}<script src="{relative('site.js', page)}?v=3" defer></script></body></html>'''
 
 
-def build_document(source):
+def build_document(source, poster_paths):
     target = SITE / source.relative_to(CONTENT).with_suffix(".html")
     target.parent.mkdir(parents=True, exist_ok=True)
     text = source.read_text()
@@ -103,14 +104,16 @@ def build_document(source):
     if target.name == "competitor-flows.html":
         body = comparison(body)
     if target == SITE / "competitor-products/README.html":
-        body = directory()
+        body = directory(poster_paths)
+    elif target.parent.name == "competitor-products":
+        body = previews(body, target, poster_paths)
     if target == SITE / "index.html":
         body = overview(body)
     target.write_text(wrap(title, body, target))
     print(target.relative_to(SITE), flush=True)
 
 
-def build_gallery():
+def build_gallery(poster_paths):
     path = SITE / "competitor-evidence/2026-10-27/gallery.html"
     content = (CONTENT / "competitor-evidence/2026-10-27/gallery.html").read_text()
     body = re.search(r'</style>(.*)<script>', content, re.S).group(1)
@@ -119,30 +122,26 @@ def build_gallery():
     body = body.replace('<nav class="index">', '<nav class="index" aria-label="製品別ショートカット">')
     body = body.replace('<nav class="index"', '<details class="product-picker"><summary>製品名から移動（40件）</summary><nav class="index"', 1)
     body = body.replace('</nav>', '</nav></details>', 1)
-    body = body.replace('<details open class="image-label">', '<details class="image-label">')
+    body = re.sub(r'<details(?: open)? class="image-label">', '<details open class="image-label">', body)
     body = body.replace('<input id="query"', '<label for="query">製品・機能を検索</label><input id="query"')
     body = body.replace('<select id="mode"', '<label for="mode">表示するメディア</label><select id="mode"')
     body = body.replace('<span id="count">', '<span id="count" role="status" aria-live="polite">')
     body = body.replace('<video ', '<video playsinline ')
-    manifest = json.loads((SITE / "competitor-evidence/2026-10-27/manifest.json").read_text())
-    for video in manifest["videos"]:
-        frames = video.get("frames", [])
-        if not frames:
-            continue
-        filename = Path(video["file"]).name
-        for match in list(re.finditer(r'<video[^>]+src="([^"]+)"', body)):
-            if Path(match[1]).name == filename:
-                poster = str(Path(match[1]).parent / Path(frames[0]["file"]).name)
-                body = body.replace(match[0], match[0].replace('<video ', f'<video poster="{poster}" '), 1)
+    def video(match):
+        source = (path.parent / match[1]).resolve()
+        poster = os.path.relpath(poster_paths[source], path.parent)
+        return match[0].replace('<video ', f'<video poster="{poster}" ')
+    body = re.sub(r'<video[^>]+src="([^"]+)"', video, body)
     body = body.replace('<input id="query"', '<input type="search" id="query"')
     body = body.replace('<span id="count"', '<button type="button" id="gallery-reset">検索をクリア</button><span id="count"')
     body = re.sub(r'(href|src)="([^"]+)"', rewrite_link, body)
-    body += f'<script src="{relative("gallery.js", path)}?v=2" defer></script>'
+    body += f'<script src="{relative("gallery.js", path)}?v=3" defer></script>'
     path.write_text(wrap("競合プロダクトの機能・画面・動画", body, path))
 
 
 if __name__ == "__main__":
     CACHE.mkdir(exist_ok=True)
+    poster_paths = posters()
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-        list(pool.map(build_document, sorted(CONTENT.rglob("*.md"))))
-    build_gallery()
+        list(pool.map(lambda source: build_document(source, poster_paths), sorted(CONTENT.rglob("*.md"))))
+    build_gallery(poster_paths)
