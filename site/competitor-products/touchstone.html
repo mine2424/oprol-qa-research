@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Touchstone — 機能・導線・画面 | Oprol QA Research</title>
+<meta name="description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Touchstone — 機能・導線・画面 | Oprol QA Research">
+<meta property="og:description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:url" content="https://mine2424.github.io/oprol-qa-research/competitor-products/touchstone.html">
+<meta property="og:image" content="https://mine2424.github.io/oprol-qa-research/social.png">
+<link rel="canonical" href="https://mine2424.github.io/oprol-qa-research/competitor-products/touchstone.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head><body><a class="skip" href="#content">本文へ移動</a>
+<header class="site-header"><a class="brand" href="../index.html">Oprol QA <span>Research</span></a><nav aria-label="資料ナビゲーション"><a href="../index.html">概要</a><a href="../competitor-flows.html">機能・導線比較</a><a href="README.html">製品別詳細</a><a href="../competitor-evidence/2026-10-27/gallery.html">画像・動画</a><a href="../02-competitors.html">市場・価格比較</a><a href="../competitor-inventory.html">候補台帳</a></nav></header>
+<main id="content" tabindex="-1"><h1>Touchstone — 機能・導線・画面</h1>
+<p>確認日：2026年10月27日。<a href="../competitor-flows.html">全体比較</a>・<a href="../competitor-evidence/2026-10-27/gallery.html#touchstone">画面／動画ギャラリー</a></p>
+<h2>調査範囲</h2>
+<p>要求の出典・人の承認・ジャーニー・実行証跡をつなぐ企業向けWeb検証。</p>
+<p>収録した変更管理動画は公式の概念アニメーション。ログイン後の実UI・承認操作・監査出力・権限設定は未操作。</p>
+<h2>作業の流れ</h2>
+<p>Knowledge Base → Analystで要求 → 人が承認 → ArchitectでJourney → 承認 → Autopilotでテスト → 決定的実行 → 失敗診断／修復提案 → 承認・再実行</p>
+<h2>機能の構成</h2>
+<p>Knowledge Base / Requirements / Journeys、Analyst / Architect / Autopilot、Release Evidence。ツアーは業務メールのゲートまで。</p>
+<p>下表は公開説明・文書の要約。実操作した範囲は画面一覧と調査範囲に限定し、表全体を実機検証済みとはしない。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>段階</th>
+<th>画面・機能</th>
+<th>入力・操作と次の行動</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>入力</td>
+<td>Knowledge Base</td>
+<td>文書・仕様・チケット等を根拠として要求に結び付ける。</td>
+</tr>
+<tr>
+<td>要求</td>
+<td>Analyst・Requirements</td>
+<td>根拠付き要求を提案し、人がレビューして承認する。</td>
+</tr>
+<tr>
+<td>設計</td>
+<td>Architect・Journeys</td>
+<td>要求からユーザージャーニーを作り、要求との依存を保つ。</td>
+</tr>
+<tr>
+<td>実装・実行</td>
+<td>Autopilot・deterministic run</td>
+<td>承認済みの内容を実行可能なテストにし、実行を記録する。</td>
+</tr>
+<tr>
+<td>変更</td>
+<td>Source replacement・version comparison</td>
+<td>資料差替えで変更を検出し、影響要求と依存ジャーニーを再レビューする。</td>
+</tr>
+<tr>
+<td>保守</td>
+<td>Diagnosis・repair proposal</td>
+<td>失敗診断と修復案を、承認・再実行の循環につなぐ。</td>
+</tr>
+<tr>
+<td>共有・判断</td>
+<td>Release Evidence</td>
+<td>要求・版・実行・承認者を結び付け、リリース判断の根拠を扱う。</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>人の担当と比較上の着眼点</h2>
+<p>要求・Journey・変更・修復の決定を行う。承認を省略する自律操作の製品とは開始負担が異なる。</p>
+<p>調査者の解釈：単発の要求→テストだけでなく、資料の改版→影響要求→依存フローという保守の連鎖を比較する必要がある。 製品性能の優劣を実証した結論ではない。</p>
+<h2>動画と見る場面</h2>
+<ul>
+<li><a href="../competitor-evidence/2026-10-27/deep/touchstone-official-02.mp4">資料差替え→要求レビュー→依存ジャーニー（公式の概念アニメーション）</a>（27.0秒、official-concept-video）。<a href="https://www.virtuosoqa.com/touchstone" rel="nofollow">公式の掲載元</a>。<br>
+見る場面：<a href="../competitor-evidence/2026-10-27/deep/touchstone-official-02-t004.png">4秒：資料の差替え</a>、<a href="../competitor-evidence/2026-10-27/deep/touchstone-official-02-t013.png">13秒：影響要求のレビュー</a>、<a href="../competitor-evidence/2026-10-27/deep/touchstone-official-02-t021.png">21秒：依存Journeyのレビュー</a>。</li>
+</ul>
+<h2>画面一覧</h2>
+<p>製品内の画面は未収録。公開説明に基づく機能表と、実際のUIを確認できた範囲を分けている。</p>
+<h2>一次情報</h2>
+<ul>
+<li><a href="https://www.virtuosoqa.com/touchstone" rel="nofollow">公式製品ページ</a></li>
+<li><a href="https://www.virtuosoqa.com/release-evidence" rel="nofollow">release-evidence</a></li>
+<li><a href="https://www.virtuosoqa.com/solutions/agentic-test-generation" rel="nofollow">agentic-test-generation</a></li>
+</ul></main>
+<footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
+<script src="../site.js" defer></script></body></html>

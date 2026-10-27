@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Docket — 機能・導線・画面 | Oprol QA Research</title>
+<meta name="description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Docket — 機能・導線・画面 | Oprol QA Research">
+<meta property="og:description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:url" content="https://mine2424.github.io/oprol-qa-research/competitor-products/docket.html">
+<meta property="og:image" content="https://mine2424.github.io/oprol-qa-research/social.png">
+<link rel="canonical" href="https://mine2424.github.io/oprol-qa-research/competitor-products/docket.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head><body><a class="skip" href="#content">本文へ移動</a>
+<header class="site-header"><a class="brand" href="../index.html">Oprol QA <span>Research</span></a><nav aria-label="資料ナビゲーション"><a href="../index.html">概要</a><a href="../competitor-flows.html">機能・導線比較</a><a href="README.html">製品別詳細</a><a href="../competitor-evidence/2026-10-27/gallery.html">画像・動画</a><a href="../02-competitors.html">市場・価格比較</a><a href="../competitor-inventory.html">候補台帳</a></nav></header>
+<main id="content" tabindex="-1"><h1>Docket — 機能・導線・画面</h1>
+<p>確認日：2026年10月27日。<a href="../competitor-flows.html">全体比較</a>・<a href="../competitor-evidence/2026-10-27/gallery.html#docket">画面／動画ギャラリー</a></p>
+<h2>調査範囲</h2>
+<p>視覚ベースの記録・再生とAIステップを混在させるWeb／モバイルE2E。</p>
+<p>公式動画を収録。現在のアカウント内の全ナビ・スケジュール・設定・モバイル実行は未操作。動画は旧画面を含み得る。</p>
+<h2>作業の流れ</h2>
+<p>埋込browser → 操作記録 → ステップ編集／AI指示 → group → 実行 → 結果・retries → repair → 継続</p>
+<h2>機能の構成</h2>
+<p>公式動画に左の順序付きステップと右の対象ブラウザ。別画面にTest Group Runs、suite内のテスト状態・時間・Retries。</p>
+<p>下表は公開説明・文書の要約。実操作した範囲は画面一覧と調査範囲に限定し、表全体を実機検証済みとはしない。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>段階</th>
+<th>画面・機能</th>
+<th>入力・操作と次の行動</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>記録</td>
+<td>Embedded browser</td>
+<td>人のクリック・入力をステップとして記録する。</td>
+</tr>
+<tr>
+<td>編集</td>
+<td>Recorded steps</td>
+<td>入力・クリックなどの順序を左パネルで扱い、Add Stepで拡張する。</td>
+</tr>
+<tr>
+<td>AI操作</td>
+<td>Natural language step</td>
+<td>動的な箇所を自然言語で指示し、Agentが対象を操作する。</td>
+</tr>
+<tr>
+<td>実行</td>
+<td>Test group・parallel run</td>
+<td>まとまったテストを並列で動かす公式例がある。</td>
+</tr>
+<tr>
+<td>結果</td>
+<td>Group runs</td>
+<td>個別の状態、所要時間、再試行回数を一覧で示す。</td>
+</tr>
+<tr>
+<td>保守</td>
+<td>Visual replay・repair</td>
+<td>座標・視覚情報を使う再生と、要素移動への修復を説明。</td>
+</tr>
+<tr>
+<td>継続</td>
+<td>Web／iOS／Android</td>
+<td>複数対象を案内。CI・認証・実行条件の具体設定は要確認。</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>人の担当と比較上の着眼点</h2>
+<p>記録する正しい経路、AIステップの意図、修復や失敗の妥当性を確認する。</p>
+<p>調査者の解釈：記録を土台にAIを部分的に挿す方式。自然言語だけの製品との準備量・保守量の違いを比較する。 製品性能の優劣を実証した結論ではない。</p>
+<h2>動画と見る場面</h2>
+<ul>
+<li><a href="../competitor-evidence/2026-10-27/deep/docket-official-01.mp4">AIステップを入力→ブラウザ操作</a>（14.9秒、official-product-video）。<a href="https://www.docketqa.com/" rel="nofollow">公式の掲載元</a>。<br>
+見る場面：<a href="../competitor-evidence/2026-10-27/deep/docket-official-01-t002.png">2秒：AI stepの入力</a>、<a href="../competitor-evidence/2026-10-27/deep/docket-official-01-t007.png">7秒：検索操作</a>、<a href="../competitor-evidence/2026-10-27/deep/docket-official-01-t012.png">12秒：カート追加</a>。</li>
+<li><a href="../competitor-evidence/2026-10-27/deep/docket-official-02.mp4">埋込ブラウザを操作→記録ステップ作成</a>（17.6秒、official-product-video）。<a href="https://www.docketqa.com/" rel="nofollow">公式の掲載元</a>。<br>
+見る場面：<a href="../competitor-evidence/2026-10-27/deep/docket-official-02-t002.png">2秒：操作の記録</a>、<a href="../competitor-evidence/2026-10-27/deep/docket-official-02-t008.png">8秒：入力stepの蓄積</a>、<a href="../competitor-evidence/2026-10-27/deep/docket-official-02-t015.png">15秒：遷移結果</a>。</li>
+<li><a href="../competitor-evidence/2026-10-27/deep/docket-official-03.mp4">スイートの並列実行一覧</a>（12.5秒、official-product-video）。<a href="https://www.docketqa.com/" rel="nofollow">公式の掲載元</a>。<br>
+見る場面：<a href="../competitor-evidence/2026-10-27/deep/docket-official-03-t002.png">2秒：suite実行一覧</a>、<a href="../competitor-evidence/2026-10-27/deep/docket-official-03-t006.png">6秒：状態と時間</a>、<a href="../competitor-evidence/2026-10-27/deep/docket-official-03-t010.png">10秒：別のテストgroup</a>。</li>
+</ul>
+<h2>画面一覧</h2>
+<p>製品内の画面は未収録。公開説明に基づく機能表と、実際のUIを確認できた範囲を分けている。</p>
+<h2>一次情報</h2>
+<ul>
+<li><a href="https://www.docketqa.com/" rel="nofollow">公式製品ページ</a></li>
+</ul></main>
+<footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
+<script src="../site.js" defer></script></body></html>

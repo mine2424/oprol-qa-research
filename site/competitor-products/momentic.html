@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Momentic／Mo — 機能・導線・画面 | Oprol QA Research</title>
+<meta name="description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Momentic／Mo — 機能・導線・画面 | Oprol QA Research">
+<meta property="og:description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:url" content="https://mine2424.github.io/oprol-qa-research/competitor-products/momentic.html">
+<meta property="og:image" content="https://mine2424.github.io/oprol-qa-research/social.png">
+<link rel="canonical" href="https://mine2424.github.io/oprol-qa-research/competitor-products/momentic.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head><body><a class="skip" href="#content">本文へ移動</a>
+<header class="site-header"><a class="brand" href="../index.html">Oprol QA <span>Research</span></a><nav aria-label="資料ナビゲーション"><a href="../index.html">概要</a><a href="../competitor-flows.html">機能・導線比較</a><a href="README.html">製品別詳細</a><a href="../competitor-evidence/2026-10-27/gallery.html">画像・動画</a><a href="../02-competitors.html">市場・価格比較</a><a href="../competitor-inventory.html">候補台帳</a></nav></header>
+<main id="content" tabindex="-1"><h1>Momentic／Mo — 機能・導線・画面</h1>
+<p>確認日：2026年10月27日。<a href="../competitor-flows.html">全体比較</a>・<a href="../competitor-evidence/2026-10-27/gallery.html#momentic">画面／動画ギャラリー</a></p>
+<h2>調査範囲</h2>
+<p>Moの探索セッションと、MomenticのYAML回帰テストを分けて調べる。Moは稼働アプリを操作し、リポジトリは読取用の文脈。</p>
+<p>登録入口まで確認。Moを新規起動していない。物理端末は公式Docs上非対応。OSダイアログや外部デスクトップアプリが必要な経路はblockし得る。</p>
+<h2>作業の流れ</h2>
+<p>Mo: 対象・brief → セッション設定 → 並列探索 → 別Agentで再現 → report・triage。回帰: local editor → YAML → local／CI実行 → 結果</p>
+<h2>機能の構成</h2>
+<p>Mo workspace・sessions・reports・triage。別系統にlocal appの手順編集・ライブ対象ブラウザ・Network／Console、環境変数、連携設定。</p>
+<p>下表は公開説明・文書の要約。実操作した範囲は画面一覧と調査範囲に限定し、表全体を実機検証済みとはしない。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>段階</th>
+<th>画面・機能</th>
+<th>入力・操作と次の行動</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>開始</td>
+<td>Mo workspace</td>
+<td>URLまたはアップロード済みモバイルbuildを対象にする。Webはhosted browser、iOSはsimulator、Androidはemulator。</td>
+</tr>
+<tr>
+<td>準備</td>
+<td>Brief・Environment</td>
+<td>期待、アカウント、データ、禁止操作を記述。環境のBASE_URLや任意の仕様書・planも使う。</td>
+</tr>
+<tr>
+<td>文脈</td>
+<td>Repositories</td>
+<td>選択したコード・差分を読取参照する。Moがcheckoutから対象アプリを起動する方式ではない。</td>
+</tr>
+<tr>
+<td>探索</td>
+<td>Session・parallel agents</td>
+<td>計画・探索・bug bash・再現の担当を分ける。各Agentのブラウザ／端末は独立する。</td>
+</tr>
+<tr>
+<td>結果</td>
+<td>Report・coverage gaps</td>
+<td>verified／issues found／blocked、期待と実際、再現手順、未検証範囲を返す。</td>
+</tr>
+<tr>
+<td>確認</td>
+<td>Bug reproducer・triage</td>
+<td>機能不具合は別セッションで独立再現。静的な指摘は画像を根拠にする。</td>
+</tr>
+<tr>
+<td>回帰</td>
+<td>Momentic local app・YAML</td>
+<td>繰り返す確認は別のテスト資産としてリポジトリで管理しlocal・CIで実行する。</td>
+</tr>
+<tr>
+<td>保守・連携</td>
+<td>Editor・Network・GitHub／GitLab／Slack</td>
+<td>手順編集と通信の調査、環境・通知・開発工程の接続を扱う。</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>人の担当と比較上の着眼点</h2>
+<p>briefに業務期待と操作制限を与え、未到達・未再現を含めて結果をレビューする。</p>
+<p>調査者の解釈：探索で発見した疑いと再現確認を分ける点、完了報告にcoverage gapsを残す点が、Oprolの判定・証拠設計の比較対象。 製品性能の優劣を実証した結論ではない。</p>
+<h2>動画と見る場面</h2>
+<ul>
+<li><a href="../competitor-evidence/2026-10-27/deep/momentic-mo-reproduction-report.mp4">Mo：担当Agentへの委任→独立再現→根拠付きレポート（紹介動画の一部）</a>（27.1秒、recorded-official-video）。<a href="https://www.youtube.com/watch?v=5RMQVtk-ayE" rel="nofollow">公式の掲載元</a>。<br>
+見る場面：<a href="../competitor-evidence/2026-10-27/deep/momentic-mo-t002.png">2秒：bug basherへの委任</a>、<a href="../competitor-evidence/2026-10-27/deep/momentic-mo-t007.png">7秒：独立再現</a>、<a href="../competitor-evidence/2026-10-27/deep/momentic-mo-t012.png">12秒：再現中の対象</a>、<a href="../competitor-evidence/2026-10-27/deep/momentic-mo-t017.png">17秒：再現根拠の報告</a>、<a href="../competitor-evidence/2026-10-27/deep/momentic-mo-t022.png">22秒：reportと画像</a>、<a href="../competitor-evidence/2026-10-27/deep/momentic-mo-t026.png">26秒：開発側の修正へ</a>。</li>
+</ul>
+<h2>画面一覧</h2>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>画面</th>
+<th>種別</th>
+<th>出典</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/momentic-vendor-01.png">GitHub integration settings</a></td>
+<td>official-ui-image</td>
+<td><a href="https://momentic.ai/docs/integrations/github" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/momentic-vendor-03.png">Slack integration settings</a></td>
+<td>official-ui-image</td>
+<td><a href="https://momentic.ai/docs/integrations/slack" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/momentic-vendor-05.png">Momentic local app showing a test step list, AI action details, a live browser, and browser context tabs</a></td>
+<td>official-ui-image</td>
+<td><a href="https://momentic.ai/docs/local-app" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/momentic-vendor-06.png">Momentic editor while dragging a While loop between AI actions, with undo and redo controls in the toolbar</a></td>
+<td>official-ui-image</td>
+<td><a href="https://momentic.ai/docs/local-app" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/momentic-vendor-07.png">Momentic Network panel showing request filtering, a request waterfall, headers, response details, and timing tabs</a></td>
+<td>official-ui-image</td>
+<td><a href="https://momentic.ai/docs/local-app" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/momentic-vendor-08.png">Network viewer</a></td>
+<td>official-ui-image</td>
+<td><a href="https://momentic.ai/docs/platforms/web/request-mocking" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/momentic-vendor-09.png">Locator auto-healing diff</a></td>
+<td>official-ui-image</td>
+<td><a href="https://momentic.ai/docs/reliability/auto-maintenance" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/momentic-vendor-10.png">Momentic classification showing Healed and Test authorship labels with reasoning about a transient UI race</a></td>
+<td>official-ui-image</td>
+<td><a href="https://momentic.ai/docs/reliability/auto-maintenance" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/momentic-vendor-11.png">Momentic healed step analysis explaining how triage replaced a transient label check with a durable queue-state check</a></td>
+<td>official-ui-image</td>
+<td><a href="https://momentic.ai/docs/reliability/auto-maintenance" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/momentic-vendor-12.png">A merged Momentic auto-heal pull request with root cause, fix, validation, and links to the base pull request and results</a></td>
+<td>official-ui-image</td>
+<td><a href="https://momentic.ai/docs/reliability/auto-maintenance" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/momentic-vendor-28.png">Runs view</a></td>
+<td>official-ui-image</td>
+<td><a href="https://momentic.ai/docs/running-tests/results" rel="nofollow">掲載元</a></td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/momentic-vendor-05.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/momentic-vendor-05.png" alt="Momentic local app showing a test step list, AI action details, a live browser, and browser context tabs — official-ui-image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/momentic-vendor-09.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/momentic-vendor-09.png" alt="Locator auto-healing diff — official-ui-image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/momentic-vendor-28.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/momentic-vendor-28.png" alt="Runs view — official-ui-image" style="max-width: 100%;"></a></p>
+<h2>一次情報</h2>
+<ul>
+<li><a href="https://momentic.ai/" rel="nofollow">公式製品ページ</a></li>
+<li><a href="https://momentic.ai/docs/quickstart/web" rel="nofollow">Web</a></li>
+<li><a href="https://momentic.ai/docs/core-concepts/editor-validation" rel="nofollow">IDE lint</a></li>
+<li><a href="https://momentic.ai/docs/running-tests/hosted-test-environments" rel="nofollow">Hosted test environments</a></li>
+<li><a href="https://momentic.ai/docs/core-concepts/variables" rel="nofollow">Variables</a></li>
+<li><a href="https://momentic.ai/docs/integrations/javascript" rel="nofollow">JavaScript</a></li>
+<li><a href="https://momentic.ai/docs/core-concepts/authentication" rel="nofollow">Authentication</a></li>
+<li><a href="https://momentic.ai/docs/mo" rel="nofollow">mo.md</a></li>
+<li><a href="https://momentic.ai/docs/integrations/github" rel="nofollow">GitHub integration settings</a></li>
+<li><a href="https://momentic.ai/docs/integrations/slack" rel="nofollow">Slack integration settings</a></li>
+<li><a href="https://momentic.ai/docs/local-app" rel="nofollow">Momentic local app showing a test step list, AI action details, a live browser, and browser context tabs</a></li>
+<li><a href="https://momentic.ai/docs/platforms/web/request-mocking" rel="nofollow">Network viewer</a></li>
+<li><a href="https://momentic.ai/docs/reliability/auto-maintenance" rel="nofollow">Locator auto-healing diff</a></li>
+<li><a href="https://momentic.ai/docs/running-tests/results" rel="nofollow">Runs view</a></li>
+</ul></main>
+<footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
+<script src="../site.js" defer></script></body></html>

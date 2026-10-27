@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TestNeo — 機能・導線・画面 | Oprol QA Research</title>
+<meta name="description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="TestNeo — 機能・導線・画面 | Oprol QA Research">
+<meta property="og:description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:url" content="https://mine2424.github.io/oprol-qa-research/competitor-products/testneo.html">
+<meta property="og:image" content="https://mine2424.github.io/oprol-qa-research/social.png">
+<link rel="canonical" href="https://mine2424.github.io/oprol-qa-research/competitor-products/testneo.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head><body><a class="skip" href="#content">本文へ移動</a>
+<header class="site-header"><a class="brand" href="../index.html">Oprol QA <span>Research</span></a><nav aria-label="資料ナビゲーション"><a href="../index.html">概要</a><a href="../competitor-flows.html">機能・導線比較</a><a href="README.html">製品別詳細</a><a href="../competitor-evidence/2026-10-27/gallery.html">画像・動画</a><a href="../02-competitors.html">市場・価格比較</a><a href="../competitor-inventory.html">候補台帳</a></nav></header>
+<main id="content" tabindex="-1"><h1>TestNeo — 機能・導線・画面</h1>
+<p>確認日：2026年10月27日。<a href="../competitor-flows.html">全体比較</a>・<a href="../competitor-evidence/2026-10-27/gallery.html#testneo">画面／動画ギャラリー</a></p>
+<h2>調査範囲</h2>
+<p>公開Playgroundの実行と、Release IntelligenceのPR・リスク・リリース判断は別の範囲。</p>
+<p>公開実行の成功はサービス表示と動画による確認。自社アプリ・PR接続・過去障害の取込・判断履歴の作成は未実施。</p>
+<h2>作業の流れ</h2>
+<p>Playground: テンプレート／自然言語 → Preview plan → Run live → Timeline・Events → 画像／動画・SDK。製品: PR取込 → 影響分析 → リスク → 検証 → PASS／WARN／BLOCK</p>
+<h2>機能の構成</h2>
+<p>PlaygroundのWeb／APIとPlan・Live Execution・Timeline・Event trace。別途PR Validation、Impact Analysis、Verification、Release Decision。</p>
+<p>下表は公開説明・文書の要約。実操作した範囲は画面一覧と調査範囲に限定し、表全体を実機検証済みとはしない。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>段階</th>
+<th>画面・機能</th>
+<th>入力・操作と次の行動</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>開始</td>
+<td>Playground</td>
+<td>公開ゲスト枠でテンプレートを選び、自然言語の意図を入力する。</td>
+</tr>
+<tr>
+<td>確認</td>
+<td>Preview plan</td>
+<td>navigate／fill／click／wait／verify等の計画を実行前に確認する。</td>
+</tr>
+<tr>
+<td>実行</td>
+<td>Run live</td>
+<td>公開Web Smokeを1回実行。画面上で6passed・0failedと表示された。</td>
+</tr>
+<tr>
+<td>結果</td>
+<td>Timeline・Event trace</td>
+<td>ステップの時間軸と接続・開始・更新・完了のイベントを切り替える。</td>
+</tr>
+<tr>
+<td>証拠</td>
+<td>Screenshots・Playback</td>
+<td>6枚の画像と28秒の対象操作動画。再生を確認済み。</td>
+</tr>
+<tr>
+<td>利用</td>
+<td>SDK output</td>
+<td>プログラム利用への出力入口。取得コードの検証は未実施。</td>
+</tr>
+<tr>
+<td>変更検証</td>
+<td>Release Intelligence</td>
+<td>PR差分・要求・障害履歴から影響とリスクを扱い、検証の根拠を提示する。</td>
+</tr>
+<tr>
+<td>判断・履歴</td>
+<td>Decision Board</td>
+<td>PASS／WARN／BLOCKと判断の履歴。Playgroundの成功をこの機能の実証とはしない。</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>人の担当と比較上の着眼点</h2>
+<p>期待を書く、計画を確認する、リリース判断の根拠を読む。</p>
+<p>調査者の解釈：入力→計画→実行→証拠の区切りが明確。実行の成功とリリース判定を別の機能として比較できる。 製品性能の優劣を実証した結論ではない。</p>
+<h2>動画と見る場面</h2>
+<ul>
+<li><a href="../competitor-evidence/2026-10-27/deep/../testneo-sample-playback.mp4">当調査で起動したサンプルRunの生成動画を再生</a>（30.5秒、recorded-public-demo）。<a href="https://app.testneo.ai/playground?product=web" rel="nofollow">公式の掲載元</a>。</li>
+</ul>
+<h2>画面一覧</h2>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>画面</th>
+<th>種別</th>
+<th>出典</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/testneo-vendor-01.png">TestNeo Release Intelligence Platform</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.testneo.ai/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/testneo-vendor-02.png">TestNeo Release Intelligence Dashboard</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.testneo.ai/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/testneo-vendor-03.png">TestNeo Impact Analysis View</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.testneo.ai/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/testneo-vendor-04.png">TestNeo Verification Execution</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.testneo.ai/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/testneo-vendor-05.png">TestNeo Release Decision Board</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.testneo.ai/" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/../testneo-01-playground.png">Playground：入力</a></td>
+<td>public-demo-ui</td>
+<td><a href="https://app.testneo.ai/playground?product=web" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/../testneo-07-playback.png">実行動画の再生</a></td>
+<td>public-demo-ui</td>
+<td><a href="https://app.testneo.ai/playground?product=web" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/../testneo-06-timeline.png">Timeline</a></td>
+<td>public-demo-ui</td>
+<td><a href="https://app.testneo.ai/playground?product=web" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/../testneo-04-completed.png">完了結果</a></td>
+<td>public-demo-ui</td>
+<td><a href="https://app.testneo.ai/playground?product=web" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/../testneo-05-events.png">Event trace</a></td>
+<td>public-demo-ui</td>
+<td><a href="https://app.testneo.ai/playground?product=web" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/../testneo-03-running.png">Run live：実行中</a></td>
+<td>public-demo-ui</td>
+<td><a href="https://app.testneo.ai/playground?product=web" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/../testneo-02-plan.png">Preview plan：実行計画</a></td>
+<td>public-demo-ui</td>
+<td><a href="https://app.testneo.ai/playground?product=web" rel="nofollow">掲載元</a></td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/testneo-vendor-01.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/testneo-vendor-01.png" alt="TestNeo Release Intelligence Platform — official-ui-image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/testneo-vendor-02.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/testneo-vendor-02.png" alt="TestNeo Release Intelligence Dashboard — official-ui-image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/testneo-vendor-03.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/testneo-vendor-03.png" alt="TestNeo Impact Analysis View — official-ui-image" style="max-width: 100%;"></a></p>
+<h2>一次情報</h2>
+<ul>
+<li><a href="https://www.testneo.ai/" rel="nofollow">公式製品ページ</a></li>
+<li><a href="https://testneo.ai/docs/release-intelligence.html" rel="nofollow">release-intelligence.html</a></li>
+</ul></main>
+<footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
+<script src="../site.js" defer></script></body></html>

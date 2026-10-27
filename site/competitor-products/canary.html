@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Canary — 機能・導線・画面 | Oprol QA Research</title>
+<meta name="description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Canary — 機能・導線・画面 | Oprol QA Research">
+<meta property="og:description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:url" content="https://mine2424.github.io/oprol-qa-research/competitor-products/canary.html">
+<meta property="og:image" content="https://mine2424.github.io/oprol-qa-research/social.png">
+<link rel="canonical" href="https://mine2424.github.io/oprol-qa-research/competitor-products/canary.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head><body><a class="skip" href="#content">本文へ移動</a>
+<header class="site-header"><a class="brand" href="../index.html">Oprol QA <span>Research</span></a><nav aria-label="資料ナビゲーション"><a href="../index.html">概要</a><a href="../competitor-flows.html">機能・導線比較</a><a href="README.html">製品別詳細</a><a href="../competitor-evidence/2026-10-27/gallery.html">画像・動画</a><a href="../02-competitors.html">市場・価格比較</a><a href="../competitor-inventory.html">候補台帳</a></nav></header>
+<main id="content" tabindex="-1"><h1>Canary — 機能・導線・画面</h1>
+<p>確認日：2026年10月27日。<a href="../competitor-flows.html">全体比較</a>・<a href="../competitor-evidence/2026-10-27/gallery.html#canary">画面／動画ギャラリー</a></p>
+<h2>調査範囲</h2>
+<p>コード差分を起点とする独立した検証層。CLI／開発Agent／PRの起動経路。</p>
+<p>公開コードとExamplesの紹介表示を確認。CLIの起動、sandbox構築、報告、回帰資産の保存は未実行。公開例の検出実績は提供者の主張。</p>
+<h2>作業の流れ</h2>
+<p>Install prompt → stack接続 → working tree／PR → Read → Run → Break → Verify → case file → 修正 → regression</p>
+<h2>機能の構成</h2>
+<p>公開ページにRead／Run／Break／Verify、In your agent／On every PR／Fix loop／Report、4件のExamples。アカウント内ナビは未確認。</p>
+<p>下表は公開説明・文書の要約。実操作した範囲は画面一覧と調査範囲に限定し、表全体を実機検証済みとはしない。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>段階</th>
+<th>画面・機能</th>
+<th>入力・操作と次の行動</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>開始</td>
+<td>Install</td>
+<td>開発Agentへ渡す導入プロンプトとCLIを案内。今回はインストールしていない。</td>
+</tr>
+<tr>
+<td>対象</td>
+<td>Working tree・PR</td>
+<td>未コミットの変更またはPRを起点に、コードベースと差分を読む。</td>
+</tr>
+<tr>
+<td>計画</td>
+<td>Read</td>
+<td>変更が届くユーザーフローを把握し、テスト候補を用意する。</td>
+</tr>
+<tr>
+<td>準備・実行</td>
+<td>Run・Break</td>
+<td>sandboxでアプリを起動し、通常系以外の挙動も試すと説明。</td>
+</tr>
+<tr>
+<td>確認</td>
+<td>Verify</td>
+<td>検出した疑いを根拠付きの結果として整理する。</td>
+</tr>
+<tr>
+<td>報告</td>
+<td>Case file</td>
+<td>再現手順、実際の破綻、原因と修正案、重大度を紹介例に表示。</td>
+</tr>
+<tr>
+<td>保守</td>
+<td>Fix loop・Regression</td>
+<td>修正後の再確認と、検出経路の継続回帰を案内。</td>
+</tr>
+<tr>
+<td>連携</td>
+<td>GitHub・Linear・Sentry等</td>
+<td>コード・障害・資料等の既存文脈を参照。接続設定・権限の実画面は未確認。</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>人の担当と比較上の着眼点</h2>
+<p>導入・stack接続、業務の正解や操作制限、修正の採否を判断する。</p>
+<p>調査者の解釈：コードの意図を理解する検証は強い代替。コードと同じ誤解に依存しない業務期待の取り方を比較する。 製品性能の優劣を実証した結論ではない。</p>
+<h2>動画と見る場面</h2>
+<p>製品操作を確認できる動画を今回保存できていない。存在しない・非対応という意味ではない。問い合わせ画面で代用しない。</p>
+<h2>画面一覧</h2>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>画面</th>
+<th>種別</th>
+<th>出典</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/canary-11-examples.png">公開case file：再現・原因・修正例</a></td>
+<td>official-ui-example</td>
+<td><a href="https://www.runcanary.ai/#demo" rel="nofollow">掲載元</a></td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/canary-11-examples.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/canary-11-examples.png" alt="公開case file：再現・原因・修正例 — official-ui-example" style="max-width: 100%;"></a></p>
+<h2>一次情報</h2>
+<ul>
+<li><a href="https://www.runcanary.ai/" rel="nofollow">公式製品ページ</a></li>
+</ul></main>
+<footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
+<script src="../site.js" defer></script></body></html>

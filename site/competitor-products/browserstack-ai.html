@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BrowserStack AI（Test Management／LCA） — 機能・導線・画面 | Oprol QA Research</title>
+<meta name="description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="BrowserStack AI（Test Management／LCA） — 機能・導線・画面 | Oprol QA Research">
+<meta property="og:description" content="AI QA・テスト支援40製品／サービスの機能・導線・画面・動画を整理した調査資料。確認日と未確認範囲を明記。">
+<meta property="og:url" content="https://mine2424.github.io/oprol-qa-research/competitor-products/browserstack-ai.html">
+<meta property="og:image" content="https://mine2424.github.io/oprol-qa-research/social.png">
+<link rel="canonical" href="https://mine2424.github.io/oprol-qa-research/competitor-products/browserstack-ai.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../styles.css">
+</head><body><a class="skip" href="#content">本文へ移動</a>
+<header class="site-header"><a class="brand" href="../index.html">Oprol QA <span>Research</span></a><nav aria-label="資料ナビゲーション"><a href="../index.html">概要</a><a href="../competitor-flows.html">機能・導線比較</a><a href="README.html">製品別詳細</a><a href="../competitor-evidence/2026-10-27/gallery.html">画像・動画</a><a href="../02-competitors.html">市場・価格比較</a><a href="../competitor-inventory.html">候補台帳</a></nav></header>
+<main id="content" tabindex="-1"><h1>BrowserStack AI（Test Management／LCA） — 機能・導線・画面</h1>
+<p>確認日：2026年10月27日。<a href="../competitor-flows.html">全体比較</a>・<a href="../competitor-evidence/2026-10-27/gallery.html#browserstack-ai">画面／動画ギャラリー</a></p>
+<h2>調査範囲</h2>
+<p>Test ManagementのAgent群とLow Code Automationを分けて読む。ケース生成はTeam Ultimate、LCAのAgentic testingはPro／Ultimateの期間限定Alphaと公式Docsに記載。全プランの一般機能とはしない。</p>
+<p>比較上の位置：要求・作成・実行・保守の直接比較。追加理由：既存の要求・手動ケース・環境・結果の基盤にAgentが入り、追加ツールを買わずにQAを進める代替になるため。</p>
+<p>公開Docs・UI例まで。アカウントのAI preferencesを変更せず、MCP・実行・データ提供を行っていない。Alpha／Betaの説明は対象機能単位で保持する。</p>
+<h2>作業の流れ</h2>
+<p>PRD・ticket等 → Ask AI → case生成・承認 → maintenance／dedup → LCAへ自動化 → 実行・証拠 → failure analysis／healing → MCP・次のrun</p>
+<h2>機能の構成</h2>
+<p>Ask AI、Test Case Generator／Maintenance／Data／Deduplication／Selection、Failure Analysis、Low Code Authoring、MCP。関連基盤はAutomate／App Automate／Percy等。</p>
+<p>下表は公開説明・文書の要約。実操作した範囲は画面一覧と調査範囲に限定し、表全体を実機検証済みとはしない。</p>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>段階</th>
+<th>画面・機能</th>
+<th>入力・操作と次の行動</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>要求</td>
+<td>Case Generator</td>
+<td>文章・PRD・Jira・Confluence・Figma等からケースを生成する説明。</td>
+</tr>
+<tr>
+<td>確認</td>
+<td>Ask AI</td>
+<td>複数Agentの入口を会話にまとめ、変更前に承認を求める。</td>
+</tr>
+<tr>
+<td>維持</td>
+<td>Case Maintenance</td>
+<td>要求変更に合わせ既存ケースを更新し、不足するケースを補う。</td>
+</tr>
+<tr>
+<td>整理</td>
+<td>Data・Deduplication・Selection</td>
+<td>実行データ、重複ケース、次のrunの選択を支える。</td>
+</tr>
+<tr>
+<td>探索</td>
+<td>Explore URL・Instructions</td>
+<td>URLと調べる範囲、追加ルールから探索。live session・summaryを確認し、priority付きシナリオからケースを選ぶ。</td>
+</tr>
+<tr>
+<td>自動化</td>
+<td>Low Code Authoring</td>
+<td>手動ケースを実行可能な操作へ変換する。Agentic testingはAlphaの利用条件あり。</td>
+</tr>
+<tr>
+<td>再利用・確認</td>
+<td>Modules・Automation Validation</td>
+<td>生成ケースに既存moduleを挿入し、実ブラウザでstepを検証する公式動画。自社環境での検証ではない。</td>
+</tr>
+<tr>
+<td>実行</td>
+<td>Browser・device</td>
+<td>既存のbrowser・device基盤に接続する。機能・契約を製品ごとに確認する。</td>
+</tr>
+<tr>
+<td>調査・保守</td>
+<td>Failure Analysis・Self healing</td>
+<td>log・履歴等から原因を分析し、変わったlocatorに対応する。</td>
+</tr>
+<tr>
+<td>外部入口</td>
+<td>MCP</td>
+<td>開発Agentから生成・分析・修復等へ入る。実行前の承認・権限は別に確認。</td>
+</tr>
+<tr>
+<td>履歴</td>
+<td>History</td>
+<td>以前の生成sessionを再度開く。</td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<h2>人の担当と比較上の着眼点</h2>
+<p>入力する期待・対象・認証・操作権限と、生成計画・修復差分・結果を人が判断する。</p>
+<p>調査者の解釈：作成機能だけでなく、要求変更・重複整理・データ・既存の実行結果を扱う継続運用の比較相手。 製品性能の優劣を実証した結論ではない。</p>
+<h2>動画と見る場面</h2>
+<ul>
+<li><a href="../competitor-evidence/2026-10-27/deep/browserstack-1-walkthrough.mp4">生成ケースへ再利用moduleを追加</a>（23.4秒、official-product-video）。<a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">公式の掲載元</a>。<br>
+見る場面：<a href="../competitor-evidence/2026-10-27/deep/browserstack-1-walkthrough-t002.png">2秒：生成ケース</a>、<a href="../competitor-evidence/2026-10-27/deep/browserstack-1-walkthrough-t007.png">7秒：moduleを指定</a>、<a href="../competitor-evidence/2026-10-27/deep/browserstack-1-walkthrough-t013.png">13秒：ケース内の参照</a>、<a href="../competitor-evidence/2026-10-27/deep/browserstack-1-walkthrough-t020.png">20秒：変更のreview</a>。</li>
+<li><a href="../competitor-evidence/2026-10-27/deep/browserstack-3-walkthrough.mp4">AI Automation Validation：実ブラウザの操作とstep結果</a>（48.3秒、official-product-video）。<a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">公式の掲載元</a>。<br>
+見る場面：<a href="../competitor-evidence/2026-10-27/deep/browserstack-3-walkthrough-t003.png">3秒：検証の開始</a>、<a href="../competitor-evidence/2026-10-27/deep/browserstack-3-walkthrough-t013.png">13秒：途中step</a>、<a href="../competitor-evidence/2026-10-27/deep/browserstack-3-walkthrough-t024.png">24秒：失敗したstep</a>、<a href="../competitor-evidence/2026-10-27/deep/browserstack-3-walkthrough-t034.png">34秒：再実行</a>、<a href="../competitor-evidence/2026-10-27/deep/browserstack-3-walkthrough-t045.png">45秒：stepの結果</a>。</li>
+</ul>
+<h2>画面一覧</h2>
+<markdown-accessiblity-table><div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>
+<thead>
+<tr>
+<th>画面</th>
+<th>種別</th>
+<th>出典</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-7.png">The Create a new test with AI page with the four ways to start.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-8.png">The Create a new test with AI page with an objective entered and the Automate case button enabled.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-9.png">A test case with its description, preconditions, and numbered test steps.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-10.png">The Import from Test Management option below the prompt box on the Create a new test with AI page.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-11.png">The Import from Test Management dialog with a folder open and one test case selected.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-12.png">Seven imported test cases listed under the Imported from BrowserStack Test Management scenario.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-13.png">The Create a new test with AI page with a prompt entered and a PRD file attached as a chip.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-14.png">The Instructions dialog with an instruction file toggle and the field to add a new file.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-15.png">The Thoughts pane listing document processing steps while test cases generate.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-16.png">The Explore URL option with a URL and the functionality to explore.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-17.png">The Instructions dialog with the field to add an instruction file.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-18.png">The URL Exploration screen with the agent's progress beside a live browser session.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-19.png">The completed exploration summary with the overview, target URL, and interactive elements.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-20.png">Test cases grouped into scenarios after a URL exploration, each case tagged with a priority.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-21.png">Selected test cases and the Automate button.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-22.png">The Add a starting URL dialog with a field for the URL and the Save and automate button.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-23.png">The History list of earlier sessions on the Create a new test with AI page.</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">掲載元</a></td>
+</tr>
+<tr>
+<td><a href="../competitor-evidence/2026-10-27/deep/browserstack-ai-3-ui-7.png">GitHub Copilot prompt in VS Code asking the BrowserStack MCP server to fix flaky test selectors, with the fetchSelfHealedSelectors tool call</a></td>
+<td>official-ui-image</td>
+<td><a href="https://www.browserstack.com/docs/browserstack-mcp-server/tools/ai-agents" rel="nofollow">掲載元</a></td>
+</tr>
+</tbody>
+</table></div></markdown-accessiblity-table>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-7.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-7.png" alt="The Create a new test with AI page with the four ways to start. — official-ui-image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-8.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-8.png" alt="The Create a new test with AI page with an objective entered and the Automate case button enabled. — official-ui-image" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-9.png"><img loading="lazy" src="../competitor-evidence/2026-10-27/deep/browserstack-ai-2-ui-9.png" alt="A test case with its description, preconditions, and numbered test steps. — official-ui-image" style="max-width: 100%;"></a></p>
+<h2>一次情報</h2>
+<ul>
+<li><a href="https://www.browserstack.com/docs/test-management/browserstack-ai" rel="nofollow">公式製品ページ</a></li>
+<li><a href="https://www.browserstack.com/docs/low-code-automation/test-recording/browserstack-ai/agentic-testing" rel="nofollow">browserstack-ai-2</a></li>
+<li><a href="https://www.browserstack.com/docs/browserstack-mcp-server/tools/ai-agents" rel="nofollow">browserstack-ai-3</a></li>
+</ul></main>
+<footer>調査資料 · 2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。出典と確認範囲は各ページをご覧ください。</footer>
+<script src="../site.js" defer></script></body></html>
