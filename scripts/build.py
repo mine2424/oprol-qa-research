@@ -9,7 +9,7 @@ from pathlib import Path
 import re
 import subprocess
 
-from presentation import comparison, contents, directory, image_viewer
+from presentation import comparison_notes, contents, directory, image_viewer
 from media import posters, previews
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,7 +19,6 @@ CACHE = ROOT / ".render-cache"
 BASE_URL = "https://mine2424.github.io/oprol-qa-research/"
 NAV = [
     ("index.html", "製品一覧"),
-    ("competitor-flows.html", "機能比較"),
     ("competitor-evidence/2026-10-27/gallery.html", "画像と動画"),
     ("02-competitors.html", "市場と価格"),
 ]
@@ -86,7 +85,7 @@ def wrap(title, body, page):
 </head><body><a class="skip" href="#content">本文へ移動</a>
 <header class="site-header"><div class="header-inner"><div class="header-top"><a class="brand" href="{relative('index.html', page)}">Oprol QA <span>Research</span></a><span class="edition">競合調査 / 2026.10.27</span></div>{navigation(page)}</div></header>
 <div class="page-layout {page_class}{' with-toc' if toc else ''}"><main id="content" tabindex="-1">{breadcrumb}{body}</main>{toc}</div>
-<footer><p><a href="{relative('competitor-inventory.html', page)}">調査対象について</a> · <a href="{relative('competitor-evidence/2026-10-27/README.html', page)}">画像・動画の出典と確認方法</a></p><p>2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。</p></footer>
+<footer><p><a href="{relative('competitor-flows.html', page)}">比較の見どころ</a> · <a href="{relative('competitor-inventory.html', page)}">調査対象について</a> · <a href="{relative('competitor-evidence/2026-10-27/README.html', page)}">画像・動画の出典と確認方法</a></p><p>2026年10月27日版 · 各社の画面・映像の権利は各権利者に帰属します。</p></footer>
 {image_viewer()}<script src="{relative('site.js', page)}?v=5" defer></script></body></html>'''
 
 
@@ -100,12 +99,14 @@ def build_document(source, poster_paths):
     body = body.replace('<img ', '<img loading="lazy" ')
     body = re.sub(r'<table(?: [^>]*)?>(.*?)</table>', r'<div class="table-scroll" role="region" aria-label="比較表。横にスクロールできます" tabindex="0"><table>\1</table></div>', body, flags=re.S)
     if target.name == "competitor-flows.html":
-        body = comparison(body)
+        body = comparison_notes(body)
+        title = "比較の見どころ"
     if target in (SITE / "index.html", SITE / "competitor-products/README.html"):
         title = "AI QA・テスト支援ツール比較"
         body = directory(poster_paths, target)
     elif target.parent.name == "competitor-products":
         body = previews(body, target, poster_paths)
+    body = body.replace(">全体比較</a>", ">比較の見どころ</a>")
     target.write_text(wrap(title, body, target))
     print(target.relative_to(SITE), flush=True)
 
@@ -133,6 +134,7 @@ def build_gallery(poster_paths):
     body = body.replace('<span id="count"', '<button type="button" id="gallery-reset">検索をクリア</button><span id="count"')
     body = re.sub(r'(href|src)="([^"]+)"', rewrite_link, body)
     body += f'<script src="{relative("gallery.js", path)}?v=5" defer></script>'
+    body = body.replace(">全体の比較表</a>", ">比較の見どころ</a>")
     path.write_text(wrap("競合プロダクトの機能・画面・動画", body, path))
 
 
